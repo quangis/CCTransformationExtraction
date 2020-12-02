@@ -1,0 +1,151 @@
+-------------------------------------
+Location question (40):
+-------------------------------------
+Where are the five star hotels in the Happy Valley ski resort
+(start Where  are  the  (measure (location (amountofObjects five star hotels ))) in  the  (extent Happy Valley ski resort))
+
+Where are the shops that open at 18 in Happy Valley ski resort
+(start Where  are  the  (measure (location (amountofObjects shops ) (condition that  (predicatecondition (predicate open at ) (value 18))))) in  (extent Happy Valley ski resort))
+
+Where are the ski pistes in Happy Valley ski resort
+(start Where  are  the  (measure (location (amountofObjects ski pistes ))) in  (extent Happy Valley ski resort))
+
+Where is the most popular ski piste in Happy Valley ski resort
+(start Where  is  the  (measure (location (condition (extrema most popular )) (objec ski piste ))) in  (extent Happy Valley ski resort))
+
+Where are the individual crimes in Amsterdam
+(start Where  are  the  (measure (location (event individual crimes ))) in  (extent Amsterdam))
+
+Where was the most intense hurricane in Oleander in 1977
+(start Where  was  the  (measure (location (condition (extrema most intense )) (event hurricane ))) in  (extent Oleander ) in  (time 1977))
+
+Where was the fastest hurricane in Oleander in 1977
+(start Where  was  the  (measure (location (condition (extrema fastest )) (event hurricane ))) in  (extent Oleander ) in  (time 1977))
+
+Where are the rocky areas in Spain
+(start Where  are  the  (measure (location (field rocky areas ))) in  (extent Spain))
+
+What areas do have slope larger than 10 percentage in Spain
+(start What areas  do have  (measure (location (field slope ) (condition (predicatecondition (predicate larger than ) (value 10 percentage ))))) in  (extent Spain))
+
+What areas do have altitude between 700 and 2000 meters in Spain
+(start What areas  do have  (measure (location (field altitude ) (condition (predicatecondition (predicate between ) (value 700) and  (value 2000 meters ))))) in  (extent Spain))
+
+What areas do have annual minimum temperature greater than 0 degrees in Spain
+(start What areas  do have  (measure (location (field annual minimum temperature ) (condition (predicatecondition (predicate greater than ) (value 0 degrees ))))) in  (extent Spain))
+
+What areas do have precipitation lower than 40 mm in Spain
+(start What areas  do have  (measure (location (field precipitation ) (condition (predicatecondition (predicate lower than ) (value 40 mm ))))) in  (extent Spain))
+
+What areas are at least 3000 m away from the rivers in Spain
+(start What areas  are  (measure (location (condition (predicatecondition (predicate at least ) (value 3000 m ))) away from  the  (amountofObjects rivers ))) in  (extent Spain))
+
+What areas are more than 5000 m away from the roads in Spain
+(start What areas  are  (measure (location (condition (predicatecondition (predicate more than ) (value 5000 m ))) away from  the  (amountofObjects roads ))) in  (extent Spain))
+
+Where are the industrial areas in Utrecht
+(start Where  are  the  (measure (location (amountofObjects industrial areas ))) in  (extent Utrecht))
+
+What areas do not have groundwater in the UK
+(start What areas  (negSign do not have) (measure (location (field groundwater ))) in  the  (extent UK))
+
+What areas do have population density less than 300 per square kilometer in UK
+(start What areas  do have  (measure (location (amountofObjects population density ) (condition (predicatecondition (predicate less than ) (value 300 per square kilometer ))))) in  (extent UK))
+
+What areas are minimum 3000 m and maximum 5000 m away from the roads in UK
+(start What areas  are  (measure (location (condition (extrema minimum  (value 3000 m ))) and  maximum  5000 m  away from  the  roads )) in  (extent UK))
+
+Where are not conservation areas in UK
+(start Where  (negSign are not ) (measure (location (field conservation areas ))) in  (extent UK))
+
+Where are the fire stations in Utrecht
+(start Where  are  the  (measure (location (amountofObjects fire stations ))) in  (extent Utrecht))
+
+Where are the holiday accommodations within 1000 m of a windsurfing beach in Italy
+(start Where  are  the  (measure (location (amountofObjects holiday accommodations ) (condition (topocondtion (topo within ) (value 1000 m ))))) of  a  windsurfing beach  in  Italy)
+
+Where are the flat areas within 500 m of a major highway in the United Kingdom
+(start Where  are  the  (measure (location (field flat areas ) (condition (topocondtion (topo within ) (value 500 m ))))) of  a  major highway  in  the  United Kingdom)
+
+Where are the commercial areas in Amsterdam
+(start Where  are  the  (measure (location (field commercial areas ))) in  (extent Amsterdam))
+
+Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort
+(start Where  are  the  (measure (location (amountofObjects luxury hotels ) (condition with  (predicatecondition (predicate more than ) (value 20))))) bedrooms  in  (extent Happy Valley ski resort))
+
+Where are forestry lands in Happy Valley ski resort
+(start Where  are  (measure (location (field forestry lands ))) in  (extent Happy Valley ski resort))
+
+What areas are affected by a tsunami in Indonesia in 2004
+(start What areas  are  (measure (location (condition (topocondtion (topo affected by ))) a  (event tsunami ))) in  (extent Indonesia ) in  (time 2004))
+
+What areas are within 100 m of cameras in Salford
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 100 m ))) of  (amountofObjects cameras ))) in  (extent Salford))
+
+Where are the Hispanic food stores in Tarrant County , Texas
+(start Where  are  the  (measure (location (amountofObjects Hispanic food stores ))) in  (extent Tarrant County  Texas))
+
+Where are the auto incidents in Tarrant County , Texas
+(start Where  are  the  (measure (location (event auto incidents ))) in  (extent Tarrant County  Texas))
+
+What areas are within 1000 m of the schools in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 1000 m ))) of  the  (amountofObjects schools ))) in  (extent Oleander))
+
+What areas are within 2000 m of the playgrounds in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 2000 m ))) of  the  (amountofObjects playgrounds ))) in  (extent Oleander))
+
+What areas are within 1000 m of the arcades in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 1000 m ))) of  the  (amountofObjects arcades ))) in  (extent Oleander))
+
+What areas are within 100 m of the hospitals in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 100 m ))) of  the  (amountofObjects hospitals ))) in  (extent Oleander))
+
+What areas are within 100 m, 200 m, and 300 m of runways in Schiphol airport
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 100 m) (value 200 m) and  (value 300 m ))) of  (amountofObjects runways ))) in  (extent Schiphol airport))
+
+What areas are within 3 minutes of driving time from the nearest fire station in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 3 minutes ))) of  driving time from  the  nearest (objec fire station ))) in  (extent Oleander))
+
+Where are health care facilities located in Riverside San Bernardino , CA
+(start Where  are  (measure (location (amountofObjects health care facilities ))) located in  (extent Riverside San Bernardino  CA))
+
+What areas do not have natural resources in the UK
+(start What areas  (negSign do not have) (measure (location (field natural resources ))) in  the  (extent UK))
+
+What areas are within 1000 m of the major transport routes in Amsterdam
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 1000 m ))) of  the  (amountofObjects major transport routes ))) in  (extent Amsterdam))
+
+What areas are within 20 minutes driving time from flower stores in Oleander
+(start What areas  are  (measure (location (condition (topocondtion (topo within ) (value 20 minutes ))) driving time from  (amountofObjects flower stores ))) in  (extent Oleander))
+
+Where are the touchdowns of the tornado in Oleander on April 2011
+(start Where  are  the  (measure (location (event touchdowns of the tornado ))) in  (extent Oleander ) on  (time April  2011))
+
+-------------------------------------
+Location of distribution question:
+-------------------------------------
+What is the mean center of households in the Oost district in Amsterdam
+What is the mean center for the higher priority incident calls for each alarm territories in Fort Worth
+Where are the cluster of fire alarms with similar priority ranking inside 300 meter neighbor in Fort Worth
+
+-------------------------------------
+Location allocation question(5):
+-------------------------------------
+Where is the best site for a landscape conservation zone in Zdarske Vrchy
+(start Where  is  the  (measure (locAllocation best site for a  (objec landscape conservation zone ))) in  (extent Zdarske Vrchy))
+
+Where is the best site for a wind farm in Portland
+(start Where  is  the  (measure (locAllocation best site for a  (objec wind farm ))) in  (extent Portland))
+
+Where is the best site for a new retail store in Toronto
+(start Where  is  the  (measure (locAllocation best site for a  new  (objec retail store ))) in  (extent Toronto))
+
+Where is the best site for a new ski piste in Happy Valley
+(start Where  is  the  (measure (locAllocation best site for a  new  (objec ski piste ))) in  (extent Happy Valley))
+
+Where is the best site for a disposal of radioactive waste in UK
+(start Where  is  the  (measure (locAllocation best site for a  (objec disposal of radioactive waste ))) in  (extent UK))
+
+-------------------------------------
+CoreConcept Amount question(35):
+-------------------------------------
