@@ -1,0 +1,467 @@
+house	object
+houses	object
+construction year	object quality	interval
+school	object
+supermarket	object
+schools	object
+supermarkets	object
+urban areas	field	nominal
+neighborhoods	object
+neighborhood	object
+residents	object
+resident	object
+parks	object
+park	object
+five star hotels	object
+five star hotel	object
+ski resorts	object
+ski resort	object
+shops	object
+shop	object
+cafes	object
+café	object
+cafés	object
+café	object
+forested areas	field	nominal
+ski pistes	object
+ski piste	object
+hotels	object
+hotel	object
+individual crimes	event
+buildings	object
+building	object
+fire stations	object
+fire station	object
+driving time	network
+fire calls	event
+fire call	event
+hurricanes	event
+hurricane	event
+trajectories	event
+trajectory	event
+number	conAmount	ERA
+people	object
+rocky areas	field	nominal
+slope	field	ratio
+altitude	field	ratio
+elevation	field	ratio
+temperature in Celsius	field	interval
+precipitation	field	ratio
+rivers	object
+river	object
+predicted probability surface	field	ratio
+probability surface	field	ratio
+little midwife toad	object
+industrial areas	field	nominal
+lanes	object
+lane	object
+cities	object
+city	object
+conservation areas	field	nominal
+emergency vehicles	object
+emergency vehicle	object
+landfills	object
+landfill	object
+forestry areas	field	nominal
+Norwegian Spruce trees	object
+Norwegian Spruce tree	object
+student residences	object
+student residence	object
+glaciers	field	nominal
+glacier	field	nominal
+population	Object conAmount	ERA
+polar bears	object
+polar bear	object
+landscape conservation zone	field	nominal
+landscape conservation parks	Object
+landscape conservation park	Object
+holiday accommodations	object
+holiday accommodation	object
+windsurfing spots	object
+windsurfing spot	object
+flat areas	field	nominal
+traffic flow	network
+routes	network
+route	network
+resorts	object
+resort	object
+centers	object
+center	object
+wind farms	object
+wind farm	object
+land use	field	nominal
+towns	object
+town	object
+retail stores	object
+retail store	object
+commercial areas	field	nominal
+luxury hotels	object
+luxury hotel	object
+bedrooms	object
+forestry lands	field	nominal
+meteorological stations	object
+meteorological station	object
+forest areas	field	nominal
+snowfall	event
+avalanche danger zones	field	nominal
+accidents	event
+accident	event
+visitor facilities	object
+visitor facility	object
+tsunamis	event
+tsunami	event
+cameras	object
+camera	object
+bus stops	object
+bus stop	object
+overall population	Object conAmount	ERA
+catchment areas	network
+service areas	network
+buffer areas	field	boolean
+buffer area	field	boolean
+counties	object
+county	object
+police districts	object
+police district	object
+mean center	covAmount	loc
+households	object
+household	object
+districts	object
+district	object
+central feature	covAmount	loc
+bank branches	object
+bank branch	object
+library patrons	object
+library patron	object
+priority	event quality	ordinal
+offices	object
+office	object
+customers	object
+customer	object
+transactions	event
+transaction	event
+count	conAmount	ERA
+employees	object
+employee	object
+police stations	object
+police station	object
+alarm territories	object
+alarm territory	object
+standard distance circles	covAmount	loc
+standard distance circle	covAmount	loc
+West Nile Virus	event
+directional trends	covAmount	loc
+directional trend	covAmount	loc
+crimes	event
+crime	event
+animal migration	event
+single family zones	field	nominal
+total mileage	covAmount	ERA
+arsons	event
+arson	event
+burglary	event
+Hispanic food stores	object
+Hispanic food store	object
+census blocks	object
+census block	object
+household income	Object conAmount	ERA
+census tracts	object
+census tract	object
+auto accidents	event
+auto accident	event
+total population	Object conAmount	ERA
+age	object quality	interval
+percentage	proportion	IRA
+Hispanic population	Object conAmount	ERA
+Hispanic people	Object
+density	CovPro	IRA
+bald eagles	object
+bald eagle	object
+tractors	object
+tractor	object
+owner occupied houses	object
+owner occupied house	object
+precincts	object
+precinct	object
+elections	event
+election	event
+totals	conAmount	ERA
+vote	event
+votes	conAmount	ERA
+robberies	event
+robbery	event
+counts	conAmount	ERA
+police beats	object
+police beat	object
+rental units	object
+rental unit	object
+registered voters	object
+registered voter	object
+point density	field	ratio
+rainfall measurements	field	ratio
+density surface	field	ratio
+temperature measurements	field	ratio
+tornadoes	event
+tornado	event
+mean direction	covAmount	loc
+degree of clustering	covAmount	loc
+degree of dispersion	covAmount	loc
+flu cases	event
+flu case	event
+false fire alarms	event
+false fire alarm	event
+clusters	covAmount	loc
+cluster	covAmount	loc
+residential areas	field	nominal
+central station	object
+Independence Day parade route	event
+properties	object
+property	object
+dwelling units	object
+dwelling unit	object
+flood zones	field	nominal
+total area	covAmount	ERA
+high school students	object
+high school student	object
+senior high schools	object
+senior high school	object
+school districts	object
+school district	object
+floodplain	field	nominal
+creeks	object
+creek	object
+abandoned lead smelters	object
+abandoned lead smelter	object
+playgrounds	object
+playground	object
+arcades	object
+arcade	object
+hospitals	object
+hospital	object
+soil type	field	nominal
+water wells	object
+water well	object
+street noise	field	ratio
+noise polluted areas	field	nominal
+street lights	object
+street light	object
+airports	object
+airport	object
+runways	object
+runway	object
+fire hydrants	object
+fire hydrant	object
+single family residential properties	object
+single family residential property	object
+walkability	object quality	ratio
+residential units	object
+residential unit	object
+connectivity	object quality	ratio
+land use mix	object quality	ratio
+bikeability surface	field	ratio
+kernel density	field	ratio
+line density	field	ratio
+topography	field	ratio
+intersections	object
+intersection	object
+cycling destinations	object
+cycling destination	object
+network distance	network
+public primary schools	object
+public primary school	object
+census areas	object
+census area	object
+children	object
+potential accessibility	object quality	ratio
+health care facilities	object
+health care facility	object
+sandy soil	field	nominal
+land use type	field	nominal
+aspect surface	field	interval
+aspect	field	interval
+animal grazing	event
+crape myrtles	object
+crape myrtle	object
+centroids	object
+centroid	object
+railway stations	object
+railway station	object
+travel time	network
+private hospitals	object
+private hospital	object
+accessibility index	object quality	ratio
+accessibility score	object quality	ratio
+public hospitals	object
+public hospital	object
+proportion	proportion	IRA
+vacant houses	object
+vacant house	object
+housing units	object
+housing unit	object
+access score	object quality	ratio
+nurse practitioner services	object
+family physician services	object
+Census Consolidated Subdivisions	object
+Census Consolidated Subdivision	object
+natural resources	field	nominal
+greens	field	nominal
+green space	field	nominal
+Euclidean distance	field	ratio
+median	amount
+average	amount	ERA
+total	amount	ERA
+severity	event quality	ordinal
+radioactive waste sites 	object
+radioactive waste site	object
+stores	object
+store	object
+monthly sales	conAmount	ERA
+birds	object
+bird	object
+distance	covAmount	loc
+flower stores	object
+flower store	object
+warehouses	object
+warehouse	object
+tornado path	event
+hurricane trajectory	event
+tornado touchdowns	event
+intensity	event quality	ratio
+911 calls	event
+911 call	event
+elderly people	object
+green roofs	object
+green roof	object
+income	conAmount	ERA
+seriously lonely people	object
+green areas	field	nominal
+residential care complexes	object
+Safety Index	object quality	ratio
+sport facilities	object
+sport facility	object
+subway stations	object
+subway station	object
+tram stations	object
+tram station	object
+urban heat island effect	field	ratio
+election votes	Event conAmount	ERA
+WOZ value	conAmount	ERA
+WOZ waarde	conAmount	ERA
+wall plants	object
+wall plant	object
+water areas	field	nominal
+elderly population	Object conAmount	ERA
+municipality areas	object
+municipality area	object
+white females	object
+white female	object
+white males	object
+white male	object
+potential geographic access	object quality	ratio
+communities	object
+community	object
+sexual and productive health services	object
+rural areas	field	nominal
+kernel density surface	field	ratio
+interpolation surface	field	ratio
+NO2 concentration	field	ratio
+hot spots	covAmount	loc
+cold spots	covAmount	loc
+thefts	event
+theft	event
+injured pedestrians	object
+injured pedestrian	object
+pedestrian injuries	event
+pedestrian injury	event
+Chinese immigrants	object
+Indian immigrants	object
+Korean immigrants	object
+Filipino immigrants	object
+Japanese immigrants	object
+Cambodian immigrants	object
+inhabitants	object
+municipalities	object
+municipality	object
+outpatient services	object
+green belt areas	field	nominal
+turbojet runways	object
+streams	object
+water bodies	field	nominal
+nature reserve districts	field	nominal
+endangered species areas	field	nominal
+developed areas	field	nominal
+wetlands	field	nominal
+water body	field	nominal
+residence	object
+hurricane areas	field	nominal
+flood plain areas	field	nominal
+flood areas	field	nominal
+metro stations	object
+metro station	object
+universities	object
+religious places	object
+noise level	field	ordinal
+agriculture	field	nominal
+political leaning	object quality	nominal
+land use areas	field	nominal
+arson cases	event
+groundwater	field	nominal
+resort center	object
+potential bus stops	object
+total linear mileage	covAmount	ERA
+clinics	object
+clinic	object
+trees	object
+tree	object
+fire alarms	event
+fire alarm	event
+senior high school districts	object
+senior high school district	object
+fire accidents	event
+fire accident	event
+fire areas	field	nominal
+lakes	object
+lake	object
+water level	object quality	ratio
+density raster	field	ratio
+primary schools	object
+primary school	object
+family physicians services	object
+central location	covAmount	loc
+priority rankings	event quality	ordinal
+villages	object
+village	object
+network based route	network
+network based path	network
+locations	location
+temperature	field	ratio
+bird count	Object conAmount	ERA
+traffic count	Object conAmount	ERA
+national network	network
+delivery route	network
+cost surface	field	ratio
+cost distance	field	ratio
+cost distance surface	field	ratio
+cost distance raster	field	ratio
+least cost route	field	nominal
+least cost path	field	nominal
+least costly route	field	nominal
+least costly path	field	nominal
+traffic counts	Object conAmount	ERA
+cervix cancer	event
+lung cancer	event
+mortality rate	objconobjconpro	ira
+crime cases	event
+extent of clustering	covAmount	loc
+population density	objconobjcovpro	IRA
+cervix cancer mortality rate	objconobjconpro	IRA
+lung cancer mortality rate	objconobjconpro	IRA
+crime rate	eveconobjconpro	IRA
+robbery rate	eveconobjconpro	IRA
+arson rate	eveconobjconpro	IRA
+burglary rate	eveconobjconpro	IRA
+plumbing	object
+for sale	object quality	boolean
+PC4 area	object
+PC4 areas	object
+open at	object quality	interval
