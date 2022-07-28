@@ -1,0 +1,5 @@
+numpy
+allennlp
+nltk
+word2number
+spacy

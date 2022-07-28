@@ -1,20 +1,18 @@
 # cct-question-parser
 
-This program extracts [CCT](https://github.com/quangis/cct) 
-transformations from geo-analytical questions in natural language.
+This program extracts core concept transformations from geo-analytical 
+questions in natural language.
 
 ## Installation
 
 ### Requirements
 
-The program is implemented in python (version 3.7). Several libraries 
-should be installed (use pip command to install the following libraries) 
-before running the code:
+Several libraries should be installed, as well as some data files:
 
-pip install numpy allennlp
-pip install -U spacy
-pip install nltk
-pip install word2number
+    pip install -r requirements.txt
+    python -m spacy download en_core_web_sm
+    python -m nltk.downloader averaged_perceptron_tagger omw-1.4
+
 
 ## Usage
 
