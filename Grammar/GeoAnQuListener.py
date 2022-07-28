@@ -98,6 +98,15 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GeoAnQuParser#boolField.
+    def enterBoolField(self, ctx:GeoAnQuParser.BoolFieldContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#boolField.
+    def exitBoolField(self, ctx:GeoAnQuParser.BoolFieldContext):
+        pass
+
+
     # Enter a parse tree produced by GeoAnQuParser#distField.
     def enterDistField(self, ctx:GeoAnQuParser.DistFieldContext):
         pass
@@ -284,6 +293,15 @@ class GeoAnQuListener(ParseTreeListener):
 
     # Exit a parse tree produced by GeoAnQuParser#networkC.
     def exitNetworkC(self, ctx:GeoAnQuParser.NetworkCContext):
+        pass
+
+
+    # Enter a parse tree produced by GeoAnQuParser#networkQ.
+    def enterNetworkQ(self, ctx:GeoAnQuParser.NetworkQContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#networkQ.
+    def exitNetworkQ(self, ctx:GeoAnQuParser.NetworkQContext):
         pass
 
 

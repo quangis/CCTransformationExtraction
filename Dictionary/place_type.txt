@@ -443,6 +443,8 @@ built-up land
 built-up lands
 cafe
 cafes
+city centre
+city center
 cities
 city
 city block
@@ -692,3 +694,5 @@ visitor attraction
 visitor attractions
 nuclear power plants
 nuclear power plant
+rain forest
+aquifer

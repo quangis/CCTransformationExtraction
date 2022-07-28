@@ -9,10 +9,7 @@ start : ((WH ((AUX (extremaR|extreDist)? measure) | (measure AUX? false?))) | (m
         (('in'|'near')? (extent 'and'?)+)*
         (('in'|'on'|'from')? temEx 'to'? temEx?)? ;
 false : Flase ;
-measure: location | (conAm coreC) |
-         (aggre? DIGIT? (coreC 'and'?)+ (('of'|'for'|'to'|'during'|'per') DIGIT? 'each'? 'new'? (coreC|distBandNei))* weight?) |
-         (aggre? (networkC|networkQ|coreC) ((('to'|'through')? destination)* (('from'|'for'|'of')? 'each'? origin)* ('to'? destination)*)) |
-         (coreC 'by' networkC);
+measure: location | (conAm coreC) | (aggre? DIGIT? (coreC 'and'?)+ (('of'|'for'|'to'|'during'|'per') DIGIT? 'each'? 'new'? (coreC|distBandNei))* weight?)|(aggre? (networkC|coreC) ((('to'|'through')? destination)* (('from'|'for'|'of')? 'each'? origin)* ('to'? destination)*))|(coreC 'by' networkC);
 //|(aggre? coreC 'and'?)+ (('for'|'of'|'to'|'by'|'through') ('new'? 'each'? DIGIT? (extremaR|extreDist)? (coreC|grid|distBandNei| 'and'?)+))* ;
 //measure: location | (coreC (('for'|'of'|'to'|'by'|'from') ('new'? coreC | grid))* (('to'|'from'|'of') extrema? coreC)?) ;
 measure1: 'to' coreC;
@@ -20,26 +17,22 @@ location: (Location1 AUX? false? (allocation|(extremaR? (coreC 'and'?)+ ('of' co
 conAm: ConAm ;
 weight: ('weighted by' aggre? coreC ('of' coreC)?) | ('with similar' aggre? coreC);
 allocation: ('best site'|'best sites') ('for'|'of') 'new'? coreC ;
-condition: boolField |
-           (topoR (grid|(coreC ('of' ((coreC 'from' origin 'to' destination)|coreC))?)|densityNei))|
-           ('with'? boolR 'from'? DIGIT? (extremaR|aggre)? coreC? (('of' coreC 'to' coreC+)|('of'? compareR? (quantity|coreC))|date|time|percent)?)|
+condition: ((topoR|extremaR)? (distField|serviceObj))|
+           (topoR (grid|(coreC ('of' (((coreC|networkC) 'from' origin 'to' destination)|coreC))?)|densityNei))|
+           ('with'? boolR 'from'? DIGIT? extremaR? aggre? coreC? (date|time|('of'? compareR? (quantity|coreC))|percent|('of' coreC 'to' coreC*))?)|
            (('with'|'of')? compareR (quantity|distField|(DIGIT? coreC)))|
            ((extremaR|distanceR) ('each'? coreC ('of' coreC)?)?)|
-           topoRIn | coreC | date ;  // //(coreC time? 'of'? coreC?) // (('with'|'that' AUX?)? false? subcon)?
+           topoRIn|
+           date ;  // //(coreC time? 'of'? coreC?) // (('with'|'that' AUX?)? false? subcon)?
 grid: quantity? ('grids'|'grid cells'|'grid'|'grid cell'|'hexagonal grids'|'hexagonal grid'|'hexagon grid') ('with' 'diameter of'? quantity)? ;
-boolField: (topoR|compareR|extremaR)? (distField|serviceObj);
-distField: ((quantity 'and'? ('area'|'buffer area'|'distance'|'buffer areas')?)+ |'buffer area'|'buffer areas') (('from'|'of'|'to')? (extremaR|extreDist)? (coreC|(networkC (('from'|'for'|'of') origin)? ('to' destination)?)) ('and'|'or')?)+ ;
-serviceObj: ((time|quantity) 'and'?)+ 'of'? networkQ (('from'|'for'|'of') origin)? ('to' destination)? ;
+distField: (quantity 'and'? ('area'|'buffer area'|'distance'|'buffer areas')?)+ (('from'|'of'|'to')? (extremaR|extreDist)? coreC ('and'|'or')?)* ;
+serviceObj: ((time|quantity) 'and'?)+ 'of'? networkC? (('from'|'for'|'of') origin)? ('to' destination)? ;
 //origin: ('from'|'for'|'of')? (extremaR|extreDist)? (objectC|(quantity? grid)) ('of' (objectC|quantity? grid))? ;
 //destination: 'to'? DIGIT? (extremaR|extreDist)? objectC;
 origin: DIGIT? (extremaR|extreDist)? objectC? 'of'? (objectC|eventC|grid)+ ;
 destination: DIGIT? (extremaR|extreDist)? ((objectC|eventC) 'and'?)+;
 //boolField: ((quantity 'area'?)|(time 'and'?)+) (('from'|'of')? (extremaR|extreDist)? (coreC|grid))*  ('to' extremaR? coreC)?; //('from'|'of')? extrema? coreC ('from' extrema? (coreC|grid))?
-subcon: (coreC compareR quantity)|
-        ((topoR|extremaR) (distField|serviceObj))|
-        (topoR coreC)|
-        (compareR coreC)|
-        (distanceR coreC ('of' coreC)?);
+subcon: (coreC compareR quantity)|((topoR|extremaR) (distField|serviceObj))|(topoR coreC)|(compareR coreC)|(distanceR coreC ('of' coreC)?);
 aggre: Aggregate ;
 topoR: TOPO ;
 topoRIn: 'in' (coreC ('of' coreC)?|densityNei);
@@ -56,7 +49,6 @@ densityNei: quantity ('circle'|'rectangle') ;
 distBandNei: 'nearest neighbors' ;
 distBand: (quantity 'distance band') | ('distance band' quantity 'by' quantity 'increments') ;
 networkC: 'network' DIGIT ;
-networkQ: 'networkquality' DIGIT ML ;
 objectC: ('object' DIGIT) | ('placename' DIGIT);
 eventC: 'event' DIGIT ;
 coreC: ('field' DIGIT ML)|('object' DIGIT)|('objectquality' DIGIT ML)|('event' DIGIT)|('eventquality' DIGIT ML)

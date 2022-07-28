@@ -34,3 +34,8 @@ highways
 highway
 major roads
 major road
+all season roads
+all season road
+planned roads
+planned road
+path
