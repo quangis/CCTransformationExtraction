@@ -7,7 +7,6 @@ What houses are for sale in urban areas in Utrecht
 What houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht
 What houses are for sale and within 1km from the parks in Utrecht
 Where are the five star hotels in the Happy Valley ski resort
-Which shops are open at 6 pm in Happy Valley ski resort
 Which cafes are in forested areas in Happy Valley ski resort
 Where are the ski pistes in Happy Valley ski resort
 Where is the most popular ski piste in Happy Valley ski resort
@@ -19,7 +18,6 @@ Which neighborhood has the highest robbery rate in Amsterdam
 Which neighborhood has the highest arson rate in Amsterdam
 Which neighborhood has the highest burglary rate in Amsterdam
 Which buildings are within 1 minute of driving time from a fire station in Fort Worth
-What buildings are within 2 minutes but not within 1 minute of driving time from a fire station in Fort Worth
 Which schools are not within 3 minutes of driving time from a fire station in Fort Worth
 What is the nearest fire station to each fire call in Fort Worth
 Where are the hurricanes in Oleander in 1977
@@ -32,7 +30,7 @@ How many people are affected by a hurricane in Oleander
 Where are the rocky areas in Spain
 What areas do have slope larger than 10 percent in Spain
 What areas do have altitude between 700 and 2000 meters in Spain
-What areas do have temperature in Celsius larger than 0 degrees in Spain
+What areas do have temperature larger than 0 degrees in Spain
 What areas do have precipitation lower than 40 millimeters in Spain
 What areas are at least 3000 meters from the rivers in Spain
 What areas are more than 5000 meters from the roads in Spain
@@ -44,9 +42,7 @@ Which city has the highest crime rate in Netherlands
 Which city has the highest population density in Netherlands
 What areas do not have groundwater in the UK
 What areas do have population density less than 300 per square kilometer in UK
-What areas are minimum 3000 meters and maximum 5000 meters from the roads in UK
 Where are not conservation areas in UK
-Which houses do not have plumbing in Utrecht
 Which emergency vehicle is closest to the accident in Utrecht
 Where is the best site for a new landfill in UK
 Which forestry areas have Norwegian Spruce trees in Europe
@@ -79,10 +75,10 @@ Which visitor facilities are in the Happy Valley
 Which properties are within 1000 meters of an abandoned lead smelter in Oleander
 What areas are affected by a tsunami in Indonesia in 2004
 What areas are within 100 meters of cameras in Salford
-Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas in Utrecht
+Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas of bus stops in Utrecht
 What are the political leaning for each county in the United States
 What is the number of crime cases for each police district in Texas in 2018
-Where is the mean center of households in the Oost district in Amsterdam
+Where is the mean center of households in Amsterdam Oost district
 What is the central feature of bank branches in Oleander
 What is the mean center of library patrons for each district in Oleander
 What is the mean center of the fire calls weighted by the priority in Fort Worth
@@ -100,7 +96,7 @@ Where are the Hispanic food stores in Tarrant County in Texas
 What is the median household income for each census block in Tarrant County in Texas
 Where are the auto accidents in Tarrant County in Texas
 What is the total population for each census block in Tarrant County, Texas
-What is the median people age for each census tract in Tarrant County in Texas
+What is the median age for each census tract in Tarrant County in Texas
 What is the construction year for each house in Oleander
 What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas
 Which park has the highest proportion of bald eagles to the bird totals in Texas
@@ -139,7 +135,7 @@ What areas are within 1000 meters of the arcades in Oleander
 What areas are within 100 meters of the hospitals in Oleander
 What is the percentage of soil type inside 1 km buffer areas of the water wells in Oleander
 What is the percentage of noise polluted areas in Oleander
-Where are the houses within 2640 feet, 5280 feet, and 7920 feet from fire station in Oleander
+Where are the houses within 2640 feet, 5280 feet, and 8920 feet from fire station in Oleander
 What areas are within 300 meters of runways in Schiphol airport
 How many fire calls were answered by a fire station that was not the closest to the fire accidents in Oleander
 Which fire hydrant is closest to the households in Oleander
@@ -160,7 +156,7 @@ What is the point density of cycling destinations in the Metro Vancouver region 
 What is the network distance from hexagonal grid with 2000 meter to the closest public primary school in the Multifunctional Urban Area of Barcelona
 What is the average network distance for people to public primary schools for each census area in Rotterdam
 What is the percentage of population within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam
-What is the network distance to primary schools for children aged between 4 and 12 in Multifunctional Urban Area of Rotterdam
+What is the network distance to primary schools for children aged between 4 and 12 in Rotterdam
 What is the average network distance for people to the three closest primary schools for each census area in Rotterdam
 What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona
 Where are the best sites for metro stations in Karbala in Iraq
@@ -177,7 +173,7 @@ What areas are outside 3000 meters from turbojet runways in Houston
 What areas are within 800 meter from major highways in Houston
 What is the potential accessibility by local road for each 2 by 2 km grid cell in Finland
 What is the potential accessibility by regional road for each 2 by 2 km grid cell in Finland
-Where are clusters of pedestrian injuries in Georgia from 2000 to 2007 
+Where are clusters of pedestrian injuries in Georgia from 2001 to 2010
 Where are the clusters of Chinese immigrants in Auckland from 1991 to 2006
 Where is the hot spots and cold spots of robberies in Shanghai in January 2009
 What is the cervix cancer mortality rate of white females for each city in the Western USA from 1970 to 1994
@@ -222,7 +218,7 @@ What is the households density for each census block in Fort Worth
 What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth
 What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth
 What is the degree of clustering of fire alarms weighted by priority rankings for each distance band from 60 to 600 meters by 30 meter increments in Fort Worth
-How many fire calls are inside 150 by 150 meters grid cell in Fort Worth
+What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth
 What is the degree of clustering of fire alarms density for each 300 meter distance band in Fort Worth
 Where are the clusters of fire alarms with similar priority for each 300 meter distance band in Fort Worth
 Which houses are within 2 minutes driving time from fire stations in Oleander
@@ -279,7 +275,7 @@ What is the population for each city in Aichi prefecture in Japan
 What is the density of elderly population for each 500 meters grid in Aichi prefecture in Japan
 What is the lung cancer mortality rate of white males for each city in the Western USA from 1970 to 1994
 Where is the hot spots and cold spots of thefts in Shanghai in December 2009
-What is the number of injured pedestrians for each census tract in Georgia from 2000 to 2007 
+What is the number of injured pedestrians for each census tract in Georgia from 2001 to 2010
 Where are the clusters of Indian immigrants in Auckland from 1991 to 2006
 Where are the clusters of Korean immigrants in Auckland from 1991 to 2007
 Where are the clusters of Filipino immigrants in Auckland from 1991 to 2008
@@ -297,7 +293,7 @@ What areas are outside 60 meters from residence in Houston
 What areas are outside 150 meters from hospitals in Houston
 What areas are outside 150 meters from schools in Houston
 What areas are not hurricane areas in Houston
-What areas are not flood plain in Houston
+What areas are not floodplain in Houston
 What areas are within 500 meters from universities in Karbala in Iraq
 What areas are within 500 meters from religious places in Karbala in Iraq
 Which hospitals are within 15 minute driving time of an accident in New York

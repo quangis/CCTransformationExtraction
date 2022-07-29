@@ -32,7 +32,7 @@ buildings	object
 building	object
 fire stations	object
 fire station	object
-driving time	network
+driving time	network quality	ratio
 fire calls	event
 fire call	event
 hurricanes	event
@@ -70,7 +70,8 @@ student residences	object
 student residence	object
 glaciers	field	nominal
 glacier	field	nominal
-population	Object conAmount	count
+population	object conAmount	count
+rural population	object conAmount	count
 polar bears	object
 polar bear	object
 landscape conservation zone	field	nominal
@@ -81,7 +82,7 @@ holiday accommodation	object
 windsurfing spots	object
 windsurfing spot	object
 flat areas	field	nominal
-traffic flow	network
+traffic flow	network quality	ratio
 routes	network
 route	network
 resorts	object
@@ -115,11 +116,9 @@ cameras	object
 camera	object
 bus stops	object
 bus stop	object
-overall population	Object conAmount	count
+overall population	object conAmount	count
 catchment areas	network
 service areas	network
-buffer areas	field	boolean
-buffer area	field	boolean
 counties	object
 county	object
 police districts	object
@@ -171,14 +170,14 @@ census tracts	object
 census tract	object
 auto accidents	event
 auto accident	event
-total population	Object conAmount	count
-people age	object quality	interval
+total population	object conAmount	count
+age	object quality	interval
 age of people	object quality	interval
 percentage	proportion	IRA
-Hispanic population	Object conAmount	count
+Hispanic population	object conAmount	count
 Hispanic people	Object
 Hispanics	Object
-density	CovPro	IRA
+density	proportion	IRA
 bald eagles	object
 bald eagle	object
 tractors	object
@@ -247,7 +246,8 @@ hospital	object
 soil type	field	nominal
 water wells	object
 water well	object
-street noise	field	ratio
+noise	field	ordinal
+street noise	field	ordinal
 noise polluted areas	field	nominal
 street lights	object
 street light	object
@@ -272,7 +272,7 @@ intersections	object
 intersection	object
 cycling destinations	object
 cycling destination	object
-network distance	network
+network distance	network quality	ratio
 public primary schools	object
 public primary school	object
 census areas	object
@@ -292,7 +292,8 @@ centroids	object
 centroid	object
 railway stations	object
 railway station	object
-travel time	network
+travel distance	network quality	ratio
+travel time	network quality	ratio
 private hospitals	object
 private hospital	object
 accessibility index	object quality	ratio
@@ -313,9 +314,6 @@ natural resources	field	nominal
 greens	field	nominal
 green space	field	nominal
 Euclidean distance	field	ratio
-median	amount
-average	amount	ERA
-total	amount	ERA
 severity	event quality	ordinal
 radioactive waste sites 	object
 radioactive waste site	object
@@ -357,7 +355,7 @@ WOZ waarde	conAmount	ERA
 wall plants	object
 wall plant	object
 water areas	field	nominal
-elderly population	Object conAmount	count
+elderly population	object conAmount	count
 municipality areas	object
 municipality area	object
 white females	object
@@ -443,7 +441,7 @@ village	object
 network based route	network
 network based path	network
 locations	location
-temperature	field	ratio
+temperature	field	interval
 bird count	Object conAmount	count
 traffic count	Object conAmount	count
 national network	network
@@ -462,7 +460,7 @@ lung cancer	event
 mortality rate	objconobjconpro	IRA
 crime cases	event
 extent of clustering	covAmount	loc
-population density	objconobjcovpro	IRA
+population density	proportion	IRA
 cervix cancer mortality rate	objconobjconpro	IRA
 lung cancer mortality rate	objconobjconpro	IRA
 crime rate	eveconobjconpro	IRA
@@ -476,24 +474,25 @@ PC4 areas	object
 open at	object quality	interval
 bird totals	object conAmount	count
 house totals	object conAmount	count
-tree density	objconobjcovpro	ira
-household density	objconobjcovpro	ira
-households density	objconobjcovpro	ira
-wall plant density	objconobjcovpro	ira
-fire alarm density	eveconobjcovpro	ira
-fire alarms density	eveconobjcovpro	ira
+tree density	proportion	IRA
+household density	proportion	IRA
+households density	proportion	IRA
+wall plant density	proportion	IRA
+fire alarm density	proportion	IRA
+fire alarms density	proportion	IRA
 road intersection	object
 interpolated surface	field	ratio
 ozone concentration	field	ratio
 shortest network based paths	network
 shortest network based path	network
+shortest path	network
 recreational sites	object
 warehouse service area	object
 bike routes	object
 mixed use zoning	field	nominal
 traffic accidents	event
 length	covAmount	ERA
-delivery cost	network
+delivery cost	network quality	ratio
 fastest delivery route	network
 fastest routes 	network
 trucks	object
@@ -523,12 +522,12 @@ mean directions	covAmount	loc
 risk index	event quality	ratio
 homelessness	event
 unemployed people	object
-homeless population density	objconobjcovpro	IRA
+homeless population density	proportion	IRA
 vacant lots	field	nominal
 vacant lot	field	nominal
 flood zones	field	nominal
 flood zone	field	nominal
-average cost per acre	objconobjcovpro	IRA
+average cost per acre	proportion	IRA
 private lands	field	nominal
 private land	field	nominal
 peaks	object
@@ -540,7 +539,7 @@ golf course	object
 parcels	object
 parcel	object
 property values	conAmount	ERA
-total miles	covAmount	ERA
+miles	covAmount	ERA
 house vacancy rate	objconobjconpro	IRA
 zip code areas	object
 zip code area	object
@@ -554,6 +553,8 @@ boroughs	object
 borough	object
 street pavements	object
 street pavement	object
+street intersections	object
+street intersection	object
 bars	object
 bar	object
 pubs	object
@@ -562,14 +563,16 @@ mental health facilities	object
 mental health facility	object
 metro rail stations	object
 metro rail station	object
-monthly rainfall	field	ratio
+monthly rainfall 	field	ratio
 vegetation areas	field	nominal
 annual rainfall	field	ratio
-human settlement	field	nominal
-major earthquake	event
+human settlement 	field	nominal
+major earthquake 	event
 maritime piracy incidents	event
 fatal car accidents	event
 fatal car accident	event
+car accident	event
+car accidents	event
 incidents	event
 incident	event
 literacy rate	objconobjconpro	IRA
@@ -580,14 +583,14 @@ country	object
 cesium 137 concentration	field	ratio
 ZIP3 areas	object
 online loans	object conAmount	ERA
-average loan interest rates	object quality	ratio
+loan interest rates	object quality	ratio
 urban landuse	field	nominal
 current main hospitals	object
 current main hospital	object
 housing districts	object
 housing district	object
-COVID testing sites	object
-COVID testing site	object
+Covid testing sites	object
+Covid testing site	object
 street crashes	event
 street crash	event
 ward	object
@@ -597,7 +600,7 @@ watershed upstream	field	nominal
 flow velocity field	field	ratio
 check ins	event
 checkins	event
-mean annual PM2.5 concentration 	field	ratio
+mean annual PM2.5 concentration	field	ratio
 PM2.5 concentration 	field	ratio
 school neighborhoods	object
 school neighborhood	object
@@ -609,7 +612,6 @@ breast cancer mortality rates	objconobjconpro	IRA
 breast cancer mortality rate ratio	proportion	IRA
 black women	object
 white women	object
-area	covAmount	ERA
 voltage	object quality	ratio
 fire	event
 attendance	object quality	ratio
@@ -626,5 +628,30 @@ ratio	proportion	IRA
 crime incidents	event
 crime incident	event
 address	object
-walking distance	network
+walking distance	network quality	ratio
+walking time	network quality	ratio
 per household online loan application rates	objconobjconpro	IRA
+rooftop	object
+potentially deforested areas	field	nominal
+potentially deforested area	field	nominal
+electric power production potential	conAmount	ERA
+solar radiation	field	ratio
+solar power	field	ratio
+total amount	conAmount	ratio
+irrigation regions	field	nominal
+aquifer	object
+malaria incidence rate	objconobjconpro	IRA
+stream runoff	covAmount	ERA
+predicted rainstorm	event
+neighbourhood	object
+neighbourhoods	object
+potentials	conAmount	ERA
+crime density	proportion	IRA
+home	object
+workplace	object
+waste disposal places	object
+waste disposal place	object
+containers	object
+container	object
+rowboat containers	object
+rowboat container	object
