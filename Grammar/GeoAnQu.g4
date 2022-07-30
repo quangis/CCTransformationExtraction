@@ -10,7 +10,7 @@ start : ((WH ((AUX (extremaR|extreDist)? measure) | (measure AUX? false?))) | (m
         (('in'|'on'|'from')? temEx 'to'? temEx?)? ;
 false : Flase ;
 measure: location | (conAm coreC) |
-         (aggre? DIGIT? (coreC 'and'?)+ (('of'|'for'|'to'|'during') DIGIT? 'each'? 'new'? (coreC|distBandNei))* weight?) |
+         (aggre? DIGIT? (coreC 'and'?)+ (('of'|'for'|'to'|'during'|'per') DIGIT? 'each'? 'new'? (coreC|distBandNei))* weight?) |
          (aggre? (networkC|networkQ|coreC) ((('to'|'through')? destination)* (('from'|'for'|'of')? 'each'? origin)* ('to'? destination)*)) |
          (coreC 'by' networkC);
 //|(aggre? coreC 'and'?)+ (('for'|'of'|'to'|'by'|'through') ('new'? 'each'? DIGIT? (extremaR|extreDist)? (coreC|grid|distBandNei| 'and'?)+))* ;
