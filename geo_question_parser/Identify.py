@@ -3050,7 +3050,7 @@ def load_ccdict(filePath):
     return coreCon
 
 
-rootPath = Path(__file__).parent
+rootPath = Path(__file__).parent.parent
 dictPath = rootPath / "Dictionary"
 rulePath = rootPath / "Rules"
 
