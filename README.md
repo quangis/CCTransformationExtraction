@@ -18,8 +18,9 @@ Several libraries should be installed, as well as some data files:
 
 Run the script `Identify.py` on `GeoAnQu.txt` to get training results 
 `Results_train_Auto.json`. Check the [Grammar/](Grammar/) folder for 
-more details of the functional grammar in `GeoAnQu.g4`. Check the 
-[Dictionary/](Dictionary/) folder for the concept dictionary.
+more details of the functional grammar in `GeoAnQu.g4`. (The module uses 
+[`antlerinator`][ant] to automatically generate the ANTLR grammar.) 
+Check the [Dictionary/](Dictionary/) folder for the concept dictionary.
 
 To check the evaluation, navigate to 
 [CCTrans_evaluation/](CCTrans_evaluation/) folder, and use `evalTest.py` 
@@ -38,3 +39,4 @@ referenced in *A grammar for interpreting geo-analytical questions as
 concept transformations* (to be published).
 
 
+[ant]: https://github.com/renatahodovan/antlerinator
