@@ -13,6 +13,7 @@ from django.db import models
 import json
 import re
 import numpy
+from pathlib import Path
 # [X] import nlp packages for placename and entities recognition
 from spacy.lang.en import English
 import en_core_web_sm
@@ -3049,15 +3050,17 @@ def load_ccdict(filePath):
     return coreCon
 
 
-rootPath = "./questionParser/"
+rootPath = Path(__file__).parent
+dictPath = rootPath / "Dictionary"
+rulePath = rootPath / "Rules"
 
-ptypePath = f"{rootPath}Dictionary/place_type.txt"
-corePath = f"{rootPath}Dictionary/coreConceptsML.txt"
-networkPath = f"{rootPath}Dictionary/network.txt"
+ptypePath = dictPath / "place_type.txt"
+corePath = dictPath / "coreConceptsML.txt"
+networkPath = dictPath / "network.txt"
 
-conversionRulesPath = f'{rootPath}Rules/conversionRules.json'
-hConceptHierarchyPath = f'{rootPath}Rules/hConceptHierarchy.json'
-measureHierarchyPath = f'{rootPath}Rules/measureHierarchy.json'
+conversionRulesPath = rulePath / "conversionRules.json"
+hConceptHierarchyPath = rulePath / "hConceptHierarchy.json"
+measureHierarchyPath = rulePath / "measureHierarchy.json"
 
 
 nlp_en = CustomEnglish()  # [X] Load English stopwords
