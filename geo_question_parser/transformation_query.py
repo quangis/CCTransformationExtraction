@@ -65,4 +65,4 @@ def parse_question(question: str) -> TransformationQuery:
     cctAnnotator = TypesToQueryConverter()
     cctAnnotator.algebraToQuery(qParsed, True, True)
     cctAnnotator.algebraToExpandedQuery(qParsed, False, False)
-    return question2query(qParsed)
+    return question2query(qParsed['queryEx'])
