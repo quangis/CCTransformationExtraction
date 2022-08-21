@@ -26,7 +26,7 @@ def question2query(queryEx: dict) -> TransformationQuery:
 
     def f(q: dict) -> BNode:
         node = BNode()
-        t = cct.parse_type(q['after']['cct']).concretize()
+        t = cct.parse_type(q['after']['cct']).concretize(replace=True)
 
         # This is a temporary solution: R(x * z, y) is for now converted to the
         # old-style R3(x, y, z)

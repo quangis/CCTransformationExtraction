@@ -6,14 +6,14 @@ from __future__ import annotations
 
 import sys
 from pathlib import Path
-from rdflib import Graph, RDF
-from transformation_algebra import TA
+from rdflib import Graph
+from transformation_algebra.namespace import TA, RDF
 from transformation_algebra.query import TransformationQuery
 from transformation_algebra.util.store import Fuseki
 from cct.language import cct
 from geo_question_parser.transformation_query import parse_question
 
-wfs = Fuseki("http://localhost:3030/cct")
+store = Fuseki("http://localhost:3030/cct")
 
 for arg in sys.argv[1:]:
     name = Path(arg).stem
@@ -34,7 +34,7 @@ for arg in sys.argv[1:]:
         print(expected_query.sparql())
 
         print("Firing query...")
-        print(expected_query.run(wfs))
+        print(store.query(expected_query))
 
         print()
         print("Parsed actual query:")
@@ -45,6 +45,6 @@ for arg in sys.argv[1:]:
 
         print()
         print("Firing query...")
-        print(actual_query.run(wfs))
+        print(store.query(actual_query))
     else:
         print(f"Skipping {arg}")
