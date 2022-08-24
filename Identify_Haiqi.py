@@ -2429,7 +2429,7 @@ if __name__ == '__main__':
     networkSet = set(l.strip() for l in open(networkPath, encoding="utf-8"))
 
     pos = []
-    units = {'db', 'decibel', 'meters'}
+    units = {'db', 'dB', 'decibel', 'meters'}
     # distWords = {'meter', 'meters', 'km', 'kilometers', 'kilometer', 'mile', 'miles'}
     humanWords = {'people', 'population', 'children'}
     amsign = {'have', 'has', 'had', 'no'}
