@@ -5,3 +5,4 @@ allennlp-models
 nltk
 word2number
 spacy
+pyzmq
