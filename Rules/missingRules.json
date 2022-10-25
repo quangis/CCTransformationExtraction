@@ -1,0 +1,1234 @@
+[
+    {
+        "id": "",
+        "description": "Which houses are for sale in Utrecht",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "boolean"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which houses are for sale in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which houses have construction year between 1990 and 2000 in Utrecht",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "interval"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What houses are for sale and within 0.5km from the main roads in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What houses are for sale in urban areas in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht",
+        "lhs": {
+            "type": "eveconobjconpro",
+            "measureLevel": "ira"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where are the five star hotels in the Happy Valley ski resort",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which ski piste is longest in the Happy Valley",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where are the individual crimes in Amsterdam",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which buildings are within 1 minute of driving time from a fire station in Fort Worth",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which buildings are within 1 minute of driving time from a fire station in Fort Worth",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "networkquality",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the nearest fire station to each fire call in Fort Worth",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What was the trajectory of a hurricane in Oleander in 1977",
+        "lhs": {
+            "type": "event",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "How many buildings are affected by a hurricane in Oleander",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where are the rocky areas in Spain",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas are at least 3000 meters from the rivers in Spain",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the predicted distribution probability for the little midwife toad in Spain in 2030",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which city has the highest population density in Netherlands",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "proportion"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas do have population density less than 300 per square kilometer in UK",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "proportion"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas do have population density less than 300 per square kilometer in UK",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "inputType": [
+                "proportion"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the best site for a new landfill in UK",
+        "lhs": {
+            "type": "allocation",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the best site for a new landfill in UK",
+        "lhs": {
+            "type": "location"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which forestry areas have Norwegian Spruce trees in Europe",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nominal",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the cluster of student residence in Utrecht",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the cluster of student residence in Utrecht",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "covamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where are the flat areas within 500 meters of a major highway in the United Kingdom",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nominal",
+            "inputType": [
+                "boolfield",
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the traffic flow of the A28 motorway in Utrecht",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the land use in Netherlands",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nominal",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the predicted probability surface for snowfall in Happy Valley",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where are the accidents within ski pistes in the Happy Valley",
+        "lhs": {
+            "type": "event",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas of bus stops in Utrecht",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "count"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas of bus stops in Utrecht",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "count",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Where is the best site of bus stops that maximize the overall population that are within 600-meters buffer areas of bus stops in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What are the political leaning for each county in the United States",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "nominal"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What are the political leaning for each county in the United States",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "nominal",
+            "key": "object",
+            "inputType": [
+                "objectquality",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the number of crime cases for each police district in Texas in 2018",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of library patrons for each district in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of the fire calls weighted by the priority in Fort Worth",
+        "lhs": {
+            "type": "eventquality",
+            "measureLevel": "ordinal"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of the fire calls weighted by the priority in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "event",
+                "eventquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of customers weighted by the number of transactions in Oleander city",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of customers weighted by the number of transactions in Oleander city",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What are the standard distance circles of West Nile Virus in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the directional trend of fire calls for each fire station in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the median household income for each census block in Tarrant County in Texas",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the median household income for each census block in Tarrant County in Texas",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the total population for each census block in Tarrant County, Texas",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the median age for each census tract in Tarrant County in Texas",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the construction year for each house in Oleander",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "interval",
+            "key": "object",
+            "inputType": [
+                "objectquality",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which park has the highest proportion of bald eagles to the bird totals in Texas",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the number of tractors for each road in Texas",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the crime rate for each police district in Texas in 2019",
+        "lhs": {
+            "type": "eveconobjconpro",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "object",
+                "eveconobjconpro"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What are the vote totals of an election for each precinct in Dallas",
+        "lhs": {
+            "type": "eveconamount",
+            "measureLevel": "count",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the population density for each census block in Dallas",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "object",
+                "proportion"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the density of robberies for each police beat in Dallas",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the density of rental units in Oleander",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of residential areas inside 1 km area of the central station in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of residential areas inside 1 km area of the central station in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which properties are within 0.5 km of the Independence Day parade route in Washington D.C.",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What are the land use inside the flood zones in Oleander",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nominal",
+            "inputType": [
+                "field",
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas are within 3 minutes of driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "location",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas are within 3 minutes of driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the walkability for each neighborhood in Ghent",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the walkability for each neighborhood in Ghent",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the network distance from hexagonal grid with 2000 meter to the closest public primary school in the Multifunctional Urban Area of Barcelona",
+        "lhs": {
+            "type": "grid"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the network distance from hexagonal grid with 2000 meter to the closest public primary school in the Multifunctional Urban Area of Barcelona",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the average network distance for people to public primary schools for each census area in Rotterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "networkquality",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of population within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era",
+            "inputType": [
+                "networkquality",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the number of inhabitants for each 100 by 100 meter grid in Banten province in Indonesia",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the travel time from the centers of 2 by 2 km grid cells to the closest hospital in Sichuan in China",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "grid"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the potential geographic access from communities to the sexual and productive health services located in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the potential accessibility by local road for each 2 by 2 km grid cell in Finland",
+        "lhs": {
+            "type": "network"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the potential accessibility by local road for each 2 by 2 km grid cell in Finland",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "network"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the cervix cancer mortality rate of white females for each city in the Western USA from 1970 to 1994",
+        "lhs": {
+            "type": "objconobjconpro",
+            "measureLevel": "ira",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the cervix cancer mortality rate of white females for each city in the Western USA from 1970 to 1994",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the aspect of ski pistes in the Happy Valley resort",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "interval",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the kernel density surface of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the kernel density surface of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ratio",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era",
+            "inputType": [
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which store has the highest monthly sales in Tarrant County in Texas",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "Which store has the highest monthly sales in Tarrant County in Texas",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the mean center of accidents weighted by priority for each alarm territories in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "eventquality",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "loc",
+            "key": "object",
+            "inputType": [
+                "covamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth",
+        "lhs": {
+            "type": "distanceBand"
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "distanceBand",
+                "eventquality"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "count",
+            "key": "grid",
+            "inputType": [
+                "event",
+                "grid"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the degree of clustering of fire alarms density for each 300 meter distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "key": "distanceBand",
+            "inputType": [
+                "covamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the degree of clustering of fire alarms density for each 300 meter distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "distanceBand"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the intensity of a hurricane in Texas",
+        "lhs": {
+            "type": "eventquality",
+            "measureLevel": "ratio",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the degree of clustering of 911 calls for each distance band from 300 to 900 meters by 60 meter increments in Portland",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc",
+            "inputType": [
+                "distanceBand",
+                "event"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the average construction year of buildings for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "interval",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the WOZ-waarde for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of elderly population to the total population for each 1 km grid in the Aichi prefecture in Japan",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "grid",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the percentage of elderly population to the total population for each 1 km grid in the Aichi prefecture in Japan",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "count",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the density of elderly population for each 500 meters grid in Aichi prefecture in Japan",
+        "lhs": {
+            "type": "proportion",
+            "measureLevel": "ira",
+            "key": "grid",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the density of elderly population for each 500 meters grid in Aichi prefecture in Japan",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era",
+            "inputType": [
+                "grid"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What areas are outside 155 meters from nature reserve districts in Houston",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": ""
+    },
+    {
+        "id": "",
+        "description": "What is the average noise level for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ordinal",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": ""
+    }
+]
