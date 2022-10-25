@@ -61,19 +61,11 @@
             "cct": ""
         },
         {
-            "concept": "serviceobj",
-            "cct": ""
-        },
-        {
             "concept": "conamount",
             "cct": ""
         },
         {
             "concept": "covamount",
-            "cct": ""
-        },
-        {
-            "concept": "covpro",
             "cct": ""
         },
         {
@@ -95,10 +87,6 @@
         
         {
             "concept": "allocation",
-            "cct": ""
-        },
-        {
-            "concept": "placename",
             "cct": ""
         },
         {
@@ -156,7 +144,6 @@
             "super": "concept",
             "sub": "proportion"
         },
-        
         {
             "super": "field",
             "sub": "distfield"
@@ -164,10 +151,6 @@
         {
             "super": "field",
             "sub": "boolfield"
-        },
-        {
-            "super": "object",
-            "sub": "serviceobj"
         },
         {
             "super": "amount",
@@ -179,17 +162,12 @@
         },
         {
             "super": "proportion",
-            "sub": "covpro"
-        },
-        {
-            "super": "proportion",
             "sub": "objconobjconpro"
         },
         {
             "super": "proportion",
             "sub": "eveconobjconpro"
         },
-        
         {
             "super": "conamount",
             "sub": "objconamount"
@@ -198,14 +176,9 @@
             "super": "conamount",
             "sub": "eveconamount"
         },
-        
         {
             "super": "concept",
             "sub": "allocation"
-        },
-        {
-            "super": "concept",
-            "sub": "placename"
         },
         {
             "super": "concept",
