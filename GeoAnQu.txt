@@ -156,7 +156,7 @@ What is the point density of cycling destinations in the Metro Vancouver region 
 What is the network distance from hexagonal grid with 2000 meter to the closest public primary school in the Multifunctional Urban Area of Barcelona
 What is the average network distance for people to public primary schools for each census area in Rotterdam
 What is the percentage of population within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam
-What is the network distance to primary schools for children aged between 4 and 12 in Rotterdam
+What is the network distance to primary schools for children aged between 4 and 12 in Multifunctional Urban Area in Rotterdam
 What is the average network distance for people to the three closest primary schools for each census area in Rotterdam
 What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona
 Where are the best sites for metro stations in Karbala in Iraq
@@ -166,7 +166,7 @@ What area are within 50 km from family physician services in Saskatchewan in Can
 What is the travel time from the centers of 2 by 2 km grid cells to the closest hospital in Sichuan in China
 What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan
 What is the density of elderly population for each municipality area in Aichi prefecture in Japan
-What is the potential geographic access of communities to the sexual and productive health services located in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019
+What is the potential geographic access from communities to the sexual and productive health services located in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019
 Where is the best site for a new landfill in Houston
 What areas are not green belt areas in Houston
 What areas are outside 3000 meters from turbojet runways in Houston
