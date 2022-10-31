@@ -245,7 +245,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -1038,7 +1038,7 @@
                 "covamount"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
