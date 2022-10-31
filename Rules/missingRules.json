@@ -765,7 +765,7 @@
                 "objectquality"
             ]
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "R(Obj,Ratio)"
     },
     {
         "id": "",
