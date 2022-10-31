@@ -773,7 +773,7 @@
         "lhs": {
             "type": "grid"
         },
-        "rhs": ""
+        "rhs": "R(Reg,_)"
     },
     {
         "id": "",
@@ -873,7 +873,7 @@
                 "network"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Reg,Ratio)"
     },
     {
         "id": "",
