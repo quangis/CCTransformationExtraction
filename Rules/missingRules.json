@@ -83,7 +83,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -105,7 +105,7 @@
                 "event"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -165,7 +165,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -176,7 +176,7 @@
                 "field"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Loc,Reg)"
     },
     {
         "id": "",
@@ -187,7 +187,7 @@
                 "boolfield"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Loc,Reg)"
     },
     {
         "id": "",
@@ -278,7 +278,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -359,7 +359,7 @@
             "type": "objconamount",
             "measureLevel": "count"
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "R(_,Count)"
     },
     {
         "id": "",
@@ -373,7 +373,7 @@
                 "objconamount"
             ]
         },
-        "rhs": "R(Loc,Ratio)"
+        "rhs": "R(Loc,Count)"
     },
     {
         "id": "",
@@ -422,7 +422,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -435,7 +435,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -457,7 +457,7 @@
                 "eventquality"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -470,7 +470,7 @@
                 "event"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -483,7 +483,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -495,7 +495,7 @@
                 "event"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -508,7 +508,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -545,7 +545,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -601,7 +601,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -629,7 +629,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,Count)"
     },
     {
         "id": "",
@@ -682,7 +682,7 @@
                 "field"
             ]
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "Ratio"
     },
     {
         "id": "",
@@ -694,7 +694,7 @@
                 "boolfield"
             ]
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "Ratio"
     },
     {
         "id": "",
@@ -731,7 +731,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Reg*Obj,Ratio)"
     },
     {
         "id": "",
@@ -786,7 +786,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Reg*Obj,Ratio)"
     },
     {
         "id": "",
@@ -827,7 +827,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Reg,Count)"
     },
     {
         "id": "",
@@ -1025,7 +1025,7 @@
                 "object"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -1073,7 +1073,7 @@
                 "grid"
             ]
         },
-        "rhs": "R(Reg,Ratio)"
+        "rhs": "R(Reg,Count)"
     },
     {
         "id": "",
@@ -1099,7 +1099,7 @@
                 "distanceBand"
             ]
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "Ratio"
     },
     {
         "id": "",
@@ -1124,7 +1124,7 @@
                 "event"
             ]
         },
-        "rhs": ""
+        "rhs": "R(Obj,Reg)"
     },
     {
         "id": "",
@@ -1178,7 +1178,7 @@
                 "objconamount"
             ]
         },
-        "rhs": "R(Reg,Ratio)"
+        "rhs": "R(Reg,Count)"
     },
     {
         "id": "",
@@ -1204,7 +1204,7 @@
                 "grid"
             ]
         },
-        "rhs": "R(_,Ratio)"
+        "rhs": "Ratio"
     },
     {
         "id": "",
