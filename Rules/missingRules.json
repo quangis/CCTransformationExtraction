@@ -176,7 +176,7 @@
                 "field"
             ]
         },
-        "rhs": "R(Loc,Reg)"
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -187,7 +187,7 @@
                 "boolfield"
             ]
         },
-        "rhs": "R(Loc,Reg)"
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -222,7 +222,7 @@
                 "proportion"
             ]
         },
-        "rhs": ""
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -253,7 +253,7 @@
         "lhs": {
             "type": "location"
         },
-        "rhs": ""
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -289,7 +289,7 @@
                 "covamount"
             ]
         },
-        "rhs": ""
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -385,7 +385,7 @@
                 "object"
             ]
         },
-        "rhs": "R(Obj,Ratio)"
+        "rhs": "R(Obj,_)"
     },
     {
         "id": "",
@@ -742,7 +742,7 @@
                 "networkquality"
             ]
         },
-        "rhs": ""
+        "rhs": "Reg"
     },
     {
         "id": "",
@@ -1046,7 +1046,7 @@
         "lhs": {
             "type": "distanceBand"
         },
-        "rhs": ""
+        "rhs": "R(Reg,_)"
     },
     {
         "id": "",
@@ -1081,25 +1081,12 @@
         "lhs": {
             "type": "covamount",
             "measureLevel": "loc",
-            "key": "distanceBand",
             "inputType": [
-                "covamount",
-                "object"
-            ]
-        },
-        "rhs": ""
-    },
-    {
-        "id": "",
-        "description": "What is the degree of clustering of fire alarms density for each 300 meter distance band in Fort Worth",
-        "lhs": {
-            "type": "covamount",
-            "measureLevel": "era",
-            "inputType": [
+                "proportion"
                 "distanceBand"
             ]
         },
-        "rhs": "Ratio"
+        "rhs": ""
     },
     {
         "id": "",
