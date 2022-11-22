@@ -1746,7 +1746,8 @@ def write_trans(coreTypeDict):
 
 
         if meais:
-            if any('proportion' in e for e in coreTypeDict['types'][meais[0]]['text']) or any('eveconobjconpro' in e for e in coreTypeDict['types'][meais[0]]['text']):  #-------new---------
+            if (any('proportion' in e for e in coreTypeDict['types'][meais[0]]['text']) or \
+                    any('eveconobjconpro' in e for e in coreTypeDict['types'][meais[0]]['text'])) and ('covamount' not in coreTypeDict['types'][meais[0]]['text'][-1]):  #-------new---------
                 # for m in coreTypeDict['types'][meais[0]]['text']:  # if measure = proportion, turn object into objconAmount
                 #     if m.startswith('object'):  # object -> object content amount
                 #         mi = coreTypeDict['types'][meais[0]]['text'].index(m)
