@@ -1204,7 +1204,7 @@ function getAllBlocksList(){
   return blocklist
 }
 
-// version late 9.3.0 using Blockly.utils.xml.textToDom
+// version after 9.3.0 using Blockly.utils.xml.textToDom
 // version before 9.3.0 using Blockly.Xml.textToDom
 function disable_sup_grid(){
 
