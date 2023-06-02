@@ -4,6 +4,10 @@
             "concept": "concept",
             "cct": ""
         },
+		{
+            "concept": "region",
+            "cct": ""
+        },
         {
             "concept": "location",
             "cct": ""
@@ -49,7 +53,7 @@
             "cct": ""
         },
         {
-            "concept": "proportion",
+            "concept": "genpro",
             "cct": ""
         },
         {
@@ -98,6 +102,10 @@
     "hierachy": [
         {
             "super": "concept",
+            "sub": "region"
+        },
+		{
+            "super": "concept",
             "sub": "location"
         },
         {
@@ -142,7 +150,7 @@
         },
         {
             "super": "concept",
-            "sub": "proportion"
+            "sub": "genpro"
         },
         {
             "super": "field",

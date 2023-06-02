@@ -1,40 +1,40 @@
 {
     "terms": [
         {
-            "concept": "nominal",
+            "concept": "nom_",
             "cct": "Nom"
         },
         {
-            "concept": "ordinal",
+            "concept": "ord_",
             "cct": "Ord"
         },
         {
-            "concept": "boolean",
+            "concept": "bool_",
             "cct": "Bool"
         },
         {
-            "concept": "interval",
+            "concept": "int_",
             "cct": "Itv"
         },
         {
-            "concept": "ratio",
+            "concept": "rat_",
             "cct": "Ratio"
         },
         {
-            "concept": "era",
+            "concept": "era_",
             "cct": "Ratio"
         },
         {
-            "concept": "ira",
+            "concept": "ira_",
             "cct": "Ratio"
         },
         {
-            "concept": "count",
+            "concept": "cou_",
             "cct": "Ratio"
         },
         
         {
-            "concept": "loc",
+            "concept": "loc_",
             "cct": "Nom"
         },
         
@@ -62,37 +62,37 @@
     
     "hierachy": [
         {
-            "super": "nominal",
-            "sub": "ordinal"
+            "super": "nom_",
+            "sub": "ord_"
         },
         {
-            "super": "nominal",
-            "sub": "boolean"
+            "super": "nom_",
+            "sub": "bool_"
         },
         {
-            "super": "ordinal",
-            "sub": "interval"
+            "super": "ord_",
+            "sub": "int_"
         },
         {
-            "super": "interval",
-            "sub": "ratio"
+            "super": "int_",
+            "sub": "rat_"
         },
         {
-            "super": "ratio",
-            "sub": "era"
+            "super": "rat_",
+            "sub": "era_"
         },
         {
-            "super": "ratio",
-            "sub": "ira"
+            "super": "rat_",
+            "sub": "ira_"
         },
         {
-            "super": "era",
-            "sub": "count"
+            "super": "era_",
+            "sub": "cou_"
         },
         
         {
-            "super": "nominal",
-            "sub": "loc"
+            "super": "nom_",
+            "sub": "loc_"
         },
         
         {
