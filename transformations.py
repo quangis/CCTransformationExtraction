@@ -1285,7 +1285,7 @@ def write_trans(parsedResult):
                         update_coreTrans(objQ_trans)
                         update_coreTrans(gen_trans(objQ_trans[-1]['after'], [meaTypeDict['id'][-1]], None))
 
-        print('final trans\n', coreConTrans)
+        # print('final trans\n', coreConTrans)
 
     except:
         print("Cannot generate transformations.\n{}".format(coreConTrans))
