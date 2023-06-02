@@ -1,4 +1,3 @@
-import re
 # [X] import antlr4 grammar
 from antlr4 import *
 from Grammar.GeoAnQuLexer import GeoAnQuLexer
@@ -6,7 +5,7 @@ from Grammar.GeoAnQuParser import GeoAnQuParser
 from antlr4.tree.Trees import Trees
 
 que_stru = {'measure', 'measure1', 'condition', 'subcon', 'support'}
-measLevel = {'interval', 'nominal', 'ratio', 'count', 'loc', 'ordinal', 'era', 'ira', 'boolean'}
+measLevel = {'int_', 'nom_', 'rat_', 'cou_', 'loc_', 'ord_', 'era_', 'ira_', 'bool_'}
 
 class BracketMatch:
     def __init__(self, refstr, parent=None, start=-1, end=-1):
@@ -64,10 +63,10 @@ def get_text(cur_treeStr):
 # Input: {'tag': ['condition', 'boolR', 'extremaR', 'coreC', 'coreC', 'coreC'], 'text': ['of to', 'has', 'highest',
 # 'proportion 0 ira', 'object 1', 'objconamount 0 count']}
 # Output: {'tag': ['coreC', 'coreC', 'coreC'], 'text': ['proportion 0 ira', 'object 1', 'objconamount 0 count']}
-def core_concept_extract(TreeDict):
+def core_concept_extract(result, TreeDict):
     cur_TD = {}
-    keep_set = {'coreC', 'networkC', 'networkQ', 'location', 'allocation', 'conAm', 'boolField', 'distField',
-                'serviceObj', 'aggre', 'compareR'}  # 'extremaR',
+    keep_set = {'coreC', 'networkC', 'networkQ', 'objectQ', 'location', 'allocation', 'conAm', 'conAmount', 'boolField', 'distField',
+                'serviceObj', 'aggre', 'compareR', 'mergeO', 'extremaR','visible'}
     tag_in = [i for i, x in enumerate(TreeDict['tag']) if not x in keep_set]
     cur_TD['tag'] = [TreeDict['tag'][i] for i in range(0, len(TreeDict['tag'])) if i not in tag_in]
     for i in range(0, len(cur_TD['tag'])):
@@ -76,20 +75,19 @@ def core_concept_extract(TreeDict):
     cur_TD['text'] = [TreeDict['text'][i] for i in range(0, len(TreeDict['text'])) if i not in tag_in]
 
     # at least 3000 meters from the rivers or Where are the luxury hotels with more than 20 bedrooms {'tag': ['compareR', 'coreC'], 'text': ['more than', 'object 1']}
-    if 'compareR' in cur_TD['tag'] and ('boolfield' in cur_TD['tag'] or (
-            len(cur_TD['tag']) == 2 and cur_TD['tag'].index('compareR') + 1 < 2 and cur_TD['tag'][
-        cur_TD['tag'].index('compareR') + 1] == 'coreC')):
-        compR_index = cur_TD['tag'].index('compareR')
-        cur_TD['tag'].pop(compR_index)
-        cur_TD['text'].pop(compR_index)
+    # and ('boolfield' in cur_TD['tag'] or (len(cur_TD['tag']) == 2 and cur_TD['tag'].index('compareR') + 1 < 2 and cur_TD['tag'][cur_TD['tag'].index('compareR') + 1] == 'coreC')) remove compreR
+    if 'compareR' in cur_TD['tag']:
+        compR_index = [x for x, y in enumerate(cur_TD['tag']) if y == 'compareR']
+        for cur_ci in compR_index:
+            compR_list = cur_TD['text'][cur_ci].split()
+            cur_TD['text'][cur_ci] = result[compR_list[0]][int(compR_list[1])]
 
-    # from origin to the nearest destination, add extreDist(nearest) to cur_TD
-    if 'extreDist' in TreeDict['tag'] and (
-            'networkC' in TreeDict['tag'] or 'networkQ' in TreeDict['tag']) and 'serviceObj' not in TreeDict['tag']:
-        cur_in = [cur_TD['tag'].index(i) for i in TreeDict['tag'] if i.startswith('network')][0]
-        cur_TD['tag'].insert(cur_in, 'extreDist')
-        cur_TD['text'].insert(cur_in, TreeDict['text'][TreeDict['tag'].index('extreDist')])
-
+    # where is the most popular ski piste {'tag': ['location', 'extremaR', 'coreC'], 'text': ['where is', 'most popular', 'object 0']}
+    if 'extremaR' in cur_TD['tag']:
+        ext_index = [x for x, y in enumerate(cur_TD['tag']) if y == 'extremaR']
+        for cur_ei in ext_index:
+            ext_list = cur_TD['text'][cur_ei].split()
+            cur_TD['text'][cur_ei] = result[ext_list[0]][int(ext_list[1])]
     return cur_TD
 
 
@@ -103,35 +101,76 @@ def core_concept_extract(TreeDict):
 def write_type(result, core_id, coreDict):
     corety = []
     csign = 0
+    netsign = 0
 
-    #--------new---------
     for cur_tag in coreDict['tag']:
-        if cur_tag == 'distfield' or cur_tag == 'location' or cur_tag == 'allocation': #--------new---------
+        curtag_index = coreDict['tag'].index(cur_tag)
+        if cur_tag == 'distfield' or cur_tag == 'allocation':
             coreType = {}
             coreType['type'] = cur_tag
             coreType['id'] = str(core_id)
             coreType['keyword'] = ''
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
             core_id += 1
-        elif cur_tag == 'boolfield' and 'serviceobj' not in coreDict['tag']: #--------new---------
+        elif cur_tag == 'location':
+            if coreDict['text'] == ['what areas'] or coreDict['text'] == ['what area']:
+                coreType = {}
+                coreType['type'] = 'region'
+                coreType['id'] = str(core_id)
+                coreType['keyword'] = coreDict['text'][0][5:]
+                corety.append(coreType)
+                coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+                coreDict['tag'] = ['coreC']
+                coreDict['text'] = ['region']
+                core_id += 1
+            else:
+                coreType = {}
+                coreType['type'] = cur_tag
+                coreType['id'] = str(core_id)
+                coreType['keyword'] = ''
+                corety.append(coreType)
+                coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+                core_id += 1
+        elif cur_tag == 'boolfield' and 'serviceobj' not in coreDict['tag']:
             coreType = {}
             coreType['type'] = cur_tag
             coreType['id'] = str(core_id)
             coreType['keyword'] = ''
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
             core_id += 1
         elif cur_tag == 'conAm':
             coreType = {}
             coreType['type'] = 'conamount'
             coreType['id'] = str(core_id)
-            # -------new-----
             coreType['keyword'] = 'how many'
-            coreType['measureLevel'] = 'count'
-            # -------new-----
+            coreType['measureLevel'] = 'cou_'
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
+            core_id += 1
+        elif cur_tag == 'objectQ':
+            coreType = {}
+            coreType['type'] = 'objectquality'
+            coreType['id'] = str(core_id)
+            objQ = coreDict['text'][curtag_index].split()
+            coreType['keyword'] = result[objQ[0]][int(objQ[1])]
+            coreType['measureLevel'] = objQ[2]
+            corety.append(coreType)
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
+            core_id += 1
+        elif cur_tag == 'conAmount':
+            coreType = {}
+            coreType['type'] = 'conamount'
+            coreType['id'] = str(core_id)
+            coreType['keyword'] = ''
+            coreType['measureLevel'] = 'cou_'
+            corety.append(coreType)
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
             core_id += 1
         elif cur_tag == 'grid' or cur_tag == 'distanceBand':
             coreType = {}
@@ -139,32 +178,52 @@ def write_type(result, core_id, coreDict):
             coreType['id'] = str(core_id)
             coreType['keyword'] = coreDict['text'][coreDict['tag'].index(cur_tag)]
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
             core_id += 1
         elif cur_tag == 'aggre':
             coreType = {}
             coreType['type'] = cur_tag
             coreType['id'] = str(core_id)
-            curtag_index = coreDict['tag'].index(cur_tag)
-            coreType['keyword'] = coreDict['text'][curtag_index]
+            # curtag_index = coreDict['tag'].index(cur_tag)
+            coreType['keyword'] = result['aggregate'][0]
             if coreDict['tag'][curtag_index - 1] == 'extreDist' and coreDict['text'][curtag_index - 2].split(' ')[
                 -1] in measLevel:
                 coreType['measureLevel'] = coreDict['text'][curtag_index - 2].split(' ')[-1]
             elif coreDict['text'][curtag_index - 1].split(' ')[-1] in measLevel:
                 coreType['measureLevel'] = coreDict['text'][curtag_index - 1].split(' ')[-1]
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            core_id += 1
+        elif cur_tag == 'mergeO':
+            coreType = {}
+            previous_CoreC = coreDict['text'][coreDict['tag'].index('mergeO')-1]
+            coreType['type'] = previous_CoreC.split()[0] # type of mergeO is based on the type of the previous coreC
+            coreType['id'] = str(core_id)
+            coreType['keyword'] = 'merge layer'
+            if len(previous_CoreC.split()) == 3:
+                coreType['measureLevel'] = previous_CoreC[2]
+            corety.append(coreType)
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
             core_id += 1
         elif cur_tag == 'networkC':
             # read network keywords
-            coreType = {}
-            nts = coreDict['text'][coreDict['tag'].index('networkC')].split(' ')
-            coreType['type'] = nts[0]
-            coreType['id'] = str(core_id)
-            coreType['keyword'] = result[nts[0]][int(nts[1])]  # e.g., driving time, network distance
-            corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
-            core_id += 1
+            if netsign == 1:
+                continue
+            else:
+                net_locs = [x for x, y in enumerate(coreDict['tag']) if y == cur_tag]
+                for nloc in net_locs:
+                    coreType = {}
+                    nts = coreDict['text'][nloc].split(' ')
+                    coreType['type'] = nts[0]
+                    coreType['id'] = str(core_id)
+                    coreType['keyword'] = result[nts[0]][int(nts[1])]  # e.g., driving time, network distance
+                    corety.append(coreType)
+                    coreDict.setdefault('id', []).insert(nloc, str(core_id))
+                    # coreDict.setdefault('id', []).append(str(core_id))
+                    core_id += 1
+                netsign += 1
         elif cur_tag == 'networkQ':
             coreType = {}
             nts = coreDict['text'][coreDict['tag'].index('networkQ')].split(' ')
@@ -173,7 +232,8 @@ def write_type(result, core_id, coreDict):
             coreType['keyword'] = result[nts[0]][int(nts[1])]  # e.g., driving time, network distance
             coreType['measureLevel'] = nts[2]
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            # coreDict.setdefault('id', []).append(str(core_id))
             core_id += 1
         elif cur_tag == 'coreC':
             if csign == 1:
@@ -237,25 +297,37 @@ def write_type(result, core_id, coreDict):
                     ori_id.append(str(core_id))
                     core_id += 1
             coreDict.setdefault('id', []).append(ori_id)
-        elif cur_tag == 'extent':
+        elif cur_tag == 'visible':
             coreType = {}
-            coreType['type'] = 'object'
+            coreType['type'] = 'field'
             coreType['id'] = str(core_id)
-            coreType['keyword'] = result['placename'][int(coreDict['text'][0].split(' ')[1])]
+            coreType['keyword'] = 'slope'
+            coreType['measureLevel'] = 'rat_'
             corety.append(coreType)
-            coreDict.setdefault('id', []).append(str(core_id))
-            core_id += 1
+            coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
+            coreDict['tag'] = 'visible'
+            coreDict['text'] = 'field'
+        elif cur_tag == 'extent':
+            for p in result['placename']:
+                coreType = {}
+                coreType['type'] = 'object'
+                coreType['id'] = str(core_id)
+                coreType['keyword'] = p # result['placename'][int(coreDict['text'][0].split(' ')[1])]
+                corety.append(coreType)
+                coreDict.setdefault('id', []).append(str(core_id))
+                core_id += 1
+        elif cur_tag == "extremaR" or cur_tag == "compareR":
+            coreDict.setdefault('id', []).insert(curtag_index, '')
+
+    coreDict['id'] = [value for value in coreDict['id'] if value != '']
 
     return corety, coreDict, core_id
 
 
 # [X] Generate parser tree of question by the GeoAnQu grammar and extract core concept transformations
-def geo_parser(result, core_id, coreConTrans):
-
-    ques_incorrect = ''
+def geo_parser(result, core_id, coreTypeDict, coreConTrans):
     sentence = result['ner_Question']
 
-    coreTypes = {}
     wei_len = 0
 
     input = InputStream(sentence)  # [X]sentence =  'What areas are with slope larger than 10 in Spain'
@@ -270,25 +342,38 @@ def geo_parser(result, core_id, coreConTrans):
         sequence = [ele for ele in quesTextDic['tag'] if ele in que_stru]
         sequence.reverse()
 
+        # print('treeStr\n', treeStr)
+        # print('quesTextDic\n', quesTextDic)
+        # print('sequence\n', sequence)
+
         if 'condition' in sequence:
             conCores = []
             con_count = treeStr.count('condition')
             for cur_i in range(0, con_count):
                 con_treeStr = Trees.toStringTree(tree.condition(cur_i), None, parser)
-                conTextDic = get_text(con_treeStr)
-                if 'date' in conTextDic['tag'] and 'coreC' not in conTextDic['tag']:
-                    conCore = {}
-                    conCore['tag'] = ['compareR']
-                    conCore['text'] = [conTextDic['text'][conTextDic['tag'].index('date')]]
+                conTextDic_ori = get_text(con_treeStr)
+                if 'subcon' in con_treeStr:
+                    subcon_treeStr = Trees.toStringTree(tree.condition(cur_i).subcon(), None, parser)
+                    subconTextDic = get_text(subcon_treeStr)
+                    subconCore = core_concept_extract(result, subconTextDic)
+                    subconCore['tag'].reverse()
+                    subconCore['text'].reverse()
+                    # print('subconCore\n', subconCore)
+                    # remove concepts in subcon from con
+                    subcon_index = conTextDic_ori['tag'].index('subcon')
+                    conTextDic = {}
+                    conTextDic['tag'] = conTextDic_ori['tag'][:subcon_index]
+                    conTextDic['text'] = conTextDic_ori['text'][:subcon_index]
                 else:
-                    conCore = core_concept_extract(conTextDic)
+                    conTextDic = conTextDic_ori
+                conCore = core_concept_extract(result, conTextDic)
                 if 'destination' in conTextDic['tag']:
                     des_list = []
                     if 'serviceObj' in conTextDic['tag']:
                         destination = tree.condition(cur_i).boolField().serviceObj().destination()
                         dest_childCount = destination.getChildCount()
                     elif 'distField' in conTextDic['tag']:
-                        destination = tree.condition(cur_i).boolField().distField().destination(0)
+                        destination = tree.condition(cur_i).boolField().distField().destination()
                         dest_childCount = destination.getChildCount()
                     else:
                         destination = tree.condition(cur_i).destination()
@@ -309,7 +394,7 @@ def geo_parser(result, core_id, coreConTrans):
                         origin = tree.condition(cur_i).boolField().serviceObj().origin()
                         ori_childCount = origin.getChildCount()
                     elif 'distField' in conTextDic['tag']:
-                        origin = tree.condition(cur_i).boolField().distField().origin(0)
+                        origin = tree.condition(cur_i).boolField().distField().origin()
                         ori_childCount = origin.getChildCount()
                     else:
                         origin = tree.condition(cur_i).origin()
@@ -321,31 +406,19 @@ def geo_parser(result, core_id, coreConTrans):
                             ori_text = ori_text[:-1] + ' ' + ori_text[-1]
                             ori_list.append(ori_text)
                         elif 'grid' in ori_text:
-                            if 'equantity' in ori_text:
-                                ein = ori_text.index('equantity') + 9
-                                ori_text = ori_text.replace('equantity' + ori_text[ein],
-                                                            result['quantity'][int(ori_text[ein])] + ' ')
-                            if 'of' in ori_text:
-                                ori_text = ori_text.replace('of', 'of ')
-                            if 'with' in ori_text:
-                                ori_text = ori_text.replace('with', ' with ')
+                            ori_text = result[ori_text[:4]][int(ori_text[-1])]
                             ori_list.append(ori_text.strip())
                             # ori_list in forward order, e.g, [object0, grid], object = centroid
                         elif 'placename' in ori_text:
                             ori_text = ori_text[:-1] + ' ' + ori_text[-1]
                             ori_list.append(ori_text.strip())
-                    #-------new---------
                     ori_list.reverse()
                     conCore['tag'].append('origin')
                     conCore['text'].append(ori_list)
-                    # -------new---------
                 if 'grid' in conTextDic['tag'] and 'origin' not in conTextDic['tag'] and 'destination' not in \
                         conTextDic['tag']:
                     cgrid_text = tree.condition(cur_i).grid().getText()
-                    if 'equantity' in cgrid_text:
-                        ein = cgrid_text.index('equantity') + 9
-                        cgrid_text = cgrid_text.replace('equantity' + cgrid_text[ein],
-                                                        result['quantity'][int(cgrid_text[ein])] + ' ')
+                    cgrid_text = result[cgrid_text[:4]][int(cgrid_text[-1])]
                     conCore['tag'].append('grid')
                     conCore['text'].append(cgrid_text)
                 conCore['tag'].reverse()
@@ -355,7 +428,7 @@ def geo_parser(result, core_id, coreConTrans):
         if 'measure' in sequence:
             mea_treeStr = Trees.toStringTree(tree.measure(), None, parser)
             meaTextDic = get_text(mea_treeStr)
-            meaCore = core_concept_extract(meaTextDic)
+            meaCore = core_concept_extract(result, meaTextDic)
             if 'destination' in meaTextDic['tag']:
                 destination = tree.measure().destination(0)
                 dest_childCount = destination.getChildCount()  # 'closest object0', childcount = 2
@@ -372,7 +445,7 @@ def geo_parser(result, core_id, coreConTrans):
                 meaCore['tag'].append('destination')
                 meaCore['text'].append(des_list)
             if 'origin' in meaTextDic['tag']:  # 'centriods of object/grid' or 'object' or 'grid'
-                origin = tree.measure().origin(0)
+                origin = tree.measure().origin()
                 ori_childCount = origin.getChildCount()
                 ori_list = []
                 for o_i in range(0, ori_childCount):
@@ -381,14 +454,7 @@ def geo_parser(result, core_id, coreConTrans):
                         ori_text = ori_text[:-1] + ' ' + ori_text[-1]
                         ori_list.append(ori_text)
                     elif 'grid' in ori_text:
-                        if 'equantity' in ori_text:
-                            ein = ori_text.index('equantity') + 9
-                            ori_text = ori_text.replace('equantity' + ori_text[ein],
-                                                        result['quantity'][int(ori_text[ein])] + ' ')
-                        if 'of' in ori_text:
-                            ori_text = ori_text.replace('of', 'of ')
-                        if 'with' in ori_text:
-                            ori_text = ori_text.replace('with', ' with ')
+                        ori_text = result[ori_text[:4]][int(ori_text[-1])]
                         ori_list.append(ori_text.strip())
                         # ori_list in forward order, e.g, [object0, grid], object = centroid
                     elif 'placename' in ori_text:
@@ -408,115 +474,79 @@ def geo_parser(result, core_id, coreConTrans):
                 wei_len = len(meaTextDic['tag']) - wei_loc - 1
 
         if 'measure1' in sequence:
-            mea1_treeStr = Trees.toStringTree(tree.measure1(), None, parser)
+            mea1_treeStr = Trees.toStringTree(tree.measure1(0), None, parser)
             mea1TreeDic = get_text(mea1_treeStr)
-            mea1Core = core_concept_extract(mea1TreeDic)
-
-        if 'subcon' in sequence:
-            subcon_treeStr = Trees.toStringTree(tree.subcon(), None, parser)
-            subconTextDic = get_text(subcon_treeStr)
-            subconCore = core_concept_extract(subconTextDic)
-            subconCore['tag'].reverse()
-            subconCore['text'].reverse()
-
-        if 'support' in sequence:
-            sup_treeStr = Trees.toStringTree(tree.support(), None, parser)
-            supTextDic = get_text(sup_treeStr)
-            supCore = core_concept_extract(supTextDic)
-            if 'grid' in supTextDic['tag']:
-                grid_text = tree.support().grid().getText()
-                if 'equantity' in grid_text:
-                    ein = grid_text.index('equantity') + 9
-                    grid_text = grid_text.replace('equantity' + grid_text[ein],
-                                                  result['quantity'][int(grid_text[ein])] + ' ')
-                supCore['tag'].append('grid')
-                supCore['text'].append(grid_text)
-            if 'distBand' in supTextDic['tag']:
-                distBand_text = tree.support().distBand().getText()
-                if 'equantity' in distBand_text:
-                    eins = [m.start() for m in re.finditer('equantity', distBand_text)]
-                    e = 9
-                    for ein in eins:
-                        distBand_text = distBand_text.replace('equantity' + distBand_text[ein + e],
-                                                              ' equantity ' + distBand_text[ein + e] + ' ')
-                        e = e + 3
-                    dBts = distBand_text.split(' ')
-                    eqins = [x for x, y in enumerate(dBts) if y == 'equantity']
-                    qlocs = []
-                    for eqin in eqins:
-                        qlocs.append(dBts[eqin + 1])
-                    for qloc in qlocs:
-                        distBand_text = distBand_text.replace(
-                            'equantity ' + distBand_text[distBand_text.index('equantity') + 10],
-                            result['quantity'][int(qloc)])
-                supCore['tag'].append('distanceBand')
-                supCore['text'].append(distBand_text.strip())
-            supCore['tag'].reverse()
-            supCore['text'].reverse()
+            mea1Core = core_concept_extract(result, mea1TreeDic)
+            mea1Core['tag'].reverse()
+            mea1Core['text'].reverse()
 
         for seq in sequence:
             if seq == 'measure':
                 meaTypes = write_type(result, core_id, meaCore)
                 coreConTrans.setdefault('types', []).extend(meaTypes[0])  # type info in the final results
-                coreTypes.setdefault('funcRole', []).append(seq)
-                coreTypes.setdefault('types', []).append(meaTypes[1])
+                coreTypeDict.setdefault('funcRole', []).append(seq)
+                coreTypeDict.setdefault('types', []).append(meaTypes[1])
                 core_id = meaTypes[2]
                 if wei_len:
-                    coreTypes['weight'] = wei_len
+                    coreTypeDict['weight'] = wei_len
+                # if 'aggre' not in meaTypes[1]['tag'][-1] and 'pro' not in meaTypes[1]['text'][-1] and 'conamount' not in \
+                #         meaTypes[1]['text'][-1] and 'covamount' not in meaTypes[1]['text'][-1]:
+                #     print('measure\t', meaTypes[1])
             elif seq == 'measure1':
                 mea1Types = write_type(result, core_id, mea1Core)
                 coreConTrans.setdefault('types', []).extend(mea1Types[0])
-                coreTypes.setdefault('funcRole', []).append(seq)
-                coreTypes.setdefault('types', []).append(mea1Types[1])
+                coreTypeDict.setdefault('funcRole', []).append(seq)
+                coreTypeDict.setdefault('types', []).append(mea1Types[1])
                 core_id = mea1Types[2]
             elif seq == 'condition':
                 conTypes = write_type(result, core_id, conCores[0])
                 coreConTrans.setdefault('types', []).extend(conTypes[0])
-                coreTypes.setdefault('funcRole', []).append(seq)
-                coreTypes.setdefault('types', []).append(conTypes[1])
+                coreTypeDict.setdefault('funcRole', []).append(seq)
+                coreTypeDict.setdefault('types', []).append(conTypes[1])
                 conCores.pop(0)
                 core_id = conTypes[2]
             elif seq == 'subcon':
                 subconTypes = write_type(result, core_id, subconCore)
                 coreConTrans.setdefault('types', []).extend(subconTypes[0])
-                coreTypes.setdefault('funcRole', []).append(seq)
-                coreTypes.setdefault('types', []).append(subconTypes[1])
+                coreTypeDict.setdefault('funcRole', []).append(seq)
+                coreTypeDict.setdefault('types', []).append(subconTypes[1])
                 core_id = subconTypes[2]
             elif seq == 'support':
-                supTypes = write_type(result, core_id, supCore)
+                if 'sup_object' in result:
+                    supTypes = ([{'type': 'object', 'id': str(core_id), 'keyword': result['sup_object'][0]}],
+                            {'tag': ['support'], 'text': ['support'], 'id': [str(core_id)]})
+                elif 'sup_grid' in result:
+                    supTypes = ([{'type': 'grid', 'id': str(core_id), 'keyword': result['sup_grid'][0]}],
+                                {'tag': ['support'], 'text': ['support'], 'id': [str(core_id)]})
+                elif 'sup_distBand' in result:
+                    supTypes = ([{'type': 'distanceBand', 'id': str(core_id), 'keyword': result['sup_distBand'][0]}],
+                                {'tag': ['support'], 'text': ['support'], 'id': [str(core_id)]})
                 coreConTrans.setdefault('types', []).extend(supTypes[0])
-                coreTypes.setdefault('funcRole', []).append(seq)
-                coreTypes.setdefault('types', []).append(supTypes[1])
-                core_id = supTypes[2]
+                coreTypeDict.setdefault('funcRole', []).append('support')
+                coreTypeDict.setdefault('types', []).append(supTypes[1])
+                core_id += 1
 
-        ext_count = treeStr.count('extent')
-        if ext_count:
-            for cur_i in range(0, ext_count):
-                ext_treeStr = Trees.toStringTree(tree.extent()[cur_i], None, parser)
-                extTextDic = get_text(ext_treeStr)
-                extTypes = write_type(result, core_id, extTextDic)
-                coreConTrans.setdefault('types', []).extend(extTypes[0])
-                coreConTrans.setdefault('extent', []).append(extTypes[1]['id'][0])
-                core_id = extTypes[2]
-            coreTypes.setdefault('funcRole', []).append('extent')
-            coreTypes.setdefault('types', []).append(extTypes[1]['id'])
+        if 'extent' in treeStr:
+            ext_treeStr = Trees.toStringTree(tree.extent(), None, parser)
+            extTextDic = get_text(ext_treeStr)
+            extTypes = write_type(result, core_id, extTextDic)
+            coreConTrans.setdefault('types', []).extend(extTypes[0])
+            coreConTrans['extent'] = extTypes[1]['id']
+            core_id = extTypes[2]
+            coreTypeDict.setdefault('funcRole', []).append('extent')
+            coreTypeDict.setdefault('types', []).append(extTypes[1]['id'])
 
-        tem_count = treeStr.count('temEx')
-        if tem_count:
-            for cur_t in range(0, tem_count):
-                tem_treeStr = Trees.toStringTree(tree.temEx(cur_t), None, parser)
-                temTextDic = get_text(tem_treeStr)
-                temsp = temTextDic['text'][0].split(' ')
-                coreConTrans.setdefault('temporalEx', []).append(result['date'][int(temsp[1])])
-            coreTypes.setdefault('funcRole', []).append('temEx')
-            coreTypes.setdefault('types', []).append(coreConTrans['temporalEx'])
+        if 'temporalex' in treeStr:
+            coreConTrans['temporalEx'] = result['temEx']
+            coreTypeDict.setdefault('funcRole', []).append('temEx')
+            coreTypeDict.setdefault('types', []).append(coreConTrans['temporalEx'])
 
-        # print('coreTypes:', coreTypes)
-        # print('coreConTrans:', coreConTrans)
+        # print('coreTypes\n', coreTypes)
+        # print('coreConTrans\n', coreConTrans)
 
     except:
-        ques_incorrect = sentence
+        print("Question cannot be parsed.\n{}".format(result))
 
-    return treeStr, coreTypes, coreConTrans, core_id, ques_incorrect
+    return treeStr, coreTypeDict, coreConTrans, core_id
 
 
