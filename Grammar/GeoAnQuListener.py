@@ -62,15 +62,6 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#weight.
-    def enterWeight(self, ctx:GeoAnQuParser.WeightContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#weight.
-    def exitWeight(self, ctx:GeoAnQuParser.WeightContext):
-        pass
-
-
     # Enter a parse tree produced by GeoAnQuParser#allocation.
     def enterAllocation(self, ctx:GeoAnQuParser.AllocationContext):
         pass
@@ -80,21 +71,30 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GeoAnQuParser#mergeO.
+    def enterMergeO(self, ctx:GeoAnQuParser.MergeOContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#mergeO.
+    def exitMergeO(self, ctx:GeoAnQuParser.MergeOContext):
+        pass
+
+
+    # Enter a parse tree produced by GeoAnQuParser#weight.
+    def enterWeight(self, ctx:GeoAnQuParser.WeightContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#weight.
+    def exitWeight(self, ctx:GeoAnQuParser.WeightContext):
+        pass
+
+
     # Enter a parse tree produced by GeoAnQuParser#condition.
     def enterCondition(self, ctx:GeoAnQuParser.ConditionContext):
         pass
 
     # Exit a parse tree produced by GeoAnQuParser#condition.
     def exitCondition(self, ctx:GeoAnQuParser.ConditionContext):
-        pass
-
-
-    # Enter a parse tree produced by GeoAnQuParser#grid.
-    def enterGrid(self, ctx:GeoAnQuParser.GridContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#grid.
-    def exitGrid(self, ctx:GeoAnQuParser.GridContext):
         pass
 
 
@@ -143,6 +143,15 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GeoAnQuParser#conAmount.
+    def enterConAmount(self, ctx:GeoAnQuParser.ConAmountContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#conAmount.
+    def exitConAmount(self, ctx:GeoAnQuParser.ConAmountContext):
+        pass
+
+
     # Enter a parse tree produced by GeoAnQuParser#subcon.
     def enterSubcon(self, ctx:GeoAnQuParser.SubconContext):
         pass
@@ -170,24 +179,6 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#topoRIn.
-    def enterTopoRIn(self, ctx:GeoAnQuParser.TopoRInContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#topoRIn.
-    def exitTopoRIn(self, ctx:GeoAnQuParser.TopoRInContext):
-        pass
-
-
-    # Enter a parse tree produced by GeoAnQuParser#boolR.
-    def enterBoolR(self, ctx:GeoAnQuParser.BoolRContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#boolR.
-    def exitBoolR(self, ctx:GeoAnQuParser.BoolRContext):
-        pass
-
-
     # Enter a parse tree produced by GeoAnQuParser#extremaR.
     def enterExtremaR(self, ctx:GeoAnQuParser.ExtremaRContext):
         pass
@@ -197,21 +188,12 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#distanceR.
-    def enterDistanceR(self, ctx:GeoAnQuParser.DistanceRContext):
+    # Enter a parse tree produced by GeoAnQuParser#booleanR.
+    def enterBooleanR(self, ctx:GeoAnQuParser.BooleanRContext):
         pass
 
-    # Exit a parse tree produced by GeoAnQuParser#distanceR.
-    def exitDistanceR(self, ctx:GeoAnQuParser.DistanceRContext):
-        pass
-
-
-    # Enter a parse tree produced by GeoAnQuParser#extreDist.
-    def enterExtreDist(self, ctx:GeoAnQuParser.ExtreDistContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#extreDist.
-    def exitExtreDist(self, ctx:GeoAnQuParser.ExtreDistContext):
+    # Exit a parse tree produced by GeoAnQuParser#booleanR.
+    def exitBooleanR(self, ctx:GeoAnQuParser.BooleanRContext):
         pass
 
 
@@ -224,21 +206,12 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#quantity.
-    def enterQuantity(self, ctx:GeoAnQuParser.QuantityContext):
+    # Enter a parse tree produced by GeoAnQuParser#quantityV.
+    def enterQuantityV(self, ctx:GeoAnQuParser.QuantityVContext):
         pass
 
-    # Exit a parse tree produced by GeoAnQuParser#quantity.
-    def exitQuantity(self, ctx:GeoAnQuParser.QuantityContext):
-        pass
-
-
-    # Enter a parse tree produced by GeoAnQuParser#date.
-    def enterDate(self, ctx:GeoAnQuParser.DateContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#date.
-    def exitDate(self, ctx:GeoAnQuParser.DateContext):
+    # Exit a parse tree produced by GeoAnQuParser#quantityV.
+    def exitQuantityV(self, ctx:GeoAnQuParser.QuantityVContext):
         pass
 
 
@@ -251,24 +224,6 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#percent.
-    def enterPercent(self, ctx:GeoAnQuParser.PercentContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#percent.
-    def exitPercent(self, ctx:GeoAnQuParser.PercentContext):
-        pass
-
-
-    # Enter a parse tree produced by GeoAnQuParser#densityNei.
-    def enterDensityNei(self, ctx:GeoAnQuParser.DensityNeiContext):
-        pass
-
-    # Exit a parse tree produced by GeoAnQuParser#densityNei.
-    def exitDensityNei(self, ctx:GeoAnQuParser.DensityNeiContext):
-        pass
-
-
     # Enter a parse tree produced by GeoAnQuParser#distBandNei.
     def enterDistBandNei(self, ctx:GeoAnQuParser.DistBandNeiContext):
         pass
@@ -278,12 +233,12 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#distBand.
-    def enterDistBand(self, ctx:GeoAnQuParser.DistBandContext):
+    # Enter a parse tree produced by GeoAnQuParser#grid.
+    def enterGrid(self, ctx:GeoAnQuParser.GridContext):
         pass
 
-    # Exit a parse tree produced by GeoAnQuParser#distBand.
-    def exitDistBand(self, ctx:GeoAnQuParser.DistBandContext):
+    # Exit a parse tree produced by GeoAnQuParser#grid.
+    def exitGrid(self, ctx:GeoAnQuParser.GridContext):
         pass
 
 
@@ -314,6 +269,15 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by GeoAnQuParser#objectQ.
+    def enterObjectQ(self, ctx:GeoAnQuParser.ObjectQContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#objectQ.
+    def exitObjectQ(self, ctx:GeoAnQuParser.ObjectQContext):
+        pass
+
+
     # Enter a parse tree produced by GeoAnQuParser#eventC.
     def enterEventC(self, ctx:GeoAnQuParser.EventCContext):
         pass
@@ -329,6 +293,15 @@ class GeoAnQuListener(ParseTreeListener):
 
     # Exit a parse tree produced by GeoAnQuParser#coreC.
     def exitCoreC(self, ctx:GeoAnQuParser.CoreCContext):
+        pass
+
+
+    # Enter a parse tree produced by GeoAnQuParser#visible.
+    def enterVisible(self, ctx:GeoAnQuParser.VisibleContext):
+        pass
+
+    # Exit a parse tree produced by GeoAnQuParser#visible.
+    def exitVisible(self, ctx:GeoAnQuParser.VisibleContext):
         pass
 
 
@@ -350,12 +323,12 @@ class GeoAnQuListener(ParseTreeListener):
         pass
 
 
-    # Enter a parse tree produced by GeoAnQuParser#temEx.
-    def enterTemEx(self, ctx:GeoAnQuParser.TemExContext):
+    # Enter a parse tree produced by GeoAnQuParser#temporalex.
+    def enterTemporalex(self, ctx:GeoAnQuParser.TemporalexContext):
         pass
 
-    # Exit a parse tree produced by GeoAnQuParser#temEx.
-    def exitTemEx(self, ctx:GeoAnQuParser.TemExContext):
+    # Exit a parse tree produced by GeoAnQuParser#temporalex.
+    def exitTemporalex(self, ctx:GeoAnQuParser.TemporalexContext):
         pass
 
 
