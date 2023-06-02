@@ -5,9 +5,7 @@ CCTransformationExtraction is a program to extract concept transformations from 
 The program is implemented in python (version 3.7). Several libraries should be installed (use pip command to install the following libraries) before running the code:
 ```
 pip install numpy
-pip install allennlp
 pip install -U spacy
-pip install nltk
 pip install word2number
 ```
 
