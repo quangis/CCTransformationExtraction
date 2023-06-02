@@ -39,3 +39,13 @@ all season road
 planned roads
 planned road
 path
+waterways
+waterway
+roadways
+roadway
+routes
+route
+bike routes
+bike route
+A2 highway
+A28 motorway
