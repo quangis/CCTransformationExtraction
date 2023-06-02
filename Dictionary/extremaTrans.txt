@@ -1,0 +1,7 @@
+most popular	population	objConAmount	cou_
+most intense	intensity	eventQuality	rat_
+fastest	speed	eventQuality	rat_
+longest	length	covAmount	era_
+biggest	area	covAmount	era_
+older than	age	objectQuality	int_
+younger than	age	objectQuality	int_
