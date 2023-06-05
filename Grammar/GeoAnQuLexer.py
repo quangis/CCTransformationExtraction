@@ -23,7 +23,7 @@ def serializedATN():
         buf.write("\t\64\4\65\t\65\4\66\t\66\4\67\t\67\48\t8\49\t9\4:\t:")
         buf.write("\4;\t;\4<\t<\4=\t=\4>\t>\4?\t?\4@\t@\3\2\3\2\3\2\3\2\3")
         buf.write("\3\3\3\3\3\3\4\3\4\3\4\3\5\3\5\3\5\3\5\3\6\3\6\3\6\3\6")
-        buf.write("\3\6\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\7\3\b\3\b\3\b\3")
+        buf.write("\3\6\3\7\3\7\3\7\3\7\3\7\3\7\3\b\3\b\3\b\3\b\3\b\3\b\3")
         buf.write("\b\3\b\3\t\3\t\3\t\3\t\3\t\3\n\3\n\3\n\3\13\3\13\3\13")
         buf.write("\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13\3\13")
         buf.write("\3\13\3\13\3\13\3\13\3\f\3\f\3\f\3\f\3\f\3\f\3\f\3\f\3")
@@ -86,8 +86,8 @@ def serializedATN():
         buf.write("\2\2k\3\2\2\2\2m\3\2\2\2\2o\3\2\2\2\2q\3\2\2\2\2s\3\2")
         buf.write("\2\2\2u\3\2\2\2\2w\3\2\2\2\2y\3\2\2\2\2{\3\2\2\2\2}\3")
         buf.write("\2\2\2\2\177\3\2\2\2\3\u0081\3\2\2\2\5\u0085\3\2\2\2\7")
-        buf.write("\u0088\3\2\2\2\t\u008b\3\2\2\2\13\u008f\3\2\2\2\r\u0095")
-        buf.write("\3\2\2\2\17\u009d\3\2\2\2\21\u00a2\3\2\2\2\23\u00a7\3")
+        buf.write("\u0088\3\2\2\2\t\u008b\3\2\2\2\13\u008f\3\2\2\2\r\u0094")
+        buf.write("\3\2\2\2\17\u009a\3\2\2\2\21\u00a2\3\2\2\2\23\u00a7\3")
         buf.write("\2\2\2\25\u00aa\3\2\2\2\27\u00bc\3\2\2\2\31\u00c7\3\2")
         buf.write("\2\2\33\u00cb\3\2\2\2\35\u00d7\3\2\2\2\37\u00e4\3\2\2")
         buf.write("\2!\u00e9\3\2\2\2#\u00ee\3\2\2\2%\u00f8\3\2\2\2\'\u00fe")
@@ -108,14 +108,14 @@ def serializedATN():
         buf.write("\7q\2\2\u0086\u0087\7h\2\2\u0087\6\3\2\2\2\u0088\u0089")
         buf.write("\7v\2\2\u0089\u008a\7q\2\2\u008a\b\3\2\2\2\u008b\u008c")
         buf.write("\7h\2\2\u008c\u008d\7q\2\2\u008d\u008e\7t\2\2\u008e\n")
-        buf.write("\3\2\2\2\u008f\u0090\7c\2\2\u0090\u0091\7n\2\2\u0091\u0092")
-        buf.write("\7q\2\2\u0092\u0093\7p\2\2\u0093\u0094\7i\2\2\u0094\f")
-        buf.write("\3\2\2\2\u0095\u0096\7v\2\2\u0096\u0097\7j\2\2\u0097\u0098")
-        buf.write("\7t\2\2\u0098\u0099\7q\2\2\u0099\u009a\7w\2\2\u009a\u009b")
-        buf.write("\7i\2\2\u009b\u009c\7j\2\2\u009c\16\3\2\2\2\u009d\u009e")
-        buf.write("\7h\2\2\u009e\u009f\7t\2\2\u009f\u00a0\7q\2\2\u00a0\u00a1")
-        buf.write("\7o\2\2\u00a1\20\3\2\2\2\u00a2\u00a3\7g\2\2\u00a3\u00a4")
-        buf.write("\7c\2\2\u00a4\u00a5\7e\2\2\u00a5\u00a6\7j\2\2\u00a6\22")
+        buf.write("\3\2\2\2\u008f\u0090\7g\2\2\u0090\u0091\7c\2\2\u0091\u0092")
+        buf.write("\7e\2\2\u0092\u0093\7j\2\2\u0093\f\3\2\2\2\u0094\u0095")
+        buf.write("\7c\2\2\u0095\u0096\7n\2\2\u0096\u0097\7q\2\2\u0097\u0098")
+        buf.write("\7p\2\2\u0098\u0099\7i\2\2\u0099\16\3\2\2\2\u009a\u009b")
+        buf.write("\7v\2\2\u009b\u009c\7j\2\2\u009c\u009d\7t\2\2\u009d\u009e")
+        buf.write("\7q\2\2\u009e\u009f\7w\2\2\u009f\u00a0\7i\2\2\u00a0\u00a1")
+        buf.write("\7j\2\2\u00a1\20\3\2\2\2\u00a2\u00a3\7h\2\2\u00a3\u00a4")
+        buf.write("\7t\2\2\u00a4\u00a5\7q\2\2\u00a5\u00a6\7o\2\2\u00a6\22")
         buf.write("\3\2\2\2\u00a7\u00a8\7d\2\2\u00a8\u00a9\7{\2\2\u00a9\24")
         buf.write("\3\2\2\2\u00aa\u00ab\7p\2\2\u00ab\u00ac\7g\2\2\u00ac\u00ad")
         buf.write("\7c\2\2\u00ad\u00ae\7t\2\2\u00ae\u00af\7g\2\2\u00af\u00b0")
@@ -136,10 +136,10 @@ def serializedATN():
         buf.write("\7v\2\2\u00da\u00db\7j\2\2\u00db\u00dc\7\"\2\2\u00dc\u00dd")
         buf.write("\7u\2\2\u00dd\u00de\7k\2\2\u00de\u00df\7o\2\2\u00df\u00e0")
         buf.write("\7k\2\2\u00e0\u00e1\7n\2\2\u00e1\u00e2\7c\2\2\u00e2\u00e3")
-        buf.write("\7t\2\2\u00e3\36\3\2\2\2\u00e4\u00e5\7v\2\2\u00e5\u00e6")
-        buf.write("\7j\2\2\u00e6\u00e7\7c\2\2\u00e7\u00e8\7v\2\2\u00e8 \3")
-        buf.write("\2\2\2\u00e9\u00ea\7y\2\2\u00ea\u00eb\7k\2\2\u00eb\u00ec")
-        buf.write("\7v\2\2\u00ec\u00ed\7j\2\2\u00ed\"\3\2\2\2\u00ee\u00ef")
+        buf.write("\7t\2\2\u00e3\36\3\2\2\2\u00e4\u00e5\7y\2\2\u00e5\u00e6")
+        buf.write("\7k\2\2\u00e6\u00e7\7v\2\2\u00e7\u00e8\7j\2\2\u00e8 \3")
+        buf.write("\2\2\2\u00e9\u00ea\7v\2\2\u00ea\u00eb\7j\2\2\u00eb\u00ec")
+        buf.write("\7c\2\2\u00ec\u00ed\7v\2\2\u00ed\"\3\2\2\2\u00ee\u00ef")
         buf.write("\7f\2\2\u00ef\u00f0\7k\2\2\u00f0\u00f1\7u\2\2\u00f1\u00f2")
         buf.write("\7v\2\2\u00f2\u00f3\7h\2\2\u00f3\u00f4\7k\2\2\u00f4\u00f5")
         buf.write("\7g\2\2\u00f5\u00f6\7n\2\2\u00f6\u00f7\7f\2\2\u00f7$\3")
@@ -391,9 +391,9 @@ class GeoAnQuLexer(Lexer):
     modeNames = [ "DEFAULT_MODE" ]
 
     literalNames = [ "<INVALID>",
-            "'and'", "'of'", "'to'", "'for'", "'along'", "'through'", "'from'", 
-            "'each'", "'by'", "'nearest neighbors'", "'allocation'", "'new'", 
-            "'weighted by'", "'with similar'", "'that'", "'with'", "'distfield'", 
+            "'and'", "'of'", "'to'", "'for'", "'each'", "'along'", "'through'", 
+            "'from'", "'by'", "'nearest neighbors'", "'allocation'", "'new'", 
+            "'weighted by'", "'with similar'", "'with'", "'that'", "'distfield'", 
             "'every'", "'aggregate'", "'toporel'", "'extrema'", "'boolean'", 
             "'comparison'", "'quantity'", "'time'", "'grid'", "'network'", 
             "'networkquality'", "'object'", "'objectquality'", "'event'", 
