@@ -30,6 +30,7 @@ hotel	object
 individual crimes	event
 buildings	object
 building	object
+buildings'usable area	object
 fire stations	object
 fire station	object
 driving time	networkQuality	rat_
@@ -76,6 +77,7 @@ student residence	object
 glaciers	field	nom_
 glacier	field	nom_
 population	objConAmount	cou_
+population estimate	objConAmount	cou_
 rural population	objConAmount	cou_
 bird population	objConAmount	cou_
 polar bears	object
@@ -162,6 +164,7 @@ animal migration	event
 single family zones	field	nom_
 total mileage	covAmount	era_
 area	covAmount	era_
+area size	covAmount	era_
 arsons	event
 arson	event
 burglary	event
@@ -345,6 +348,7 @@ elderly people	object
 green roofs	object
 green roof	object
 income	conAmount	era_
+housing price	conAmount	era_
 seriously lonely people	object
 green areas	field	nom_
 residential care complexes	object
@@ -398,6 +402,10 @@ Cambodian immigrants	object
 inhabitants	object
 municipalities	object
 municipality	object
+rural municipalities	object
+rural municipality	object
+rural districts	object
+rural district	object
 outpatient services	object
 green belt areas	field	nom_
 turbojet runways	object
@@ -641,16 +649,25 @@ address	object
 walking distance	networkQuality	rat_
 walking time	networkQuality	rat_
 per household online loan application rates	objconobjconpro	ira_
+roof	object
 rooftop	object
+rooftop cell	object
+rooftop cells	object
 potentially deforested areas	field	nom_
 potentially deforested area	field	nom_
 electric power production potential	conAmount	era_
-solar radiation	field	rat_
-solar power	field	rat_
+electric power production in MWh	conAmount	era_
+solar radiation	conAmount	era_
+solar power	conAmount	era_
+solar radiation in MWh m2	conAmount	era_
+solar radiation in KWh m2	conAmount	era_
+solar radiation in Wh m2	conAmount	era_
 total amount	conAmount	rat_
+annual amount	conAmount	rat_
 irrigation regions	field	nom_
 aquifer	object
 malaria incidence rate	objconobjconpro	ira_
+malaria incidence counts	eveConAmount	cou_
 stream runoff	covAmount	era_
 predicted rainstorm	event
 neighbourhood	object
@@ -678,3 +695,11 @@ new ski piste	object
 school districts of senior high schools	object
 buffer areas	distfield	rat_
 buffer area	distfield	rat_
+metropolitan municipalities	object
+metropolitan municipality	object
+administrative regions	object
+administrative region	object
+provinces	object
+province	object
+population centers	object
+population center	object
