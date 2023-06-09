@@ -217,15 +217,15 @@ temperature measurements	field	rat_
 tornadoes	event
 tornado	event
 mean direction	covAmount	loc_
-degree of clustering	covAmount	loc_
-degree of dispersion	covAmount	loc_
+degree of clustering	covAmount	rat_
+degree of dispersion	covAmount	rat_
 flu cases	event
 flu case	event
 false fire alarms	event
 false fire alarm	event
 clusters	covAmount	loc_
 cluster	covAmount	loc_
-residential areas	field	nom_
+residential area	field	nom_
 central station	object
 Independence Day parade route	event
 properties	object
@@ -333,7 +333,7 @@ store	object
 monthly sales	conAmount	era_
 birds	object
 bird	object
-neighbor distance	covAmount	loc_
+neighbor distance	covAmount	rat_
 flower stores	object
 flower store	object
 warehouses	object
@@ -693,8 +693,8 @@ best sites	allocation
 best site	allocation
 new ski piste	object
 school districts of senior high schools	object
-buffer areas	distfield	rat_
-buffer area	distfield	rat_
+buffer areas	distfield
+buffer area	distfield
 metropolitan municipalities	object
 metropolitan municipality	object
 administrative regions	object
