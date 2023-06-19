@@ -8,9 +8,8 @@ from geoparser import geo_parser
 from transformations import write_trans
 
 results = []
-# BlocklyJson = "test.json"
-# BlocklyJson = "blocklyoutput.json"
-BlocklyJson = "blocklyoutput_GeoAnQu.json"
+BlocklyJson = "Data/blocklyoutput_Leticia.json"
+# BlocklyJson = "Data/test.json"
 sym = '" ? \n \t'  # remove these symbols from questions
 
 
@@ -76,7 +75,7 @@ def readJson(BlocklyJson):
             result['question'] = ' '.join(result['question'].split())  # remove extra whitespaces in string
             result['replaceQ'] = ' '.join(result['replaceQ'].split()).replace('-', ' ').replace('?', '')
 
-            # print('*********************************')
+            print('*********************************')
             # print('question\n', result['question'])
 
             # [X] loop every key in result and replace keywords with its tag
@@ -114,7 +113,7 @@ def readJson(BlocklyJson):
             result.update(re_CoreCon[0])  # re_CoreCon[0]: dictionary - Core Concepts
             result['ner_Question'] = re_CoreCon[1]
             # print('ner_Question\n', result['ner_Question'])
-            print('result\n', result)
+            # print('result\n', result)
 
             # [X] Generate parser tree
             parsedQuestion = geo_parser(result, core_id, coreTypeDict, coreConTrans)
@@ -127,11 +126,9 @@ def readJson(BlocklyJson):
             results.append(result)
             # print(results)
 
-    # with open('parse_results_retri_0601.json', 'w') as outputFile:
-    #     json.dump(results, outputFile)
-
-    with open('GeoAnQu_parser_results_0601.json', 'w') as outputFile:
+    with open('Data/Leticia_parser_results_0619_5.json', 'w') as outputFile:
         json.dump(results, outputFile)
+
 
 
 if __name__ == '__main__':
