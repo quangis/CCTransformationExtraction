@@ -30,7 +30,9 @@ class BracketMatch:
         return result
 
 
-# [X] Extract parser rules(tags) and text from parserTreeString
+# [X] Extract every parser rule(tag) and text from parserTreeString
+# Output: {'tag': ['condition', 'boolR', 'extremaR', 'coreC', 'coreC', 'coreC'], 'text': ['of to', 'has', 'highest',
+# 'proportion 0 ira', 'object 1', 'objconamount 0 count']}
 def get_text(cur_treeStr):
     nodetextDic = {}
     root = BracketMatch(cur_treeStr)
@@ -62,7 +64,7 @@ def get_text(cur_treeStr):
 # [X]Extract core concept from texts and tags of the parse tree
 # Input: {'tag': ['condition', 'boolR', 'extremaR', 'coreC', 'coreC', 'coreC'], 'text': ['of to', 'has', 'highest',
 # 'proportion 0 ira', 'object 1', 'objconamount 0 count']}
-# Output: {'tag': ['coreC', 'coreC', 'coreC'], 'text': ['proportion 0 ira', 'object 1', 'objconamount 0 count']}
+# Output: {'tag': ['extremaR', 'coreC', 'coreC', 'coreC'], 'text': ['highest', 'proportion 0 ira', 'object 1', 'objconamount 0 count']}
 def core_concept_extract(result, TreeDict):
     cur_TD = {}
     keep_set = {'coreC', 'networkC', 'networkQ', 'objectQ', 'location', 'allocation', 'conAm', 'conAmount', 'boolField', 'distField',
@@ -305,8 +307,9 @@ def write_type(result, core_id, coreDict):
             coreType['measureLevel'] = 'rat_'
             corety.append(coreType)
             coreDict.setdefault('id', []).insert(curtag_index, str(core_id))
-            coreDict['tag'] = 'visible'
-            coreDict['text'] = 'field'
+            coreDict['tag'] = ['visible']
+            coreDict['text'] = ['field']
+            core_id += 1
         elif cur_tag == 'extent':
             for p in result['placename']:
                 coreType = {}

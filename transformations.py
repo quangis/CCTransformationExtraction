@@ -86,7 +86,7 @@ def newAmount_type(c_coreC, keywd):
     elif c_coreC == 'networkquality':
         newAmoutType = {'type': 'objectquality', 'id': str(core_id), 'keyword': keywd if keywd!= None else '', 'measureLevel': 'rat_'}
     elif c_coreC == 'network':
-        newAmoutType = {'type': 'object', 'id': str(core_id), 'keyword': keywd if keywd!= None else '', 'measureLevel': 'rat_'}
+        newAmoutType = {'type': 'object', 'id': str(core_id), 'keyword': keywd if keywd!= None else ''}
     elif c_coreC == 'visibility':
         newAmoutType = {'type': 'field', 'id': str(core_id), 'keyword': keywd if keywd != None else '', 'measureLevel': 'nom_'}
     elif c_coreC == 'distance':
@@ -153,6 +153,7 @@ def update_coreTrans(cur_tran):
 # update next_TypeDict['id'] for next trans inside comR_trans() and extR_trans()
 def update_nextid(nextTypeDict):
     global core_id
+    global mea1is
 
     if 'pro' in nextTypeDict['text'][-1] and len(nextTypeDict['text']) == 2 and not mea1is:
         nextTypeDict['tag'].insert(0, 'coreC')
@@ -186,6 +187,7 @@ def remove_boolid(conTypeDict):
 
 def merge_aggConAmount(mergeTypeDict):
     global coreConTrans
+    c_index = None
 
     a_index = [i for i in range(0, len(coreConTrans['types'])) if coreConTrans['types'][i]['id'] == mergeTypeDict['id'][-1]][0]
     a_keywd = coreConTrans['types'][a_index]['keyword']
@@ -195,11 +197,12 @@ def merge_aggConAmount(mergeTypeDict):
     elif mergeTypeDict['tag'] == ['coreC', 'coreC', 'aggre'] and a_keywd == 'total':
         c_index = [i for i in range(0, len(coreConTrans['types'])) if coreConTrans['types'][i]['id'] == mergeTypeDict['id'][1]][0]
 
-    coreConTrans['types'][c_index]['keyword'] = a_keywd + ' ' + coreConTrans['types'][c_index]['keyword']
-    coreConTrans['types'].pop(a_index)
-    mergeTypeDict['tag'].pop()
-    mergeTypeDict['text'].pop()
-    mergeTypeDict['id'].pop()
+    if c_index != None:
+        coreConTrans['types'][c_index]['keyword'] = a_keywd + ' ' + coreConTrans['types'][c_index]['keyword']
+        coreConTrans['types'].pop(a_index)
+        mergeTypeDict['tag'].pop()
+        mergeTypeDict['text'].pop()
+        mergeTypeDict['id'].pop()
 
     return mergeTypeDict
 
@@ -277,6 +280,8 @@ def comR_trans(c_index, n_index):
     elif 'boolfield' in re_comp['tag']:
         trans_bool = write_trans_within(re_comp)
         update_coreTrans(trans_bool)
+        if 'region' in next_TypeDict['text'][0]:
+            update_coreTrans(gen_trans([cur_TypeDict['id'][-1]], [next_TypeDict['id'][0]], None))
 
 
 # [X] Generate transformation for extremaR condition, sub-condition and measure
@@ -355,7 +360,10 @@ def extR_trans(c_index, n_index):
     elif 'boolfield' in re_ext['tag']:
         trans_bool = write_trans_within(re_ext)
         update_coreTrans(trans_bool)
-
+        update_coreTrans(gen_trans([next_TypeDict['id'][0], re_ext['id'][-1]], [str(core_id)], None))
+        update_coreType(new_type(next_TypeDict['id'][0]))
+        next_TypeDict['id'][0] = str(core_id)
+        update_id()
 
 # [X] Generate transformation for aggre in condition, sub-condition and measure
 # allTypeDict: coreTypeDict, include functional roles and their types
@@ -395,6 +403,11 @@ def aggre_trans(c_index, aggTypeDict):
                 # aggre trans
                 update_coreTrans(gen_trans([aggTypeDict['id'][1]], [aggTypeDict['id'][-1]], c_supTypeDict['id'][-1]))
             elif not supis and not con_meais:
+                agg_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
+                update_coreTrans(gen_trans([aggTypeDict['id'][0]], [aggTypeDict['id'][1]], None))
+                # aggre trans
+                update_coreTrans(gen_trans([aggTypeDict['id'][1], agg_extent_id], [aggTypeDict['id'][-1]], agg_extent_id))
+            elif not supis and con_meais: # What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands
                 agg_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
                 update_coreTrans(gen_trans([aggTypeDict['id'][0]], [aggTypeDict['id'][1]], None))
                 # aggre trans
@@ -440,6 +453,7 @@ def pro_trans(c_index, proTypeDict):
     global supis
     global con_meais
     global coreTypeDict
+    global coreConTrans
 
     # seperate proTypeDict into two dictionary: one includes concepts for aggre transformation, another one includes aggre as input and other concepts for proportion transformation
     if 'aggre' in proTypeDict['tag']:
@@ -559,17 +573,11 @@ def pro_trans(c_index, proTypeDict):
                                 # pro
                                 update_coreTrans(gen_trans([str(core_id-1), afte_aTypeDict['id'][0]], [afte_aTypeDict['id'][-1]], pro_extent_id))
                     else:
-                        # field/object/event * condition -> new field/object/event
-                        # if 'serviceobj' not in m_ciTypeDict['tag']:
-                        # update_coreTrans(gen_trans([afte_aTypeDict['id'][0], m_ciTypeDict['id'][-1]], [str(core_id)],
-                        #                   None))
-                        # update_coreType(new_type(afte_aTypeDict['id'][0]))
-                        # update_id()
                         if supis:
                             m_supTypeDict = coreTypeDict['types'][supis[0]]
                             # new field/object/event * support-> (cov)amount
                             keywd0 = afte_aTypeDict['text'][0].split()[0]
-                            update_coreTrans(gen_trans([str(core_id - 1), m_supTypeDict['id'][-1]], [str(core_id)], m_supTypeDict['id'][-1]))
+                            update_coreTrans(gen_trans([coreConTrans['transformations'][-1]['after'][0], m_supTypeDict['id'][-1]], [str(core_id)], m_supTypeDict['id'][-1]))
                             update_coreType(newAmount_type(keywd0, None))
                             update_id()
                             # denominator
@@ -587,11 +595,14 @@ def pro_trans(c_index, proTypeDict):
                             pro_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
                             # new field/object/event -> (cov)Amount
                             keywd0 = afte_aTypeDict['text'][0].split()[0]
-                            update_coreTrans(gen_trans([str(core_id-1)], [str(core_id)], pro_extent_id if keywd0 != 'field' else None))
+                            if keywd0 != 'field' or keywd0 != 'region':
+                                update_coreTrans(gen_trans(coreConTrans['transformations'][-1]['after'], [str(core_id)], None))
+                            else:
+                                update_coreTrans(gen_trans(coreConTrans['transformations'][-1]['after'], [str(core_id)], pro_extent_id ))
                             update_coreType(newAmount_type(keywd0, None))
                             update_id()
                             # dominator
-                            if [i['keyword'] for i in coreConTrans['types'] if i['id'] == afte_aTypeDict['id'][-1]] == ['density'] or keywd0 == 'field':
+                            if [i['keyword'] for i in coreConTrans['types'] if i['id'] == afte_aTypeDict['id'][-1]] == ['density'] or keywd0 == 'field' or keywd0 == 'region':
                                 if 'distfield' in m_ciTypeDict['tag']:
                                     update_coreTrans(gen_trans([m_ciTypeDict['id'][-1]], [str(core_id)], None))
                                     update_coreType(newAmount_type('boolfield', None))
@@ -686,6 +697,7 @@ def pro_trans(c_index, proTypeDict):
                     update_coreType(newAmount_type(afte_aTypeDict['text'][1].split()[0], None))
                 update_id()
 
+
 # [X] Generate transformation for conAmount in condition and measure
 # allTypeDict: coreTypeDict, include functional roles and their types
 # index of current functional role in coreTypeDict['funcRole']
@@ -710,12 +722,30 @@ def conAmount_trans(c_index, conATypeDict):
                 conA_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
                 for ci in con_meais:
                     m_ciTypeDict = coreTypeDict['types'][ci]
-                    update_coreTrans(gen_trans([conATypeDict['id'][0], m_ciTypeDict['id'][-1]], [str(core_id)], conA_extent_id))
+                    update_coreTrans(gen_trans([conATypeDict['id'][0], m_ciTypeDict['id'][-1]], [str(core_id)], conA_extent_id if 'distfield' not in m_ciTypeDict['tag'] else m_ciTypeDict['id'][m_ciTypeDict['tag'].index('distfield')]))
                     update_coreType(new_type(conATypeDict['id'][0]))
                     conATypeDict['id'][0] = str(core_id)
                     update_id()
             elif supis and not con_meais:
                 # What is the WOZ-waarde for each neighborhood in Amsterdam
+                m_supTypeDict = coreTypeDict['types'][supis[0]]
+                update_coreTrans(gen_trans([conATypeDict['id'][0], m_supTypeDict['id'][-1]], [str(core_id)], m_supTypeDict['id'][-1]))
+                update_coreType(new_type(conATypeDict['id'][0]))
+                update_id()
+            elif not supis and not con_meais:
+                conA_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
+                update_coreTrans(gen_trans([conATypeDict['id'][0]], [str(core_id)],
+                                           conA_extent_id))
+                update_coreType(new_type(conATypeDict['id'][0]))
+                update_id()
+            elif con_meais and supis:
+                for ci in con_meais:
+                    m_ciTypeDict = coreTypeDict['types'][ci]
+                    update_coreTrans(gen_trans([conATypeDict['id'][0], m_ciTypeDict['id'][-1]], [str(core_id)], m_ciTypeDict['id'][-1] if 'distfield' not in m_ciTypeDict['tag'] else
+                                               m_ciTypeDict['id'][m_ciTypeDict['tag'].index('distfield')]))
+                    update_coreType(new_type(conATypeDict['id'][0]))
+                    conATypeDict['id'][0] = str(core_id)
+                    update_id()
                 m_supTypeDict = coreTypeDict['types'][supis[0]]
                 update_coreTrans(gen_trans([conATypeDict['id'][0], m_supTypeDict['id'][-1]], [str(core_id)], m_supTypeDict['id'][-1]))
                 update_coreType(new_type(conATypeDict['id'][0]))
@@ -738,7 +768,6 @@ def conAmount_trans(c_index, conATypeDict):
             elif not supis and not con_meais:
                 conA_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
                 update_coreTrans(gen_trans([conATypeDict['id'][0]], [conATypeDict['id'][1]], conA_extent_id))
-
 
 
 # [X] Generate core concept transformations within condition, measure...
@@ -822,6 +851,31 @@ def write_trans_within(TypeDict):
                     transwithin.append(trans_ori)
                     update_coreType(new_type(TypeDict['id'][s_in - 3][-1]))
                     update_id()
+                else:   # ['destination', 'networkQ', 'serviceObj', ...]
+                    if len(TypeDict['id'][s_in - 2]) == 2:  # [['grid', 'centroid'], 'networkC', 'serviceObj']
+                        trans['before'] = [TypeDict['id'][s_in - 2][0]]
+                        trans['after'] = [TypeDict['id'][s_in - 2][1]]
+                        transwithin.append(trans)
+                    # destination, measure_obj -> driving time
+                    trans = {}
+                    trans['before'] = [TypeDict['id'][s_in - 2][-1], measureType['id'][0]]
+                    trans['after'] = [TypeDict['id'][s_in - 1]]
+                    transwithin.append(trans)
+                    # driving time -> 1 min driving time
+                    trans_service = {}
+                    trans_service['before'] = [TypeDict['id'][s_in - 1]]
+                    trans_service['after'] = [str(core_id)]
+                    transwithin.append(trans_service)
+                    update_coreType(new_type(trans_service['before'][0]))
+                    update_id()
+                    # network quality -> object
+                    trans_des = {}
+                    trans_des['before'] = [str(core_id - 1)]
+                    trans_des['after'] = [str(core_id)]
+                    transwithin.append(trans_des)
+                    update_coreType(new_type(measureType['id'][0]))
+                    measureType['id'][0] = str(core_id)
+                    update_id()
             elif s_in - 2 >= 0 and TypeDict['tag'][s_in - 2] == 'origin':  # ['origin', 'networkC', 'serviceObj'], remove 'roadData'
                 if len(TypeDict['id'][s_in - 2]) == 2:  # [['grid', 'centroid'], 'networkC', 'serviceObj'], remove 'roadData'
                     trans['before'] = [TypeDict['id'][s_in - 2][0]]
@@ -864,9 +918,14 @@ def write_trans_within(TypeDict):
                         transwithin.append(trans)
                     # origin: TypeDict['id'][n_in - 2], destination: TypeDict['id'][n_in - 1], // remove roadData:TypeDict['id'][n_in - 1]
                     trans = {}
-                    desti_id = TypeDict['id'][desti_loc][:] if type(TypeDict['id'][desti_loc][:]) != list else TypeDict['id'][desti_loc][:][-1]
-                    orig_id = TypeDict['id'][orig_loc][-1]
-                    trans['before'] = [desti_id, orig_id]
+                    if type(TypeDict['id'][desti_loc]) == list:
+                        desti_idlist = TypeDict['id'][desti_loc][:]
+                        desti_idlist.append(TypeDict['id'][orig_loc][-1])
+                        trans['before'] = desti_idlist
+                    elif type(TypeDict['id'][desti_loc]) == str:
+                        desti_id = TypeDict['id'][desti_loc][:]
+                        orig_id = TypeDict['id'][orig_loc][-1]
+                        trans['before'] = [desti_id, orig_id]
                     if 'extremaR' in TypeDict['tag']:
                         trans['after'] = [TypeDict['id'][n_in-1]]
                     else:
@@ -883,7 +942,7 @@ def write_trans_within(TypeDict):
                         update_id()
                     elif tt == 'networkC':
                         netC_keywd_in = [i for i in range(0, len(coreConTrans['types'])) if coreConTrans['types'][i]['id'] == trans['after'][0]][0]
-                        if 'shortest' in coreConTrans['types'][netC_keywd_in]['keyword']:
+                        if TypeDict != measureType:
                             s_trans={}
                             s_trans['before'] = trans['after']
                             s_trans['after'] = [str(core_id)]
@@ -1051,8 +1110,15 @@ def write_trans(parsedResult):
 
         if subis:
             subTypeDict = coreTypeDict['types'][subis[0]]
-            cur_conTypeDict = coreTypeDict['types'][subis[0]+1]
-            if 'compareR' in subTypeDict['tag']:
+            cur_conTypeDict = coreTypeDict['types'][con_meais[0]]
+            if subTypeDict['tag'] == ['coreC']:
+                if 'amount' not in cur_conTypeDict['text'][0] and 'pro' not in cur_conTypeDict['text'][0] and 'aggre' not in \
+                        cur_conTypeDict['text'][0]:
+                    update_coreTrans(gen_trans([cur_conTypeDict['id'][0], subTypeDict['id'][0]], [str(core_id)], None))
+                    update_coreType(new_type(cur_conTypeDict['id'][0]))
+                    cur_conTypeDict['id'][0] = str(core_id)
+                    update_id()
+            elif 'compareR' in subTypeDict['tag']:
                 comR_trans(subis[0], subis[0] + 1)
             elif 'extremaR' in subTypeDict['tag']:
                 if subTypeDict['text'][1] == 'closest to':
@@ -1157,7 +1223,9 @@ def write_trans(parsedResult):
                     cur_mTypeDict['id'][0] = str(core_id)
                     update_id()
                 elif len(conTypeDict['id']) > 1 and 'compareR' not in conTypeDict['tag'] and 'extremaR' not in conTypeDict['tag'] and 'conAmount' not in conTypeDict['tag']:
-                    if ('object' in conTypeDict['text'][0] or 'event' in conTypeDict['text'][0]) and ('object' in cur_mTypeDict['text'][0] or 'event' in cur_mTypeDict['text'][0]) and 'boolfield' in conTypeDict['tag']:
+                    meainp_index = [i for i in range(0, len(coreConTrans['types'])) if coreConTrans['types'][i]['id'] == cur_mTypeDict['id'][0]][0]
+                    if ('object' in conTypeDict['text'][0] or 'event' in conTypeDict['text'][0]) and ('object' in cur_mTypeDict['text'][0] or 'event' in cur_mTypeDict['text'][0]) \
+                            and 'boolfield' in conTypeDict['tag'] and 'district' not in coreConTrans['types'][meainp_index]['keyword']:
                         # Which neighborhoods are within 100 meters from a school in Utrecht
                         update_coreTrans(gen_trans([conTypeDict['id'][0], cur_mTypeDict['id'][0]], [str(core_id)], None))
                         update_coreType(newAmount_type('distance', None))
@@ -1173,15 +1241,17 @@ def write_trans(parsedResult):
                         update_id()
                         remove_boolid(conTypeDict)
                     else:
-                        con_mea_trans = write_trans_within(conTypeDict)
-                        update_coreTrans(con_mea_trans)
+                        con_trans = write_trans_within(conTypeDict)
+                        update_coreTrans(con_trans)
                         if 'serviceobj' in conTypeDict['tag'] or conTypeDict['tag'][-1] == 'networkC':
-                            conTypeDict['id'][-1] = con_mea_trans[-1]['after'][0]
+                            conTypeDict['id'][-1] = con_trans[-1]['after'][0]
                         if 'amount' not in cur_mTypeDict['text'][0] and 'pro' not in cur_mTypeDict['text'][0] and 'aggre' not in cur_mTypeDict['text'][0]:
-                            if 'region' in cur_mTypeDict['text'][0]:
-                                cur_mTypeDict['id'][0] = str(core_id)
-                            else:
-                                update_coreTrans(gen_trans([cur_mTypeDict['id'][0], conTypeDict['id'][-1]], [str(core_id)], None))
+                            if 'region' in cur_mTypeDict['text'][0] and 'serviceobj' not in conTypeDict['tag']:
+                                # cur_mTypeDict['id'][0] = str(core_id)
+                                update_coreTrans(gen_trans([conTypeDict['id'][-1]], [cur_mTypeDict['id'][0]], None))
+                            elif 'region' not in cur_mTypeDict['text'][0] and 'serviceobj' not in conTypeDict['tag']:
+                                con_mea_trans = gen_trans([cur_mTypeDict['id'][0], conTypeDict['id'][-1]], [str(core_id)], None)
+                                update_coreTrans(con_mea_trans)
                                 update_coreType(new_type(cur_mTypeDict['id'][0]))
                                 cur_mTypeDict['id'][0] = str(core_id)
                                 update_id()
@@ -1207,12 +1277,6 @@ def write_trans(parsedResult):
                         m_supTypeDict = coreTypeDict['types'][supis[0]]
                         update_coreTrans(gen_trans([meaTypeDict['id'][0], m_supTypeDict['id'][-1]], [meaTypeDict['id'][1]], None))
                     elif not supis and con_meais:
-                        for ci in con_meais:
-                            m_ciTypeDict = coreTypeDict['types'][ci]
-                            update_coreTrans(gen_trans([meaTypeDict['id'][0], m_ciTypeDict['id'][-1]], [str(core_id)], None))
-                            update_coreType(new_type(meaTypeDict['id'][0]))
-                            meaTypeDict['id'][0] = str(core_id)
-                            update_id()
                         # new input -> covamount
                         update_coreTrans(gen_trans([meaTypeDict['id'][0]], [meaTypeDict['id'][1]], None))
                 elif meaTypeDict['tag'] == ['coreC', 'coreC', 'coreC']:
@@ -1241,12 +1305,19 @@ def write_trans(parsedResult):
                                                    m_supTypeDict['id'][-1]))
                     elif meaTypeDict['tag'] == ['networkC', 'objectQ']:
                         update_coreTrans(gen_trans([meaTypeDict['id'][0], m_supTypeDict['id'][-1]], [meaTypeDict['id'][1]], m_supTypeDict['id'][-1]))
+                elif supis and con_meais:
+                    m_supTypeDict = coreTypeDict['types'][supis[0]]
+                    if meaTypeDict['tag'] == ['coreC']:
+                        update_coreTrans(gen_trans([meaTypeDict['id'][0], m_supTypeDict['id'][-1]], [str(core_id)],
+                                                   m_supTypeDict['id'][-1] if 'region' not in meaTypeDict['text'][0] else None))
+                        update_coreType(new_type(meaTypeDict['id'][0]))
+                        update_id()
                 else:
                     m_extent_id = coreTypeDict['types'][coreTypeDict['funcRole'].index('extent')][0]
-                    # if meaTypeDict['tag'] == ['coreC']:
-                    #     update_coreTrans(gen_trans(meaTypeDict['id'], [str(core_id)], None))
-                    #     update_coreType(new_type(meaTypeDict['id'][0]))
-                    #     update_id()
+                    if not supis and not con_meais and (meaTypeDict['tag'] == ['coreC'] or meaTypeDict['tag'] == ['networkC']):
+                        update_coreTrans(gen_trans(meaTypeDict['id'], [str(core_id)], None))
+                        update_coreType(new_type(meaTypeDict['id'][0]))
+                        update_id()
                     if meaTypeDict['tag'] == ['coreC', 'location'] or meaTypeDict['tag'] == ['coreC', 'allocation']:
                         update_coreTrans(write_trans_within(meaTypeDict))
                     elif meaTypeDict['tag'] == ['coreC', 'conAm']:
@@ -1286,6 +1357,7 @@ def write_trans(parsedResult):
                         update_coreTrans(gen_trans(objQ_trans[-1]['after'], [meaTypeDict['id'][-1]], None))
 
         # print('final trans\n', coreConTrans)
+
 
     except:
         print("Cannot generate transformations.\n{}".format(coreConTrans))
