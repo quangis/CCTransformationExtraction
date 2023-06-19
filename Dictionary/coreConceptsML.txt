@@ -226,6 +226,7 @@ false fire alarm	event
 clusters	covAmount	loc_
 cluster	covAmount	loc_
 residential area	field	nom_
+residential areas	field	nom_
 central station	object
 Independence Day parade route	event
 properties	object
