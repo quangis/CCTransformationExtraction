@@ -1,0 +1,153 @@
+[
+	{
+		"question": "Which neighborhoods are  within 100 meters from a  school in Utrecht",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"100 meters"
+		],
+		"placename": [
+			"Utrecht"
+		],
+		"replaceQ": "Which neighborhoods are  within 100 meters from a  school extent"
+	},
+	{
+		"question": "Which neighborhoods have an average WOZ value  less than 200  in Utrecht",
+		"aggregate": [
+			"average"
+		],
+		"comparison": [
+			"less than"
+		],
+		"quantity": [
+			"200 "
+		],
+		"placename": [
+			"Utrecht"
+		],
+		"replaceQ": "Which neighborhoods have an average WOZ value  less than 200  extent"
+	},
+	{
+		"question": "What is the  number of people  within 1000 meters of the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What is the  number of people  within 1000 meters of the  A2 highway extent"
+	},
+	{
+		"question": "What is the  proportion of rural population  within 2 kilometers of   all-season roads in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What is the  proportion of rural population  within 2 kilometers of   all-season roads extent"
+	},
+	{
+		"question": "What is the  crime density  along the  shortest path from my home to my workplace in Amsterdam",
+		"placename": [
+			"Amsterdam"
+		],
+		"replaceQ": "What is the  crime density  along the  shortest path from my home to my workplace extent"
+	},
+	{
+		"question": "What are the  supermarkets, sport facilities and offices in Amsterdam",
+		"placename": [
+			"Amsterdam"
+		],
+		"replaceQ": "What are the  supermarkets, sport facilities and offices extent"
+	},
+	{
+		"question": "What is the  shortest path through my workplace, a gym and a supermarket from my home in Amsterdam",
+		"placename": [
+			"Amsterdam"
+		],
+		"replaceQ": "What is the  shortest path through my workplace, a gym and a supermarket from my home extent"
+	},
+	{
+		"question": "What is the average network distance from households to the nearest supermarket in centrum district in Amsterdam",
+		"aggregate": [
+			"average"
+		],
+		"extrema": [
+			"nearest"
+		],
+		"placename": [
+			"centrum district",
+			"Amsterdam"
+		],
+		"replaceQ": "What is the average network distance from households to the nearest supermarket extent"
+	},
+	{
+		"question": "What is the  proportion of residential area for each neighborhood in Amsterdam",
+		"sup_object": [
+			"neighborhood"
+		],
+		"replaceQ": "What is the  proportion of residential area support extent",
+		"placename": [
+			"Amsterdam"
+		]
+	},
+	{
+		"question": "What is the  density of street intersections for each neighborhood in Amsterdam",
+		"sup_object": [
+			"neighborhood"
+		],
+		"replaceQ": "What is the  density of street intersections support extent",
+		"placename": [
+			"Amsterdam"
+		]
+	},
+	{
+		"question": "What is the  diversity of land use for each neighborhood in Amsterdam",
+		"sup_object": [
+			"neighborhood"
+		],
+		"replaceQ": "What is the  diversity of land use support extent",
+		"placename": [
+			"Amsterdam"
+		]
+	},
+	{
+		"question": "What is the  shortest travel route from the AEB incineration plant through  every waste disposal place along waterways in Amsterdam",
+		"placename": [
+			"Amsterdam"
+		],
+		"replaceQ": "What is the  shortest travel route from the AEB incineration plant through  every waste disposal place along waterways extent"
+	},
+	{
+		"question": "What is the total walking time from each  household to the nearest waste disposal place in the Amsterdam city center",
+		"aggregate": [
+			"total"
+		],
+		"extrema": [
+			"nearest"
+		],
+		"placename": [
+			"Amsterdam city center"
+		],
+		"replaceQ": "What is the total walking time from each  household to the nearest waste disposal place extent"
+	},
+	{
+		"question": "What is the total kernel density of waste disposal places in the Amsterdam city center",
+		"aggregate": [
+			"total"
+		],
+		"placename": [
+			"Amsterdam city center"
+		],
+		"replaceQ": "What is the total kernel density of waste disposal places extent"
+	}
+]
