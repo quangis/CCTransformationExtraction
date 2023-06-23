@@ -1,0 +1,757 @@
+[
+	{
+		"question": "What is the directional trend of fire calls for each fire station in Fort Worth",
+		"sup_object": [
+			"fire station"
+		],
+		"replaceQ": "What is directional trend of fire calls support extent",
+		"placename": [
+			"Fort Worth"
+		],
+		"covamount": [
+			"directional trend"
+		],
+		"event": [
+			"fire calls"
+		],
+		"ner_Question": "what is covamount0 loc_ of event0 support extent",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 loc_) of (coreC event 0)) (support support) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "object",
+					"id": "0",
+					"keyword": "fire station",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "event",
+					"id": "1",
+					"keyword": "fire calls",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "covamount",
+					"id": "2",
+					"keyword": "directional trend",
+					"measureLevel": "loc_",
+					"cct": "R(_,Reg)"
+				},
+				{
+					"type": "object",
+					"id": "3",
+					"keyword": "Fort Worth",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"3"
+			],
+			"transformations": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where is the best site of bus stops that maximize the total population within 600 meters buffer areas of bus stops in Utrecht",
+		"extrema": [
+			"maximize"
+		],
+		"aggregate": [
+			"total"
+		],
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"600 meters"
+		],
+		"placename": [
+			"Utrecht"
+		],
+		"replaceQ": "Where is best site of bus stops that extrema0 aggregate0 population topoRel0 quantity0 buffer areas of bus stops extent",
+		"distfield": [
+			"buffer areas"
+		],
+		"objconamount": [
+			"population"
+		],
+		"object": [
+			"bus stops"
+		],
+		"allocation": [
+			"best site"
+		],
+		"ner_Question": "where is allocation0 of object0 that extrema0 aggregate0 objconamount0 cou_ toporel0 quantity0 distfield0 rat_ of object0 extent",
+		"parseTreeStr": "(start where is (measure (allocation allocation 0 of (coreC object 0))) (condition that (extremaR extrema 0) (aggre aggregate 0) (coreC objconamount 0 cou_) (subcon (boolField (topoR toporel 0) (distField (quantityV quantity 0) distfield 0 rat_ of (coreC object 0))))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "object",
+					"id": "0",
+					"keyword": "bus stops",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "distfield",
+					"id": "1",
+					"keyword": "",
+					"cct": "R(Loc,Ratio)"
+				},
+				{
+					"type": "boolfield",
+					"id": "2",
+					"keyword": "",
+					"cct": "R(Loc,Bool)"
+				},
+				{
+					"type": "objconamount",
+					"id": "3",
+					"keyword": "population",
+					"measureLevel": "cou_",
+					"cct": "R(_,Count)"
+				},
+				{
+					"type": "aggre",
+					"id": "4",
+					"keyword": "total",
+					"measureLevel": "cou_",
+					"cct": "R(Obj, Reg * Count)"
+				},
+				{
+					"type": "object",
+					"id": "5",
+					"keyword": "bus stops",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "allocation",
+					"id": "6",
+					"keyword": "",
+					"cct": "R(Obj,Reg)"
+				},
+				{
+					"type": "object",
+					"id": "7",
+					"keyword": "Utrecht",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "objconamount",
+					"id": "8",
+					"keyword": "population",
+					"measureLevel": "cou_",
+					"cct": "R(Reg,Count)"
+				},
+				{
+					"type": "object",
+					"id": "9",
+					"keyword": "bus stops",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"7"
+			],
+			"transformations": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"2"
+					],
+					"after": [
+						"8"
+					],
+					"key": "1"
+				},
+				{
+					"before": [
+						"8",
+						"5"
+					],
+					"after": [
+						"4"
+					],
+					"key": "5"
+				},
+				{
+					"before": [
+						"5",
+						"4"
+					],
+					"after": [
+						"9"
+					]
+				},
+				{
+					"before": [
+						"9"
+					],
+					"after": [
+						"6"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the travel time from the centroids of 2 by 2 kilometers grid cells to the nearest airport in Finland",
+		"grid": [
+			"2 by 2 kilometers grid cells"
+		],
+		"extrema": [
+			"nearest"
+		],
+		"placename": [
+			"Finland"
+		],
+		"replaceQ": "What is travel time from centroids of grid0 to extrema0 airport extent",
+		"networkquality": [
+			"travel time"
+		],
+		"object": [
+			"centroids",
+			"airport"
+		],
+		"ner_Question": "what is networkquality0 rat_ from object0 of grid0 to extrema0 object1 extent",
+		"parseTreeStr": "(start what is (measure (networkQ networkquality 0 rat_) from (origin (objectC object 0) of (grid grid 0)) to (destination (extremaR extrema 0) (objectC object 1))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "object",
+					"id": "0",
+					"keyword": "airport",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "grid",
+					"id": "1",
+					"keyword": "2 by 2 kilometers grid cells",
+					"cct": "R(Reg,_)"
+				},
+				{
+					"type": "object",
+					"id": "2",
+					"keyword": "centroids",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "networkquality",
+					"id": "3",
+					"keyword": "travel time",
+					"measureLevel": "rat_",
+					"cct": "R(Obj * Obj, Ratio)"
+				},
+				{
+					"type": "object",
+					"id": "4",
+					"keyword": "Finland",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "objectquality",
+					"id": "5",
+					"keyword": "travel time",
+					"measureLevel": "rat_",
+					"cct": "R(Obj, Reg * Ratio)"
+				}
+			],
+			"extent": [
+				"4"
+			],
+			"transformations": [
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"0",
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				},
+				{
+					"before": [
+						"3"
+					],
+					"after": [
+						"5"
+					],
+					"key": "2"
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the degree of clustering of 911 calls for each 60 meters distance band in Portland",
+		"sup_distBand": [
+			"60 meters distance band"
+		],
+		"replaceQ": "What is degree of clustering of 911 calls support extent",
+		"placename": [
+			"Portland"
+		],
+		"covamount": [
+			"degree of clustering"
+		],
+		"event": [
+			"911 calls"
+		],
+		"ner_Question": "what is covamount0 loc_ of event0 support extent",
+		"parseTreeStr": "(start what is (measure (coreC covamount 0 loc_) of (coreC event 0)) (support support) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "distanceBand",
+					"id": "0",
+					"keyword": "60 meters distance band",
+					"cct": "R(Reg,_)"
+				},
+				{
+					"type": "event",
+					"id": "1",
+					"keyword": "911 calls",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "covamount",
+					"id": "2",
+					"keyword": "degree of clustering",
+					"measureLevel": "rat_",
+					"cct": "R(Reg,Ratio)"
+				},
+				{
+					"type": "object",
+					"id": "3",
+					"keyword": "Portland",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"3"
+			],
+			"transformations": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"2"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "Where are the rocky areas in Spain",
+		"placename": [
+			"Spain"
+		],
+		"replaceQ": "Where are rocky areas extent",
+		"field": [
+			"rocky areas"
+		],
+		"ner_Question": "where are field0 nom_ extent",
+		"parseTreeStr": "(start (measure (location where are (coreC field 0 nom_))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "field",
+					"id": "0",
+					"keyword": "rocky areas",
+					"measureLevel": "nom_",
+					"cct": "R(Loc,Nom)"
+				},
+				{
+					"type": "location",
+					"id": "1",
+					"keyword": "",
+					"cct": "Reg"
+				},
+				{
+					"type": "object",
+					"id": "2",
+					"keyword": "Spain",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"2"
+			],
+			"transformations": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+		{
+		"question": "Where are the ski pistes in Happy Valley ski resort",
+		"placename": [
+			"Happy Valley ski resort"
+		],
+		"replaceQ": "Where are ski pistes extent",
+		"object": [
+			"ski pistes"
+		],
+		"ner_Question": "where are object0 extent",
+		"parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "object",
+					"id": "0",
+					"keyword": "ski pistes",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "location",
+					"id": "1",
+					"keyword": "",
+					"cct": "R(Obj,Reg)"
+				},
+				{
+					"type": "object",
+					"id": "2",
+					"keyword": "Happy Valley ski resort",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"2"
+			],
+			"transformations": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas are more than 3000 meters from the rivers in Spain",
+		"comparison": [
+			"more than"
+		],
+		"quantity": [
+			"3000 meters"
+		],
+		"placename": [
+			"Spain"
+		],
+		"replaceQ": "What areas are comparison0 quantity0 from rivers extent",
+		"object": [
+			"rivers"
+		],
+		"ner_Question": "what areas are comparison0 quantity0 from object0 extent",
+		"parseTreeStr": "(start (measure (location what areas)) are (condition (boolField (compareR comparison 0) (distField (quantityV quantity 0) from (coreC object 0)))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "object",
+					"id": "0",
+					"keyword": "rivers",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "distfield",
+					"id": "1",
+					"keyword": "",
+					"cct": "R(Loc,Ratio)"
+				},
+				{
+					"type": "boolfield",
+					"id": "2",
+					"keyword": "",
+					"cct": "R(Loc,Bool)"
+				},
+				{
+					"type": "region",
+					"id": "3",
+					"keyword": "areas",
+					"cct": "R(Loc)"
+				},
+				{
+					"type": "object",
+					"id": "4",
+					"keyword": "Spain",
+					"cct": "R(Obj,_)"
+				}
+			],
+			"extent": [
+				"4"
+			],
+			"transformations": [
+				{
+					"before": [
+						"0"
+					],
+					"after": [
+						"1"
+					]
+				},
+				{
+					"before": [
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What areas have population density less than 300 per square kilometer in the UK",
+		"comparison": [
+			"less than"
+		],
+		"quantity": [
+			"300 per square kilometer"
+		],
+		"placename": [
+			"UK"
+		],
+		"replaceQ": "What areas have population density comparison0 quantity0 extent",
+		"genpro": [
+			"population density"
+		],
+		"ner_Question": "what areas have genpro0 ira_ comparison0 quantity0 extent",
+		"parseTreeStr": "(start (measure (location what areas)) have (condition (coreC genpro 0 ira_) (compareR comparison 0) (quantityV quantity 0)) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "genpro",
+					"id": "0",
+					"keyword": "population density",
+					"measureLevel": "ira_",
+					"cct": "R(_,Ratio)"
+				},
+				{
+					"type": "region",
+					"id": "1",
+					"keyword": "areas",
+					"cct": "R(_,Reg)"
+				},
+				{
+					"type": "object",
+					"id": "2",
+					"keyword": "UK",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "region",
+					"id": "3",
+					"keyword": "areas",
+					"cct": "R(_,Reg)"
+				}
+			],
+			"extent": [
+				"2"
+			],
+			"transformations": [
+				{
+					"before": [
+						"1",
+						"0"
+					],
+					"after": [
+						"3"
+					]
+				}
+			]
+		}
+	},
+	{
+		"question": "What is the percentage of population within 1000 meters of network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"grid": [
+			"hexagonal grids with a diameter of 2000 meters"
+		],
+		"placename": [
+			"Rotterdam"
+		],
+		"replaceQ": "What is percentage of population topoRel0 quantity0 of network distance from grid0 to primary schools extent",
+		"networkquality": [
+			"network distance"
+		],
+		"object": [
+			"primary schools"
+		],
+		"objconamount": [
+			"population"
+		],
+		"genpro": [
+			"percentage"
+		],
+		"ner_Question": "what is genpro0 ira_ of objconamount0 cou_ toporel0 quantity0 of networkquality0 rat_ from grid0 to object0 extent",
+		"parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (serviceObj (quantityV quantity 0) of (networkQ networkquality 0 rat_) from (origin (grid grid 0)) to (destination (objectC object 0))))) (extent extent))",
+		"cctrans": {
+			"types": [
+				{
+					"type": "grid",
+					"id": "0",
+					"keyword": "hexagonal grids with a diameter of 2000 meters",
+					"cct": "R(Reg,_)"
+				},
+				{
+					"type": "object",
+					"id": "1",
+					"keyword": "primary schools",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "networkquality",
+					"id": "2",
+					"keyword": "network distance",
+					"measureLevel": "rat_",
+					"cct": "R(Obj * Obj, Ratio)"
+				},
+				{
+					"type": "objconamount",
+					"id": "3",
+					"keyword": "population",
+					"measureLevel": "cou_",
+					"cct": "R(_,Count)"
+				},
+				{
+					"type": "genpro",
+					"id": "4",
+					"keyword": "percentage",
+					"measureLevel": "ira_",
+					"cct": "R(Obj, Reg * Ratio)"
+				},
+				{
+					"type": "object",
+					"id": "5",
+					"keyword": "Rotterdam",
+					"cct": "R(Obj,_)"
+				},
+				{
+					"type": "networkquality",
+					"id": "6",
+					"keyword": "network distance",
+					"measureLevel": "rat_",
+					"cct": "R(Obj * Obj, Ratio)"
+				},
+				{
+					"type": "grid",
+					"id": "7",
+					"keyword": "hexagonal grids with a diameter of 2000 meters",
+					"cct": "R(Reg,_)"
+				},
+				{
+					"type": "objconamount",
+					"id": "8",
+					"keyword": "population",
+					"measureLevel": "cou_",
+					"cct": "R(Reg, Count)"
+				}
+			],
+			"extent": [
+				"5"
+			],
+			"transformations": [
+				{
+					"before": [
+						"0",
+						"1"
+					],
+					"after": [
+						"2"
+					]
+				},
+				{
+					"before": [
+						"2"
+					],
+					"after": [
+						"6"
+					]
+				},
+				{
+					"before": [
+						"6"
+					],
+					"after": [
+						"7"
+					]
+				},
+				{
+					"before": [
+						"3",
+						"7"
+					],
+					"after": [
+						"8"
+					],
+					"key": "7"
+				},
+				{
+					"before": [
+						"8",
+						"3"
+					],
+					"after": [
+						"4"
+					],
+					"key": "5"
+				}
+			]
+		}
+	}
+]
