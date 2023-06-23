@@ -1,0 +1,661 @@
+[
+	{
+		"question": "What is the  percentage of the rural population  within 2 kilometers of the  all-season roads in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What is the  percentage of the rural population  within 2 kilometers of the  all-season roads extent"
+	},
+	{
+		"question": "What are the  metropolitan municipalities in Shikoku, Japan",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What are the  metropolitan municipalities extent"
+	},
+	{
+		"question": "What are the  areas  within 2 kilometers of the  all-season roads in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What are the  areas  within 2 kilometers of the  all-season roads extent"
+	},
+	{
+		"question": "What is the  population for each rural district in Shikoku, Japan",
+		"sup_object": [
+			"rural district"
+		],
+		"replaceQ": "What is the  population support extent",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		]
+	},
+	{
+		"question": "Which hospital is  within 2 minutes of   driving time to the nearest incident  in San Francisco, USA",
+		"topoRel": [
+			"within"
+		],
+		"time": [
+			"2 minutes"
+		],
+		"extrema": [
+			"nearest"
+		],
+		"placename": [
+			"San Francisco",
+			"USA"
+		],
+		"replaceQ": "Which hospital is  within 2 minutes of   driving time to the nearest incident  extent"
+	},
+	{
+		"question": "Where is the  incident in San Francisco, USA",
+		"placename": [
+			"San Francisco",
+			"USA"
+		],
+		"replaceQ": "Where is the  incident extent"
+	},
+	{
+		"question": "Where are the  hospitals in San Francisco, USA",
+		"placename": [
+			"San Francisco",
+			"USA"
+		],
+		"replaceQ": "Where are the  hospitals extent"
+	},
+	{
+		"question": "What is the  road network in San Francisco, USA",
+		"placename": [
+			"San Francisco",
+			"USA"
+		],
+		"replaceQ": "What is the  road network extent"
+	},
+	{
+		"question": "Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from  2000 to  2015",
+		"extrema": [
+			"highest"
+		],
+		"placename": [
+			"Democratic Republic",
+			"Congo"
+		],
+		"replaceQ": "Which administrative regions have the highest malaria incidence rate extent temporalEx",
+		"temEx": [
+			"from  2000 to  2015"
+		]
+	},
+	{
+		"question": "What are the  malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from  2000 to  2015",
+		"sup_object": [
+			"administrative regions"
+		],
+		"replaceQ": "What are the  malaria incidence counts support extent temporalEx",
+		"placename": [
+			"Democratic Republic",
+			"Congo"
+		],
+		"temEx": [
+			"from  2000 to  2015"
+		]
+	},
+	{
+		"question": "What is the  population estimate in the Democratic Republic of the Congo in  2016",
+		"placename": [
+			"Democratic Republic",
+			"Congo"
+		],
+		"replaceQ": "What is the  population estimate extent temporalEx",
+		"temEx": [
+			"2016"
+		]
+	},
+	{
+		"question": "What is the   rural population  within 2 kilometers of the  all-season roads in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What is the   rural population  within 2 kilometers of the  all-season roads extent"
+	},
+	{
+		"question": "What are the  administrative regions in the Democratic Republic of the Congo",
+		"placename": [
+			"Democratic Republic",
+			"Congo"
+		],
+		"replaceQ": "What are the  administrative regions extent"
+	},
+	{
+		"question": "What are the  administrative regions in the world",
+		"placename": [
+			"world"
+		],
+		"replaceQ": "What are the  administrative regions extent"
+	},
+	{
+		"question": "Which neighborhoods are  within 100 meters from a  school and  with housing price lower than 200000 dollars in Utrecht, the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"100 meters",
+			"200000 dollars"
+		],
+		"comparison": [
+			"lower than"
+		],
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		],
+		"replaceQ": "Which neighborhoods are  within 100 meters from a  school and  with housing price lower than 200000 dollars extent"
+	},
+	{
+		"question": "What is the average housing price of neighborhoods  within 100 meters from a  school in Utrecht, the Netherlands",
+		"aggregate": [
+			"average"
+		],
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"100 meters"
+		],
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		],
+		"replaceQ": "What is the average housing price of neighborhoods  within 100 meters from a  school extent"
+	},
+	{
+		"question": "What is the average housing price for each neighborhood in Utrecht, the Netherlands",
+		"aggregate": [
+			"average"
+		],
+		"sup_object": [
+			"neighborhood"
+		],
+		"replaceQ": "What is the average housing price support extent",
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		]
+	},
+	{
+		"question": "Which neighborhoods are  within 100 meters from a  school in Utrecht, the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"100 meters"
+		],
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		],
+		"replaceQ": "Which neighborhoods are  within 100 meters from a  school extent"
+	},
+	{
+		"question": "Where are the  schools in Utrecht, the Netherlands",
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		],
+		"replaceQ": "Where are the  schools extent"
+	},
+	{
+		"question": "Where are the  schools in the Netherlands",
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "Where are the  schools extent"
+	},
+	{
+		"question": "What are the  neighborhoods in Utrecht, the Netherlands",
+		"placename": [
+			"Utrecht",
+			"Netherlands"
+		],
+		"replaceQ": "What are the  neighborhoods extent"
+	},
+	{
+		"question": "What are the  neighborhoods in the Netherlands",
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What are the  neighborhoods extent"
+	},
+	{
+		"question": "What is the  population  within 2 kilometers of the  all-season roads for each rural district in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"sup_object": [
+			"rural district"
+		],
+		"replaceQ": "What is the  population  within 2 kilometers of the  all-season roads support extent",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		]
+	},
+	{
+		"question": "What is the  number of people  within 1000 meters of the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What is the  number of people  within 1000 meters of the  A2 highway extent"
+	},
+	{
+		"question": "What is the  area of each population center  within 1000 meters of the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What is the  area of each population center  within 1000 meters of the  A2 highway extent"
+	},
+	{
+		"question": "What is the  area size of population centers  within the  provinces  intersected with the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within",
+			"intersected with"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What is the  area size of population centers  within the  provinces  intersected with the  A2 highway extent"
+	},
+	{
+		"question": "What are the  population centers  within the  provinces  intersected with the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within",
+			"intersected with"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What are the  population centers  within the  provinces  intersected with the  A2 highway extent"
+	},
+	{
+		"question": "What are the  population centers in the Netherlands",
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What are the  population centers extent"
+	},
+	{
+		"question": "What are the  provinces  intersected with the  A2 highway in the Netherlands",
+		"topoRel": [
+			"intersected with"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What are the  provinces  intersected with the  A2 highway extent"
+	},
+	{
+		"question": "What areas are  within 1000 meters of the  A2 highway in the Netherlands",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"1000 meters"
+		],
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What areas are  within 1000 meters of the  A2 highway extent"
+	},
+	{
+		"question": "What are the  provinces in the Netherlands",
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "What are the  provinces extent"
+	},
+	{
+		"question": "Where is the  A2 highway in the Netherlands",
+		"placename": [
+			"Netherlands"
+		],
+		"replaceQ": "Where is the  A2 highway extent"
+	},
+	{
+		"question": "What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.",
+		"aggregate": [
+			"total"
+		],
+		"sup_object": [
+			"building's usable area"
+		],
+		"replaceQ": "What is the total annual amount of electric power production in MWh support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "What is the  proportion of population  within 2 kilometers of the  all-season roads for each rural district in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"sup_object": [
+			"rural district"
+		],
+		"replaceQ": "What is the  proportion of population  within 2 kilometers of the  all-season roads support extent",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		]
+	},
+	{
+		"question": "What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.",
+		"aggregate": [
+			"total"
+		],
+		"sup_object": [
+			"building's usable area"
+		],
+		"replaceQ": "What is the total annual amount of solar radiation in MWh/m2 support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "Which buildings have an  area of roof  larger than 30 square meters in Glover Park, Washington, D.C.",
+		"comparison": [
+			"larger than"
+		],
+		"quantity": [
+			"30 square meters"
+		],
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "Which buildings have an  area of roof  larger than 30 square meters extent"
+	},
+	{
+		"question": "What is the  area of each building in Glover Park, Washington, D.C.",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What is the  area of each building extent"
+	},
+	{
+		"question": "What are the  rooftop cells with slope lower than 10 degrees,  with solar radiation higher than 8000 kilowatt hours,  with aspect higher than 22.5 degrees and  with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.",
+		"comparison": [
+			"lower than",
+			"higher than",
+			"higher than",
+			"lower than"
+		],
+		"quantity": [
+			"10 degrees",
+			"8000 kilowatt hours",
+			"22.5 degrees",
+			"337.5 degrees"
+		],
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What are the  rooftop cells with slope lower than 10 degrees,  with solar radiation higher than 8000 kilowatt hours,  with aspect higher than 22.5 degrees and  with aspect lower than 337.5 degrees extent"
+	},
+	{
+		"question": "What are the  rooftop cells with slope lower than 45 degrees and  with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.",
+		"comparison": [
+			"lower than",
+			"higher than"
+		],
+		"quantity": [
+			"45 degrees",
+			"8000 kilowatt hours"
+		],
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What are the  rooftop cells with slope lower than 45 degrees and  with solar radiation higher than 8000 kilowatt hours extent"
+	},
+	{
+		"question": "What are the  rooftop cells with slope lower than 10 degrees and  with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.",
+		"comparison": [
+			"lower than",
+			"higher than"
+		],
+		"quantity": [
+			"10 degrees",
+			"8000 kilowatt hours"
+		],
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What are the  rooftop cells with slope lower than 10 degrees and  with solar radiation higher than 8000 kilowatt hours extent"
+	},
+	{
+		"question": "What are the  rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.",
+		"comparison": [
+			"lower than"
+		],
+		"quantity": [
+			"45 degrees"
+		],
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What are the  rooftop cells with slope lower than 45 degrees extent"
+	},
+	{
+		"question": "What are the  slope in Glover Park, Washington, D.C.",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		],
+		"replaceQ": "What are the  slope extent"
+	},
+	{
+		"question": "What is the  solar radiation in KWh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+		"sup_object": [
+			"rooftop cell"
+		],
+		"replaceQ": "What is the  solar radiation in KWh/m2 support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "What is the  aspect for each rooftop cell in Glover Park, Washington, D.C.",
+		"sup_object": [
+			"rooftop cell"
+		],
+		"replaceQ": "What is the  aspect support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "What is the  area of rural district  within 2 kilometers of the  all-season roads in Shikoku, Japan",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What is the  area of rural district  within 2 kilometers of the  all-season roads extent"
+	},
+	{
+		"question": "What is the average solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+		"aggregate": [
+			"average"
+		],
+		"sup_object": [
+			"rooftop cell"
+		],
+		"replaceQ": "What is the average solar radiation in Wh/m2 support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "What areas are  within 2 kilometers of the  all-season roads for each rural district in Amsterdam",
+		"topoRel": [
+			"within"
+		],
+		"quantity": [
+			"2 kilometers"
+		],
+		"sup_object": [
+			"rural district"
+		],
+		"replaceQ": "What areas are  within 2 kilometers of the  all-season roads support extent",
+		"placename": [
+			"Amsterdam"
+		]
+	},
+	{
+		"question": "Where are the  all-season roads in Shikoku, Japan",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "Where are the  all-season roads extent"
+	},
+	{
+		"question": "What is the  population for each district in Shikoku, Japan",
+		"sup_object": [
+			"district"
+		],
+		"replaceQ": "What is the  population support extent",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		]
+	},
+	{
+		"question": "What are the  rural municipalities in Shikoku, Japan",
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What are the  rural municipalities extent"
+	},
+	{
+		"question": "What is the total rural population in Shikoku, Japan",
+		"aggregate": [
+			"total"
+		],
+		"placename": [
+			"Shikoku",
+			"Japan"
+		],
+		"replaceQ": "What is the total rural population extent"
+	},
+	{
+		"question": "What is the  density of population  within   provinces  intersected with the  A2 highway for each population center in Netherlands",
+		"topoRel": [
+			"within",
+			"intersected with"
+		],
+		"sup_object": [
+			"population center"
+		],
+		"replaceQ": "What is the  density of population  within   provinces  intersected with the  A2 highway support extent",
+		"placename": [
+			"Netherlands"
+		]
+	},
+	{
+	"question": "Where are the  roads in San Francisco, USA",
+	"placename": [
+		"San Francisco",
+		"USA"
+	],
+	"replaceQ": "Where are the  roads extent"
+	},
+	{
+		"question": "What is the  solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+		"sup_object": [
+			"rooftop cell"
+		],
+		"replaceQ": "What is the  solar radiation in Wh/m2 support extent",
+		"placename": [
+			"Glover Park",
+			"Washington",
+			"D.C."
+		]
+	},
+	{
+		"question": "What is the  population estimate in the world in  2016",
+		"placename": [
+			"world"
+		],
+		"replaceQ": "What is the  population estimate extent temporalEx",
+		"temEx": [
+			"2016"
+		]
+	}
+]
