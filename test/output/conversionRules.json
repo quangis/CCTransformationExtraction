@@ -1,0 +1,2805 @@
+[
+    {
+        "id": 1,
+        "description": "Which neighborhoods are within 100 meters from a school in Utrecht",
+        "lhs": {
+            "type": "object"
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 2,
+        "description": "Which neighborhoods are within 100 meters from a school in Utrecht",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": 3,
+        "description": "Which neighborhoods are within 100 meters from a school in Utrecht",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": 4,
+        "description": "Which neighborhoods are within 100 meters from a school in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 5,
+        "description": "Which neighborhoods have an average WOZ value less than 200 in Utrecht",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": 6,
+        "description": "Which neighborhoods have an average WOZ value less than 200 in Utrecht",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 7,
+        "description": "Which neighborhoods have an average WOZ value less than 200 in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "aggre",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 8,
+        "description": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": 9,
+        "description": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "lhs": {
+            "type": "boolfield",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "R(Loc,Bool)"
+    },
+    {
+        "id": 10,
+        "description": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_"
+        },
+        "rhs": "R(_,Count)"
+    },
+    {
+        "id": 11,
+        "description": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Count)"
+    },
+    {
+        "id": 12,
+        "description": "What is the proportion of rural population within 2 kilometers of all-season roads in Shikoku, Japan",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_"
+        },
+        "rhs": "R(_,Count)"
+    },
+    {
+        "id": 13,
+        "description": "What is the proportion of rural population within 2 kilometers of all-season roads in Shikoku, Japan",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 14,
+        "description": "What is the proportion of rural population within 2 kilometers of all-season roads in Shikoku, Japan",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Count)"
+    },
+    {
+        "id": 15,
+        "description": "What is the crime density along the shortest path from my home to my workplace in Amsterdam",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Reg)"
+    },
+    {
+        "id": 16,
+        "description": "What is the crime density along the shortest path from my home to my workplace in Amsterdam",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": 17,
+        "description": "What is the crime density along the shortest path from my home to my workplace in Amsterdam",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "network"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 18,
+        "description": "What is the crime density along the shortest path from my home to my workplace in Amsterdam",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 19,
+        "description": "What are the supermarkets, sport facilities and offices in Amsterdam",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 20,
+        "description": "What is the shortest path through my workplace, a gym and a supermarket from my home in Amsterdam",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "object",
+                "object",
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Reg)"
+    },
+    {
+        "id": 21,
+        "description": "What is the average network distance from households to the nearest supermarket in centrum district in Amsterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 22,
+        "description": "What is the average network distance from households to the nearest supermarket in centrum district in Amsterdam",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 23,
+        "description": "What is the proportion of residential area for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_"
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": 24,
+        "description": "What is the proportion of residential area for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 25,
+        "description": "What is the proportion of residential area for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 26,
+        "description": "What is the proportion of residential area for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 27,
+        "description": "What is the density of street intersections for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 28,
+        "description": "What is the density of street intersections for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 29,
+        "description": "What is the diversity of land use for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 30,
+        "description": "What is the shortest travel route from the AEB incineration plant through every waste disposal place along waterways in Amsterdam",
+        "lhs": {
+            "type": "network"
+        },
+        "rhs": "R(Obj*Obj,Reg)"
+    },
+    {
+        "id": 31,
+        "description": "What is the shortest travel route from the AEB incineration plant through every waste disposal place along waterways in Amsterdam",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "network",
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Reg)"
+    },
+    {
+        "id": 32,
+        "description": "What is the total kernel density of waste disposal places in the Amsterdam city center",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": 33,
+        "description": "What is the total kernel density of waste disposal places in the Amsterdam city center",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": 34,
+        "description": "What is the directional trend of fire calls for each fire station in Fort Worth",
+        "lhs": {
+            "type": "event"
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 35,
+        "description": "What is the directional trend of fire calls for each fire station in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": 36,
+        "description": "Where is the best site of bus stops that maximize the total population within 600 meters buffer areas of bus stops in Utrecht",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": 37,
+        "description": "Where is the best site of bus stops that maximize the total population within 600 meters buffer areas of bus stops in Utrecht",
+        "lhs": {
+            "type": "allocation",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg)"
+    },
+    {
+        "id": 38,
+        "description": "What is the travel time from the centroids of 2 by 2 kilometers grid cells to the nearest airport in Finland",
+        "lhs": {
+            "type": "grid"
+        },
+        "rhs": "R(Reg,_)"
+    },
+    {
+        "id": 39,
+        "description": "What is the travel time from the centroids of 2 by 2 kilometers grid cells to the nearest airport in Finland",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "grid"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": 40,
+        "description": "What is the degree of clustering of 911 calls for each 60 meters distance band in Portland",
+        "lhs": {
+            "type": "distanceBand"
+        },
+        "rhs": "R(Reg,_)"
+    },
+    {
+        "id": 41,
+        "description": "What is the degree of clustering of 911 calls for each 60 meters distance band in Portland",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "distanceBand",
+                "event"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": 42,
+        "description": "Where are the rocky areas in Spain",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "Reg"
+    },
+    {
+        "id": 43,
+        "description": "Where are the ski pistes in Happy Valley ski resort",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg)"
+    },
+    {
+        "id": 44,
+        "description": "What areas are more than 3000 meters from the rivers in Spain",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Loc)"
+    },
+    {
+        "id": 45,
+        "description": "What areas have population density less than 300 per square kilometer in the UK",
+        "lhs": {
+            "type": "region"
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": 46,
+        "description": "What areas have population density less than 300 per square kilometer in the UK",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "genpro",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": 47,
+        "description": "What is the percentage of population within 1000 meters of network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": 48,
+        "description": "What is the percentage of population within 1000 meters of network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam",
+        "lhs": {
+            "type": "grid",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Reg,_)"
+    },
+    {
+        "id": 49,
+        "description": "What is the percentage of population within 1000 meters of network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Rotterdam",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Count)"
+    },
+    {
+        "id": "6-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "6-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "11-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Count)"
+    },
+    {
+        "id": "11-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Count)"
+    },
+    {
+        "id": "18-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "18-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "25-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "25-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT3",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT4",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "29-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "29-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "33-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "33-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "42-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "distfield"
+            ]
+        },
+        "rhs": "Reg"
+    },
+    {
+        "id": "42-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "Reg"
+    },
+    {
+        "id": "46-IT1",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "objconobjconpro",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "46-IT2",
+        "description": "Derived based on inputType subtypes",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "eveconobjconpro",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "int_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Itv)"
+    },
+    {
+        "id": "2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ord_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ord)"
+    },
+    {
+        "id": "2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "nom_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Nom)"
+    },
+    {
+        "id": "3-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "int_",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Itv)"
+    },
+    {
+        "id": "3-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ord_",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ord)"
+    },
+    {
+        "id": "3-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "nom_",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Nom)"
+    },
+    {
+        "id": "5-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "5-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_"
+        },
+        "rhs": "R(_,Itv)"
+    },
+    {
+        "id": "5-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_"
+        },
+        "rhs": "R(_,Ord)"
+    },
+    {
+        "id": "5-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_"
+        },
+        "rhs": "R(_,Nom)"
+    },
+    {
+        "id": "6-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "6-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "6-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "6-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "11-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "11-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "11-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "11-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "11-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "12-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "12-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "int_"
+        },
+        "rhs": "R(_,Itv)"
+    },
+    {
+        "id": "12-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "nom_"
+        },
+        "rhs": "R(_,Nom)"
+    },
+    {
+        "id": "12-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "ord_"
+        },
+        "rhs": "R(_,Ord)"
+    },
+    {
+        "id": "12-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "13-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "13-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "13-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "13-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "14-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "rat_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "14-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "int_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "14-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "nom_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "14-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "ord_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "14-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "16-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "16-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_"
+        },
+        "rhs": "R(_,Itv)"
+    },
+    {
+        "id": "16-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_"
+        },
+        "rhs": "R(_,Ord)"
+    },
+    {
+        "id": "16-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_"
+        },
+        "rhs": "R(_,Nom)"
+    },
+    {
+        "id": "18-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "18-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "18-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "18-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "21-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "21-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "21-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "22-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "22-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "22-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "24-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "24-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "24-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "24-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "25-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "25-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "25-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "25-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "26-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "26-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "int_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "26-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "ord_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "26-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "nom_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "27-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "27-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "27-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "28-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "28-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "28-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "28-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "29-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "29-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "29-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "29-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "32-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "int_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": "32-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ord_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": "32-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "33-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "33-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "33-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "36-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "36-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "36-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "36-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "41-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "int_",
+            "inputType": [
+                "distanceBand",
+                "event"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "41-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "ord_",
+            "inputType": [
+                "distanceBand",
+                "event"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "41-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "nom_",
+            "inputType": [
+                "distanceBand",
+                "event"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "47-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "int_",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Itv)"
+    },
+    {
+        "id": "47-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "ord_",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ord)"
+    },
+    {
+        "id": "47-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "nom_",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Nom)"
+    },
+    {
+        "id": "49-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "rat_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "49-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "int_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "49-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "nom_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "49-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "ord_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "49-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "era_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "6-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "6-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "6-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "6-IT2-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "11-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "11-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "11-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "11-IT1-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "11-IT1-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "11-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "11-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Itv)"
+    },
+    {
+        "id": "11-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Nom)"
+    },
+    {
+        "id": "11-IT2-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ord)"
+    },
+    {
+        "id": "11-IT2-SuperML4",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "distfield",
+            "inputType": [
+                "boolfield",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "18-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "18-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "18-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "18-IT1-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "18-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "18-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "18-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "18-IT2-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "25-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "25-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "25-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "25-IT1-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "25-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "25-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "25-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "25-IT2-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "27-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "27-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "27-IT1-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "27-IT3-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT3-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "27-IT3-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "27-IT3-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "covamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "27-IT4-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "27-IT4-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "27-IT4-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "27-IT4-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "eveconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "29-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "29-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "29-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "29-IT1-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "29-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "29-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "29-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "29-IT2-SuperML3",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "33-IT1-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "33-IT1-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "33-IT1-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "distfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "33-IT2-SuperML0",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "33-IT2-SuperML1",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "ord_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "33-IT2-SuperML2",
+        "description": "Derived based on measureLevel supertypes",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    }
+]

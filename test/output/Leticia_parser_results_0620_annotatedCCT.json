@@ -1,0 +1,5031 @@
+[
+    {
+        "question": "What is the percentage of the rural population within 2 kilometers of the all-season roads in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What is percentage of rural population topoRel0 quantity0 of all season roads extent",
+        "objconamount": [
+            "rural population"
+        ],
+        "genpro": [
+            "percentage"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what is genpro0 ira_ of objconamount0 cou_ toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "3",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "4",
+                    "keyword": "percentage",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "7",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                }
+            ],
+            "extent": [
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "7"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "before": [
+                        "7",
+                        "3"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "5"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "4",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "5"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "7",
+                        "cct": "R(Reg,Count)",
+                        "key": "1"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "3",
+                                "cct": "R(_,Count)"
+                            }
+                        },
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Loc,Bool)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "1",
+                                        "cct": "R(Loc,Ratio)"
+                                    },
+                                    "before": [
+                                        {
+                                            "after": {
+                                                "id": "0",
+                                                "cct": "R(Obj,_)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Count)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the metropolitan municipalities in Shikoku, Japan",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What are metropolitan municipalities extent",
+        "object": [
+            "metropolitan municipalities"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "metropolitan municipalities",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "metropolitan municipalities"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the areas within 2 kilometers of the all-season roads in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What are areas topoRel0 quantity0 of all season roads extent",
+        "region": [
+            "areas"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what are region0 toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC region 0)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "region",
+                    "id": "3",
+                    "keyword": "areas",
+                    "cct": "R(Loc)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Loc)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Loc,Bool)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the population for each rural district in Shikoku, Japan",
+        "sup_object": [
+            "rural district"
+        ],
+        "replaceQ": "What is population support extent",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "objconamount": [
+            "population"
+        ],
+        "ner_Question": "what is objconamount0 cou_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rural district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "1",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "4",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Which hospital is within 2 minutes of driving time to the nearest incident in San Francisco, USA",
+        "topoRel": [
+            "within"
+        ],
+        "time": [
+            "2 minutes"
+        ],
+        "extrema": [
+            "nearest"
+        ],
+        "placename": [
+            "San Francisco",
+            "USA"
+        ],
+        "replaceQ": "Which hospital is topoRel0 time0 of driving time to extrema0 incident extent",
+        "networkquality": [
+            "driving time"
+        ],
+        "object": [
+            "hospital"
+        ],
+        "event": [
+            "incident"
+        ],
+        "ner_Question": "which object0 is toporel0 time0 of networkquality0 rat_ to extrema0 event0 extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) is (condition (boolField (topoR toporel 0) (serviceObj (time time 0) of (networkQ networkquality 0 rat_) to (destination (extremaR extrema 0) (eventC event 0))))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "event",
+                    "id": "0",
+                    "keyword": "incident",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "1",
+                    "keyword": "driving time",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "hospital",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "San Francisco",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "USA",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "5",
+                    "keyword": "driving time",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "hospital",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "hospital"
+                }
+            ],
+            "extent": [
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "2"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "5"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "6",
+                        "1"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Where is the incident in San Francisco, USA",
+        "placename": [
+            "San Francisco",
+            "USA"
+        ],
+        "replaceQ": "Where is incident extent",
+        "event": [
+            "incident"
+        ],
+        "ner_Question": "where is event0 extent",
+        "parseTreeStr": "(start (measure (location where is (coreC event 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "event",
+                    "id": "0",
+                    "keyword": "incident",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": ""
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "San Francisco",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "USA",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Where are the hospitals in San Francisco, USA",
+        "placename": [
+            "San Francisco",
+            "USA"
+        ],
+        "replaceQ": "Where are hospitals extent",
+        "object": [
+            "hospitals"
+        ],
+        "ner_Question": "where are object0 extent",
+        "parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "hospitals",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "San Francisco",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "USA",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the road network in San Francisco, USA",
+        "placename": [
+            "San Francisco",
+            "USA"
+        ],
+        "replaceQ": "What is road network extent",
+        "network": [
+            "road network"
+        ],
+        "ner_Question": "what is network0 extent",
+        "parseTreeStr": "(start what is (measure (networkC network 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "network",
+                    "id": "0",
+                    "keyword": "road network",
+                    "cct": "R(Obj*Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "San Francisco",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "USA",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "network",
+                    "id": "3",
+                    "keyword": "road network"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015",
+        "extrema": [
+            "highest"
+        ],
+        "placename": [
+            "Democratic Republic",
+            "Congo"
+        ],
+        "replaceQ": "Which administrative regions have extrema0 malaria incidence rate extent temporalEx",
+        "temEx": [
+            "from  2000 to  2015"
+        ],
+        "objconobjconpro": [
+            "malaria incidence rate"
+        ],
+        "object": [
+            "administrative regions"
+        ],
+        "ner_Question": "which object0 have extrema0 objconobjconpro0 ira_ extent temporalex",
+        "parseTreeStr": "(start which (measure (coreC object 0)) have (condition (extremaR extrema 0) (coreC objconobjconpro 0 ira_)) (extent extent) (temporalex temporalex))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "objconobjconpro",
+                    "id": "0",
+                    "keyword": "malaria incidence rate",
+                    "measureLevel": "ira_"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "administrative regions",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Democratic Republic",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Congo",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "administrative regions"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "temporalEx": [
+                "from  2000 to  2015"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015",
+        "sup_object": [
+            "administrative regions"
+        ],
+        "replaceQ": "What are malaria incidence counts support extent temporalEx",
+        "placename": [
+            "Democratic Republic",
+            "Congo"
+        ],
+        "temEx": [
+            "from  2000 to  2015"
+        ],
+        "eveconamount": [
+            "malaria incidence counts"
+        ],
+        "ner_Question": "what are eveconamount0 cou_ support extent temporalex",
+        "parseTreeStr": "(start what are (measure (coreC eveconamount 0 cou_)) (support support) (extent extent) (temporalex temporalex))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "administrative regions",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "eveconamount",
+                    "id": "1",
+                    "keyword": "malaria incidence counts",
+                    "measureLevel": "cou_"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Democratic Republic",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Congo",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "eveconamount",
+                    "id": "4",
+                    "keyword": "malaria incidence counts",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "temporalEx": [
+                "from  2000 to  2015"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the population estimate in the Democratic Republic of the Congo in 2016",
+        "placename": [
+            "Democratic Republic",
+            "Congo"
+        ],
+        "replaceQ": "What is population estimate extent temporalEx",
+        "temEx": [
+            "2016"
+        ],
+        "objconamount": [
+            "population estimate"
+        ],
+        "ner_Question": "what is objconamount0 cou_ extent temporalex",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (extent extent) (temporalex temporalex))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "objconamount",
+                    "id": "0",
+                    "keyword": "population estimate",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Democratic Republic",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Congo",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "3",
+                    "keyword": "population estimate",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "temporalEx": [
+                "2016"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the rural population within 2 kilometers of the all-season roads in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What is rural population topoRel0 quantity0 of all season roads extent",
+        "objconamount": [
+            "rural population"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what is objconamount0 cou_ toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "3",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "6",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "6"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "6",
+                "cct": "R(Reg,Count)",
+                "key": "1"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Count)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Loc,Bool)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the administrative regions in the Democratic Republic of the Congo",
+        "placename": [
+            "Democratic Republic",
+            "Congo"
+        ],
+        "replaceQ": "What are administrative regions extent",
+        "object": [
+            "administrative regions"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "administrative regions",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Democratic Republic",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Congo",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "administrative regions"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the administrative regions in the world",
+        "placename": [
+            "world"
+        ],
+        "replaceQ": "What are administrative regions extent",
+        "object": [
+            "administrative regions"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "administrative regions",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "world",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "administrative regions"
+                }
+            ],
+            "extent": [
+                "1"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Which neighborhoods are within 100 meters from a school and with housing price lower than 200000 dollars in Utrecht, the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "100 meters",
+            "200000 dollars"
+        ],
+        "comparison": [
+            "lower than"
+        ],
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "replaceQ": "Which neighborhoods are topoRel0 quantity0 from school and with housing price comparison0 quantity1 extent",
+        "object": [
+            "neighborhoods",
+            "school"
+        ],
+        "conamount": [
+            "housing price"
+        ],
+        "ner_Question": "which object0 are toporel0 quantity0 from object1 and with conamount0 era_ comparison0 quantity1 extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) are (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) from (coreC object 1)))) and (condition with (coreC conamount 0 era_) (compareR comparison 0) (quantityV quantity 1)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "conamount",
+                    "id": "0",
+                    "keyword": "housing price",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "school",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "neighborhoods"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "8",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "9",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "10",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "4",
+                        "0"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "1",
+                        "7"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                },
+                {
+                    "before": [
+                        "8"
+                    ],
+                    "after": [
+                        "9"
+                    ]
+                },
+                {
+                    "before": [
+                        "9"
+                    ],
+                    "after": [
+                        "10"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands",
+        "aggregate": [
+            "average"
+        ],
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "100 meters"
+        ],
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "replaceQ": "What is aggregate0 housing price of neighborhoods topoRel0 quantity0 from school extent",
+        "object": [
+            "neighborhoods",
+            "school"
+        ],
+        "conamount": [
+            "housing price"
+        ],
+        "ner_Question": "what is aggregate0 conamount0 era_ of object0 toporel0 quantity0 from object1 extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC conamount 0 era_) of (coreC object 0)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) from (coreC object 1)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "school",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "4",
+                    "keyword": "housing price",
+                    "measureLevel": "era_"
+                },
+                {
+                    "type": "aggre",
+                    "id": "5",
+                    "keyword": "average",
+                    "measureLevel": "era_"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "8",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "9",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "10",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "6",
+                "7"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "3"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                },
+                {
+                    "before": [
+                        "8"
+                    ],
+                    "after": [
+                        "9"
+                    ]
+                },
+                {
+                    "before": [
+                        "9"
+                    ],
+                    "after": [
+                        "10"
+                    ]
+                },
+                {
+                    "before": [
+                        "10"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                },
+                {
+                    "before": [
+                        "4"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "6"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the average housing price for each neighborhood in Utrecht, the Netherlands",
+        "aggregate": [
+            "average"
+        ],
+        "sup_object": [
+            "neighborhood"
+        ],
+        "replaceQ": "What is aggregate0 housing price support extent",
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "conamount": [
+            "housing price"
+        ],
+        "ner_Question": "what is aggregate0 conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhood",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "housing price",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "2",
+                    "keyword": "average",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "0"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(_,Ratio)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "Which neighborhoods are within 100 meters from a school in Utrecht, the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "100 meters"
+        ],
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "replaceQ": "Which neighborhoods are topoRel0 quantity0 from school extent",
+        "object": [
+            "neighborhoods",
+            "school"
+        ],
+        "ner_Question": "which object0 are toporel0 quantity0 from object1 extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) are (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) from (coreC object 1)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "school",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "6",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "7",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "8",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "3"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "6"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "7"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "8",
+                "cct": "R(Obj,_)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "7",
+                        "cct": "R(Obj*Obj,Ratio)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "6",
+                                "cct": "R(Obj*Obj,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                },
+                                {
+                                    "after": {
+                                        "id": "3",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Where are the schools in Utrecht, the Netherlands",
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "replaceQ": "Where are schools extent",
+        "object": [
+            "schools"
+        ],
+        "ner_Question": "where are object0 extent",
+        "parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "schools",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "Where are the schools in the Netherlands",
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "Where are schools extent",
+        "object": [
+            "schools"
+        ],
+        "ner_Question": "where are object0 extent",
+        "parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "schools",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the neighborhoods in Utrecht, the Netherlands",
+        "placename": [
+            "Utrecht",
+            "Netherlands"
+        ],
+        "replaceQ": "What are neighborhoods extent",
+        "object": [
+            "neighborhoods"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "neighborhoods"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the neighborhoods in the Netherlands",
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What are neighborhoods extent",
+        "object": [
+            "neighborhoods"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "neighborhoods"
+                }
+            ],
+            "extent": [
+                "1"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "sup_object": [
+            "rural district"
+        ],
+        "replaceQ": "What is population topoRel0 quantity0 of all season roads support extent",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "objconamount": [
+            "population"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what is objconamount0 cou_ toporel0 quantity0 of object0 support extent",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rural district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "3",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "4",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "7",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "8",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                },
+                {
+                    "before": [
+                        "4",
+                        "3"
+                    ],
+                    "after": [
+                        "7"
+                    ],
+                    "key": "2"
+                },
+                {
+                    "before": [
+                        "7",
+                        "0"
+                    ],
+                    "after": [
+                        "8"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "1000 meters"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What is number of people topoRel0 quantity0 of A2 highway extent",
+        "conamount": [
+            "number of people"
+        ],
+        "object": [
+            "a2 highway"
+        ],
+        "ner_Question": "what is conamount0 cou_ toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC conamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "3",
+                    "keyword": "number of people",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "5",
+                    "keyword": "number of people",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "5",
+                "cct": "R(Reg,Count)",
+                "key": "1"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Count)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Loc,Bool)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the area of each population center within 1000 meters of the A2 highway in the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "1000 meters"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What is area of each population center topoRel0 quantity0 of A2 highway extent",
+        "object": [
+            "population center",
+            "a2 highway"
+        ],
+        "covamount": [
+            "area"
+        ],
+        "ner_Question": "what is covamount0 era_ of each object0 toporel0 quantity0 of object1 extent",
+        "parseTreeStr": "(start what is (measure (coreC covamount 0 era_) of each (coreC object 0)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 1)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "population center",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "4",
+                    "keyword": "area",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "6",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "7",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "8",
+                    "keyword": "population center",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "3"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "6"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "7"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                },
+                {
+                    "before": [
+                        "8"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "4",
+                "cct": "R(Obj,Reg*Ratio)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "8",
+                        "cct": "R(Obj,_)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "7",
+                                "cct": "R(Obj*Obj,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "6",
+                                        "cct": "R(Obj*Obj,Ratio)"
+                                    },
+                                    "before": [
+                                        {
+                                            "after": {
+                                                "id": "0",
+                                                "cct": "R(Obj,_)"
+                                            }
+                                        },
+                                        {
+                                            "after": {
+                                                "id": "3",
+                                                "cct": "R(Obj,_)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the area size of population centers within the provinces intersected with the A2 highway in the Netherlands",
+        "topoRel": [
+            "within",
+            "intersected with"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What is area size of population centers topoRel0 provinces topoRel1 A2 highway extent",
+        "object": [
+            "population centers",
+            "provinces",
+            "a2 highway"
+        ],
+        "covamount": [
+            "area size"
+        ],
+        "ner_Question": "what is covamount0 era_ of object0 toporel0 object1 toporel1 object2 extent",
+        "parseTreeStr": "(start what is (measure (coreC covamount 0 era_) of (coreC object 0)) (condition (topoR toporel 0) (coreC object 1) (subcon (topoR toporel 1) (coreC object 2))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "provinces",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "population centers",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "3",
+                    "keyword": "area size",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "provinces"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "population centers"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "2",
+                        "5"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "6"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the population centers within the provinces intersected with the A2 highway in the Netherlands",
+        "topoRel": [
+            "within",
+            "intersected with"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What are population centers topoRel0 provinces topoRel1 A2 highway extent",
+        "object": [
+            "population centers",
+            "provinces",
+            "a2 highway"
+        ],
+        "ner_Question": "what are object0 toporel0 object1 toporel1 object2 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition (topoR toporel 0) (coreC object 1) (subcon (topoR toporel 1) (coreC object 2))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "provinces",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "population centers",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "provinces"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "population centers"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                },
+                {
+                    "before": [
+                        "2",
+                        "4"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the population centers in the Netherlands",
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What are population centers extent",
+        "object": [
+            "population centers"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "population centers",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "population centers"
+                }
+            ],
+            "extent": [
+                "1"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the provinces intersected with the A2 highway in the Netherlands",
+        "topoRel": [
+            "intersected with"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What are provinces topoRel0 A2 highway extent",
+        "object": [
+            "provinces",
+            "a2 highway"
+        ],
+        "ner_Question": "what are object0 toporel0 object1 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition (topoR toporel 0) (coreC object 1)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "provinces",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "provinces"
+                }
+            ],
+            "extent": [
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What areas are within 1000 meters of the A2 highway in the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "1000 meters"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What areas are topoRel0 quantity0 of A2 highway extent",
+        "object": [
+            "a2 highway"
+        ],
+        "ner_Question": "what areas are toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start (measure (location what areas)) are (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "region",
+                    "id": "3",
+                    "keyword": "areas",
+                    "cct": "R(Loc)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Loc)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Loc,Bool)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the provinces in the Netherlands",
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What are provinces extent",
+        "object": [
+            "provinces"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "provinces",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "provinces"
+                }
+            ],
+            "extent": [
+                "1"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Where is the A2 highway in the Netherlands",
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "Where is A2 highway extent",
+        "object": [
+            "a2 highway"
+        ],
+        "ner_Question": "where is object0 extent",
+        "parseTreeStr": "(start (measure (location where is (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.",
+        "aggregate": [
+            "total"
+        ],
+        "sup_object": [
+            "building's usable area"
+        ],
+        "replaceQ": "What is aggregate0 annual amount of electric power production in MWh support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "conamount": [
+            "electric power production in mwh",
+            "annual amount"
+        ],
+        "ner_Question": "what is aggregate0 conamount1 rat_ of conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC conamount 1 rat_) of (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "building's usable area",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "electric power production in mwh",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "2",
+                    "keyword": "annual amount",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "aggre",
+                    "id": "3",
+                    "keyword": "total",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the proportion of population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "sup_object": [
+            "rural district"
+        ],
+        "replaceQ": "What is proportion of population topoRel0 quantity0 of all season roads support extent",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "objconamount": [
+            "population"
+        ],
+        "genpro": [
+            "proportion"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what is genpro0 ira_ of objconamount0 cou_ toporel0 quantity0 of object0 support extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rural district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "3",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "4",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "5",
+                    "keyword": "proportion",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "8",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "9",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "10",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "6",
+                "7"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                },
+                {
+                    "before": [
+                        "4",
+                        "3"
+                    ],
+                    "after": [
+                        "8"
+                    ],
+                    "key": "2"
+                },
+                {
+                    "before": [
+                        "8",
+                        "0"
+                    ],
+                    "after": [
+                        "9"
+                    ],
+                    "key": "0"
+                },
+                {
+                    "before": [
+                        "4",
+                        "0"
+                    ],
+                    "after": [
+                        "10"
+                    ],
+                    "key": "0"
+                },
+                {
+                    "before": [
+                        "9",
+                        "10"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.",
+        "aggregate": [
+            "total"
+        ],
+        "sup_object": [
+            "building's usable area"
+        ],
+        "replaceQ": "What is aggregate0 annual amount of solar radiation in MWh m2 support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "conamount": [
+            "solar radiation in mwh m2",
+            "annual amount"
+        ],
+        "ner_Question": "what is aggregate0 conamount1 rat_ of conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC conamount 1 rat_) of (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "building's usable area",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "solar radiation in mwh m2",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "2",
+                    "keyword": "annual amount",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "aggre",
+                    "id": "3",
+                    "keyword": "total",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Which buildings have an area of roof larger than 30 square meters in Glover Park, Washington, D.C.",
+        "comparison": [
+            "larger than"
+        ],
+        "quantity": [
+            "30 square meters"
+        ],
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "Which buildings have area of roof comparison0 quantity0 extent",
+        "object": [
+            "buildings",
+            "roof"
+        ],
+        "covamount": [
+            "area"
+        ],
+        "ner_Question": "which object0 have covamount0 era_ of object1 comparison0 quantity0 extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) have (condition (coreC covamount 0 era_) of (coreC object 1) (compareR comparison 0) (quantityV quantity 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "roof",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "1",
+                    "keyword": "area",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "buildings",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "buildings"
+                }
+            ],
+            "extent": [
+                "3",
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "2",
+                        "1"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the area of each building in Glover Park, Washington, D.C.",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What is area of each building extent",
+        "object": [
+            "building"
+        ],
+        "covamount": [
+            "area"
+        ],
+        "ner_Question": "what is covamount0 era_ of each object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC covamount 0 era_) of each (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "building",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "1",
+                    "keyword": "area",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg*Ratio)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.",
+        "comparison": [
+            "lower than",
+            "higher than",
+            "higher than",
+            "lower than"
+        ],
+        "quantity": [
+            "10 degrees",
+            "8000 kilowatt hours",
+            "22.5 degrees",
+            "337.5 degrees"
+        ],
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What are rooftop cells with slope comparison0 quantity0 , with solar radiation comparison1 quantity1 , with aspect comparison1 quantity2 and with aspect comparison0 quantity3 extent",
+        "conamount": [
+            "solar radiation"
+        ],
+        "object": [
+            "rooftop cells"
+        ],
+        "field": [
+            "aspect",
+            "slope"
+        ],
+        "ner_Question": "what are object0 with field1 rat_ comparison0 quantity0 , with conamount0 era_ comparison1 quantity1 , with field0 int_ comparison1 quantity2 and with field0 int_ comparison0 quantity3 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition with (coreC field 1 rat_) (compareR comparison 0) (quantityV quantity 0)) (condition with (coreC conamount 0 era_) (compareR comparison 1) (quantityV quantity 1)) (condition with (coreC field 0 int_) (compareR comparison 1) (quantityV quantity 2) and) (condition with (coreC field 0 int_) (compareR comparison 0) (quantityV quantity 3)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "field",
+                    "id": "0",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                },
+                {
+                    "type": "conamount",
+                    "id": "2",
+                    "keyword": "solar radiation",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "field",
+                    "id": "3",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "rooftop cells",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "8",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                },
+                {
+                    "type": "object",
+                    "id": "9",
+                    "keyword": "rooftop cells"
+                },
+                {
+                    "type": "field",
+                    "id": "11",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                },
+                {
+                    "type": "object",
+                    "id": "12",
+                    "keyword": "rooftop cells"
+                },
+                {
+                    "type": "object",
+                    "id": "14",
+                    "keyword": "rooftop cells"
+                },
+                {
+                    "type": "field",
+                    "id": "15",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "16",
+                    "keyword": "rooftop cells"
+                }
+            ],
+            "extent": [
+                "5",
+                "6",
+                "7"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                },
+                {
+                    "before": [
+                        "8",
+                        "4"
+                    ],
+                    "after": [
+                        "9"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "11"
+                    ]
+                },
+                {
+                    "before": [
+                        "11",
+                        "9"
+                    ],
+                    "after": [
+                        "12"
+                    ]
+                },
+                {
+                    "before": [
+                        "12",
+                        "2"
+                    ],
+                    "after": [
+                        "14"
+                    ]
+                },
+                {
+                    "before": [
+                        "3"
+                    ],
+                    "after": [
+                        "15"
+                    ]
+                },
+                {
+                    "before": [
+                        "15",
+                        "14"
+                    ],
+                    "after": [
+                        "16"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.",
+        "comparison": [
+            "lower than",
+            "higher than"
+        ],
+        "quantity": [
+            "45 degrees",
+            "8000 kilowatt hours"
+        ],
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What are rooftop cells with slope comparison0 quantity0 and with solar radiation comparison1 quantity1 extent",
+        "conamount": [
+            "solar radiation"
+        ],
+        "object": [
+            "rooftop cells"
+        ],
+        "field": [
+            "slope"
+        ],
+        "ner_Question": "what are object0 with field0 rat_ comparison0 quantity0 and with conamount0 era_ comparison1 quantity1 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition with (coreC field 0 rat_) (compareR comparison 0) (quantityV quantity 0) and) (condition with (coreC conamount 0 era_) (compareR comparison 1) (quantityV quantity 1)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "conamount",
+                    "id": "0",
+                    "keyword": "solar radiation",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "rooftop cells",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "rooftop cells"
+                },
+                {
+                    "type": "field",
+                    "id": "7",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "8",
+                    "keyword": "rooftop cells"
+                }
+            ],
+            "extent": [
+                "3",
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "2",
+                        "0"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "7",
+                        "6"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.",
+        "comparison": [
+            "lower than",
+            "higher than"
+        ],
+        "quantity": [
+            "10 degrees",
+            "8000 kilowatt hours"
+        ],
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What are rooftop cells with slope comparison0 quantity0 and with solar radiation comparison1 quantity1 extent",
+        "conamount": [
+            "solar radiation"
+        ],
+        "object": [
+            "rooftop cells"
+        ],
+        "field": [
+            "slope"
+        ],
+        "ner_Question": "what are object0 with field0 rat_ comparison0 quantity0 and with conamount0 era_ comparison1 quantity1 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition with (coreC field 0 rat_) (compareR comparison 0) (quantityV quantity 0) and) (condition with (coreC conamount 0 era_) (compareR comparison 1) (quantityV quantity 1)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "conamount",
+                    "id": "0",
+                    "keyword": "solar radiation",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "rooftop cells",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "rooftop cells"
+                },
+                {
+                    "type": "field",
+                    "id": "7",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "8",
+                    "keyword": "rooftop cells"
+                }
+            ],
+            "extent": [
+                "3",
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "2",
+                        "0"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "7",
+                        "6"
+                    ],
+                    "after": [
+                        "8"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.",
+        "comparison": [
+            "lower than"
+        ],
+        "quantity": [
+            "45 degrees"
+        ],
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What are rooftop cells with slope comparison0 quantity0 extent",
+        "object": [
+            "rooftop cells"
+        ],
+        "field": [
+            "slope"
+        ],
+        "ner_Question": "what are object0 with field0 rat_ comparison0 quantity0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (condition with (coreC field 0 rat_) (compareR comparison 0) (quantityV quantity 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "field",
+                    "id": "0",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "rooftop cells",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "5",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "rooftop cells"
+                }
+            ],
+            "extent": [
+                "2",
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "5",
+                        "1"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the slope in Glover Park, Washington, D.C.",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "replaceQ": "What are slope extent",
+        "field": [
+            "slope"
+        ],
+        "ner_Question": "what are field0 rat_ extent",
+        "parseTreeStr": "(start what are (measure (coreC field 0 rat_)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "field",
+                    "id": "0",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "4",
+                    "keyword": "slope",
+                    "measureLevel": "rat_"
+                }
+            ],
+            "extent": [
+                "1",
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the solar radiation in KWh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+        "sup_object": [
+            "rooftop cell"
+        ],
+        "replaceQ": "What is solar radiation in KWh m2 support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "conamount": [
+            "solar radiation in kwh m2"
+        ],
+        "ner_Question": "what is conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rooftop cell",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "solar radiation in kwh m2",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "5",
+                    "keyword": "solar radiation in kwh m2",
+                    "measureLevel": "era_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the aspect for each rooftop cell in Glover Park, Washington, D.C.",
+        "sup_object": [
+            "rooftop cell"
+        ],
+        "replaceQ": "What is aspect support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "field": [
+            "aspect"
+        ],
+        "ner_Question": "what is field0 int_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC field 0 int_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rooftop cell",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "5",
+                    "keyword": "aspect",
+                    "measureLevel": "int_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the area of rural district within 2 kilometers of the all-season roads in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What is area of rural district topoRel0 quantity0 of all season roads extent",
+        "object": [
+            "rural district",
+            "all season roads"
+        ],
+        "covamount": [
+            "area"
+        ],
+        "ner_Question": "what is covamount0 era_ of object0 toporel0 quantity0 of object1 extent",
+        "parseTreeStr": "(start what is (measure (coreC covamount 0 era_) of (coreC object 0)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 1)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "rural district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "4",
+                    "keyword": "area",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "rural district"
+                }
+            ],
+            "extent": [
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                },
+                {
+                    "before": [
+                        "7"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the average solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+        "aggregate": [
+            "average"
+        ],
+        "sup_object": [
+            "rooftop cell"
+        ],
+        "replaceQ": "What is aggregate0 solar radiation in Wh m2 support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "conamount": [
+            "solar radiation in wh m2"
+        ],
+        "ner_Question": "what is aggregate0 conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rooftop cell",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "solar radiation in wh m2",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "2",
+                    "keyword": "average",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "3",
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "0"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(_,Ratio)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What areas are within 2 kilometers of the all-season roads for each rural district in Amsterdam",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "sup_object": [
+            "rural district"
+        ],
+        "replaceQ": "What areas are topoRel0 quantity0 of all season roads support extent",
+        "placename": [
+            "Amsterdam"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what areas are toporel0 quantity0 of object0 support extent",
+        "parseTreeStr": "(start (measure (location what areas)) are (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rural district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "3",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "region",
+                    "id": "4",
+                    "keyword": "areas",
+                    "cct": "R(Loc)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "region",
+                    "id": "6",
+                    "keyword": "areas"
+                }
+            ],
+            "extent": [
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                },
+                {
+                    "before": [
+                        "3"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                },
+                {
+                    "before": [
+                        "4",
+                        "0"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Where are the all-season roads in Shikoku, Japan",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "Where are all season roads extent",
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "where are object0 extent",
+        "parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the population for each district in Shikoku, Japan",
+        "sup_object": [
+            "district"
+        ],
+        "replaceQ": "What is population support extent",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "objconamount": [
+            "population"
+        ],
+        "ner_Question": "what is objconamount0 cou_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "1",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "4",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What are the rural municipalities in Shikoku, Japan",
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What are rural municipalities extent",
+        "object": [
+            "rural municipalities"
+        ],
+        "ner_Question": "what are object0 extent",
+        "parseTreeStr": "(start what are (measure (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rural municipalities",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "rural municipalities"
+                }
+            ],
+            "extent": [
+                "1",
+                "2"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the total rural population in Shikoku, Japan",
+        "aggregate": [
+            "total"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What is aggregate0 rural population extent",
+        "objconamount": [
+            "rural population"
+        ],
+        "ner_Question": "what is aggregate0 objconamount0 cou_ extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC objconamount 0 cou_)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "objconamount",
+                    "id": "0",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "1",
+                    "keyword": "total",
+                    "measureLevel": "cou_",
+                    "cct": "R(Obj,Reg*Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "2"
+                    ],
+                    "after": [
+                        "1"
+                    ],
+                    "key": "2"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg*Count)",
+                "key": "2"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(_,Count)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands",
+        "topoRel": [
+            "within",
+            "intersected with"
+        ],
+        "sup_object": [
+            "population center"
+        ],
+        "replaceQ": "What is density of population topoRel0 provinces topoRel1 A2 highway support extent",
+        "placename": [
+            "Netherlands"
+        ],
+        "objconamount": [
+            "population"
+        ],
+        "object": [
+            "provinces",
+            "a2 highway"
+        ],
+        "genpro": [
+            "density"
+        ],
+        "ner_Question": "what is genpro0 ira_ of objconamount0 cou_ toporel0 object0 toporel1 object1 support extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC objconamount 0 cou_)) (condition (topoR toporel 0) (coreC object 0) (subcon (topoR toporel 1) (coreC object 1))) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "population center",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "provinces",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "3",
+                    "keyword": "population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "4",
+                    "keyword": "density",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "provinces"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "7",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "8",
+                    "keyword": "population",
+                    "measureLevel": "cou_"
+                },
+                {
+                    "type": "covamount",
+                    "id": "9",
+                    "keyword": "",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "2",
+                        "0"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "6"
+                    ],
+                    "after": [
+                        "7"
+                    ],
+                    "key": "6"
+                },
+                {
+                    "before": [
+                        "7",
+                        "1"
+                    ],
+                    "after": [
+                        "8"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "9"
+                    ]
+                },
+                {
+                    "before": [
+                        "8",
+                        "9"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "Where are the roads in San Francisco, USA",
+        "placename": [
+            "San Francisco",
+            "USA"
+        ],
+        "replaceQ": "Where are roads extent",
+        "object": [
+            "roads"
+        ],
+        "ner_Question": "where are object0 extent",
+        "parseTreeStr": "(start (measure (location where are (coreC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "location",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "San Francisco",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "USA",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "2",
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "1",
+                "cct": "R(Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.",
+        "sup_object": [
+            "rooftop cell"
+        ],
+        "replaceQ": "What is solar radiation in Wh m2 support extent",
+        "placename": [
+            "Glover Park",
+            "Washington",
+            "D.C."
+        ],
+        "conamount": [
+            "solar radiation in wh m2"
+        ],
+        "ner_Question": "what is conamount0 era_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC conamount 0 era_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "rooftop cell",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "1",
+                    "keyword": "solar radiation in wh m2",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "Glover Park",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Washington",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "D.C.",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "5",
+                    "keyword": "solar radiation in wh m2",
+                    "measureLevel": "era_"
+                }
+            ],
+            "extent": [
+                "2",
+                "3",
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T"
+    },
+    {
+        "question": "What is the population estimate in the world in 2016",
+        "placename": [
+            "world"
+        ],
+        "replaceQ": "What is population estimate extent temporalEx",
+        "temEx": [
+            "2016"
+        ],
+        "objconamount": [
+            "population estimate"
+        ],
+        "ner_Question": "what is objconamount0 cou_ extent temporalex",
+        "parseTreeStr": "(start what is (measure (coreC objconamount 0 cou_)) (extent extent) (temporalex temporalex))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "objconamount",
+                    "id": "0",
+                    "keyword": "population estimate",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "world",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "2",
+                    "keyword": "population estimate",
+                    "measureLevel": "cou_"
+                }
+            ],
+            "extent": [
+                "1"
+            ],
+            "temporalEx": [
+                "2016"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T"
+    }
+]

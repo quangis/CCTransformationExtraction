@@ -1,0 +1,1827 @@
+C:\Users\Enkhbold\.conda\envs\qparserSOA\python.exe C:/Users/Enkhbold/PycharmProjects/geo-question-parser-haiqi/test/Test.py
+============================== TESTING retrieval dataset
+============================== TESTING GeoAnQu dataset
+============================== TESTING MS student dataset
+
+INFO:: TQConverter.generateRuleTemplates:: Generated 33 new templates/rules. Total of 33 templates/rules in the list.
+
+INFO:: TQConverter.generateRuleTemplates:: Generated 16 new templates/rules. Total of 49 templates/rules in the list.
+
+INFO:: TQConverter.expandRulesByInputTypeHiearchy:: 19 new rules were derived. Total of 68 rules in the list.
+
+WARNING:: TQConverter.expandRulesByMeasureHiearchy:: Cannot identify measure in RHS 'R(_,Reg)' of rule with 'id=35'. This rule is skipped.
+
+INFO:: TQConverter.expandRulesByMeasureHiearchy:: 148 new rules were derived. Total of 216 rules in the list.
+
+###################################################################################
+###### ANNOTATING GeoAnQu_parser_results_0620.json
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '0', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'houses'}' in 'Which houses are for sale in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '0', 'keyword': 'construction year', 'measureLevel': 'int_'}' in 'Which houses have construction year before 1990 and after 2000 in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'houses'}' in 'Which houses have construction year before 1990 and after 2000 in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses have construction year before 1990 and after 2000 in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses have construction year before 1990 and after 2000 in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '3', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '7', 'keyword': 'hispanic population', 'measureLevel': 'cou_'}' in 'What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '2', 'keyword': 'proportion', 'measureLevel': 'ira_'}' in 'Which park has the highest proportion of bald eagles to the total bird population in Texas'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'park'}' in 'Which park has the highest proportion of bald eagles to the total bird population in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which park has the highest proportion of bald eagles to the total bird population in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which park has the highest proportion of bald eagles to the total bird population in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of tractors for each road in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of tractors for each road in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of tractors for each road in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'total number', 'measureLevel': 'cou_'}' in 'What is the percentage of owner-occupied houses to the total number of houses for each census tract in Tarrant County, Texas'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '4', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of owner-occupied houses to the total number of houses for each census tract in Tarrant County, Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of owner-occupied houses to the total number of houses for each census tract in Tarrant County, Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of owner-occupied houses to the total number of houses for each census tract in Tarrant County, Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '1', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'What is the crime rate for each police district in Texas in 2019'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '3', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'What is the crime rate for each police district in Texas in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the crime rate for each police district in Texas in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the crime rate for each police district in Texas in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconamount', 'id': '2', 'keyword': 'vote totals', 'measureLevel': 'cou_'}' in 'What are the vote totals of an election for each precinct in Dallas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the vote totals of an election for each precinct in Dallas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the vote totals of an election for each precinct in Dallas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'amount', 'id': '4', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the density of robberies for each police beat in Dallas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the density of robberies for each police beat in Dallas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the density of robberies for each police beat in Dallas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'amount', 'id': '3', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the density of rental units in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the density of rental units in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the density of rental units in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'ski piste'}' in 'Where is the most popular ski piste in Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where is the most popular ski piste in Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where is the most popular ski piste in Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'trees'}' in 'What is the point density of trees in parks in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the point density of trees in parks in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the point density of trees in parks in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'point density', 'measureLevel': 'rat_'}' in 'What is the point density of fire calls in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the point density of fire calls in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the point density of fire calls in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'rainfall measurements', 'measureLevel': 'rat_'}' in 'What is the point density of rainfall measurements in the Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'point density', 'measureLevel': 'rat_'}' in 'What is the point density of rainfall measurements in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the point density of rainfall measurements in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the point density of rainfall measurements in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'temperature measurements', 'measureLevel': 'rat_'}' in 'What is the point density of temperature measurements in Oleander city'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'point density', 'measureLevel': 'rat_'}' in 'What is the point density of temperature measurements in Oleander city'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the point density of temperature measurements in Oleander city'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the point density of temperature measurements in Oleander city'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'directional trends', 'measureLevel': 'loc_'}' in 'What are the directional trends of tornadoes in the Tarrant county from 2010 to 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the directional trends of tornadoes in the Tarrant county from 2010 to 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the directional trends of tornadoes in the Tarrant county from 2010 to 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'mean direction', 'measureLevel': 'loc_'}' in 'What is the mean direction of freeways in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean direction of freeways in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean direction of freeways in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'degree of clustering', 'measureLevel': 'rat_'}' in 'What is the degree of clustering for fire calls in Fort Worth in 2015'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of clustering for fire calls in Fort Worth in 2015'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of clustering for fire calls in Fort Worth in 2015'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'degree of dispersion', 'measureLevel': 'rat_'}' in 'What is the degree of dispersion for the flu cases in Amsterdam in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of dispersion for the flu cases in Amsterdam in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of dispersion for the flu cases in Amsterdam in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'degree of clustering', 'measureLevel': 'rat_'}' in 'What is the degree of clustering for the false fire alarms in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of clustering for the false fire alarms in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of clustering for the false fire alarms in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'ski piste'}' in 'Which ski piste is longest in the Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which ski piste is longest in the Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which ski piste is longest in the Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '0', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'Where are the clusters of fire alarms with similar priority in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of fire alarms with similar priority in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of fire alarms with similar priority in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of fire alarms with similar priority in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of census blocks with similar median household income in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of census blocks with similar median household income in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of census blocks with similar median household income in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'Where are the clusters of neighborhoods with similar crime rate in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of neighborhoods with similar crime rate in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of neighborhoods with similar crime rate in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of neighborhoods with similar crime rate in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '6', 'keyword': 'residential areas', 'measureLevel': 'nom_'}' in 'What is the percentage of residential areas within 1 kilometer of the central station in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '7', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the percentage of residential areas within 1 kilometer of the central station in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '8', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the percentage of residential areas within 1 kilometer of the central station in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of residential areas within 1 kilometer of the central station in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of residential areas within 1 kilometer of the central station in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '5', 'keyword': '', 'measureLevel': 'rat_'}' in 'Which properties are within 0.5 kilometers of the Independence Day parade route in Washington D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which properties are within 0.5 kilometers of the Independence Day parade route in Washington D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which properties are within 0.5 kilometers of the Independence Day parade route in Washington D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many dwelling units are in the flood zones in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'dwelling units'}' in 'How many dwelling units are in the flood zones in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many dwelling units are in the flood zones in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many dwelling units are in the flood zones in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'total area', 'measureLevel': 'era_'}' in 'What is the total area of flood zones in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the total area of flood zones in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the total area of flood zones in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'land use', 'measureLevel': 'nom_'}' in 'What are the land use in the flood zones in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the land use in the flood zones in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the land use in the flood zones in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of households for each precinct in Dallas County'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of households for each precinct in Dallas County'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of households for each precinct in Dallas County'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many high school students are in the school districts of senior high schools in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'high school students'}' in 'How many high school students are in the school districts of senior high schools in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many high school students are in the school districts of senior high schools in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many high school students are in the school districts of senior high schools in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'hotels'}' in 'Which hotels are within 0.3 kilometers of the longest ski piste in Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which hotels are within 0.3 kilometers of the longest ski piste in Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which hotels are within 0.3 kilometers of the longest ski piste in Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '6', 'keyword': 'soil type', 'measureLevel': 'nom_'}' in 'What is the percentage of soil type within 1 kilometer of the water wells in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '7', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the percentage of soil type within 1 kilometer of the water wells in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '8', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the percentage of soil type within 1 kilometer of the water wells in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of soil type within 1 kilometer of the water wells in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of soil type within 1 kilometer of the water wells in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the percentage of noise polluted areas in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of noise polluted areas in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of noise polluted areas in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '3', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '5', 'keyword': '', 'measureLevel': 'rat_'}' in 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'fire station'}' in 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '8', 'keyword': 'fire calls'}' in 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'Which neighborhood has the highest crime rate in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'neighborhood'}' in 'Which neighborhood has the highest crime rate in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which neighborhood has the highest crime rate in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which neighborhood has the highest crime rate in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'fire hydrant'}' in 'Which fire hydrant is closest to the households in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which fire hydrant is closest to the households in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which fire hydrant is closest to the households in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'driving time', 'measureLevel': 'rat_'}' in 'What areas are within 3 minutes of driving time from the nearest fire station in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '5', 'keyword': 'areas'}' in 'What areas are within 3 minutes of driving time from the nearest fire station in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '6', 'keyword': 'areas'}' in 'What areas are within 3 minutes of driving time from the nearest fire station in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are within 3 minutes of driving time from the nearest fire station in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are within 3 minutes of driving time from the nearest fire station in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '3', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many buildings are within 3 minutes of driving time from fire stations in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many buildings are within 3 minutes of driving time from fire stations in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many buildings are within 3 minutes of driving time from fire stations in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'buildings'}' in 'Which buildings are in the fire areas in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which buildings are in the fire areas in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which buildings are in the fire areas in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'buildings'}' in 'Which buildings were affected by tornadoes in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which buildings were affected by tornadoes in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which buildings were affected by tornadoes in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'walkability', 'measureLevel': 'rat_'}' in 'What is the walkability for each neighborhood in Ghent'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'walkability', 'measureLevel': 'rat_'}' in 'What is the walkability for each neighborhood in Ghent'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the walkability for each neighborhood in Ghent'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the walkability for each neighborhood in Ghent'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'connectivity', 'measureLevel': 'rat_'}' in 'What is the connectivity for each neighborhood in Ghent'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'connectivity', 'measureLevel': 'rat_'}' in 'What is the connectivity for each neighborhood in Ghent'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the connectivity for each neighborhood in Ghent'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the connectivity for each neighborhood in Ghent'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'bikeability', 'measureLevel': 'rat_'}' in 'What is the bikeability in the Metro Vancouver region in Canada'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'bikeability', 'measureLevel': 'rat_'}' in 'What is the bikeability in the Metro Vancouver region in Canada'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the bikeability in the Metro Vancouver region in Canada'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the bikeability in the Metro Vancouver region in Canada'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where are the individual crimes in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the individual crimes in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the individual crimes in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'topography', 'measureLevel': 'rat_'}' in 'What is the topography in the Metro Vancouver region in Canada'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'topography', 'measureLevel': 'rat_'}' in 'What is the topography in the Metro Vancouver region in Canada'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the topography in the Metro Vancouver region in Canada'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the topography in the Metro Vancouver region in Canada'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '5', 'keyword': 'network distance', 'measureLevel': 'rat_'}' in 'What is the network distance from hexagonal grids with a diameter of 2000 meters to the nearest public primary school in the Multifunctional Urban Area of Barcelona'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the network distance from hexagonal grids with a diameter of 2000 meters to the nearest public primary school in the Multifunctional Urban Area of Barcelona'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the network distance from hexagonal grids with a diameter of 2000 meters to the nearest public primary school in the Multifunctional Urban Area of Barcelona'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '4', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average network distance for people to public primary schools for each census area in Rotterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average network distance for people to public primary schools for each census area in Rotterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average network distance for people to public primary schools for each census area in Rotterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '5', 'keyword': 'age', 'measureLevel': 'int_'}' in 'What is the network distance to primary schools for children older than 4 and younger than 12 in Multifunctional Urban Area in Rotterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'children'}' in 'What is the network distance to primary schools for children older than 4 and younger than 12 in Multifunctional Urban Area in Rotterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the network distance to primary schools for children older than 4 and younger than 12 in Multifunctional Urban Area in Rotterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the network distance to primary schools for children older than 4 and younger than 12 in Multifunctional Urban Area in Rotterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '4', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is average network distance for people to the nearest primary schools for each census area in Rotterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is average network distance for people to the nearest primary schools for each census area in Rotterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is average network distance for people to the nearest primary schools for each census area in Rotterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'robbery rate', 'measureLevel': 'ira_'}' in 'Which neighborhood has the highest robbery rate in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'neighborhood'}' in 'Which neighborhood has the highest robbery rate in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which neighborhood has the highest robbery rate in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which neighborhood has the highest robbery rate in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '7', 'keyword': 'number of people', 'measureLevel': 'cou_'}' in 'What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'centroids'}' in 'What is the travel time from the centroids of municipalities to outpatient services in Tuscany in Italy'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the travel time from the centroids of municipalities to outpatient services in Tuscany in Italy'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the travel time from the centroids of municipalities to outpatient services in Tuscany in Italy'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of inhabitants for each 100 by 100 meters grid cell in Banten province in Indonesia'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of inhabitants for each 100 by 100 meters grid cell in Banten province in Indonesia'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of inhabitants for each 100 by 100 meters grid cell in Banten province in Indonesia'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '3', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '7', 'keyword': 'elderly population', 'measureLevel': 'cou_'}' in 'What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of elderly population to the total population for each municipality area in the Aichi prefecture in Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '5', 'keyword': 'elderly population', 'measureLevel': 'cou_'}' in 'What is the density of elderly population for each municipality area in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the density of elderly population for each municipality area in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the density of elderly population for each municipality area in the Aichi prefecture in Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'potential geographic access', 'measureLevel': 'rat_'}' in 'What is the potential geographic access from communities to the sexual and productive health services in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '9', 'keyword': 'sexual and productive health services'}' in 'What is the potential geographic access from communities to the sexual and productive health services in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the potential geographic access from communities to the sexual and productive health services in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the potential geographic access from communities to the sexual and productive health services in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'arson rate', 'measureLevel': 'ira_'}' in 'Which neighborhood has the highest arson rate in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'neighborhood'}' in 'Which neighborhood has the highest arson rate in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which neighborhood has the highest arson rate in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which neighborhood has the highest arson rate in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have green belt areas in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have green belt areas in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have green belt areas in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'potential accessibility', 'measureLevel': 'rat_'}' in 'What is the potential accessibility by local road for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the potential accessibility by local road for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the potential accessibility by local road for each 2 by 2 kilometers grid cell in Finland'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'potential accessibility', 'measureLevel': 'rat_'}' in 'What is the potential accessibility by regional road for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the potential accessibility by regional road for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the potential accessibility by regional road for each 2 by 2 kilometers grid cell in Finland'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of pedestrian injuries in Georgia from 2001 to 2010'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of pedestrian injuries in Georgia from 2001 to 2010'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of pedestrian injuries in Georgia from 2001 to 2010'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Chinese immigrants in Auckland from 1991 to 2006'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Chinese immigrants in Auckland from 1991 to 2006'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Chinese immigrants in Auckland from 1991 to 2006'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'hot spots and cold spots', 'measureLevel': 'loc_'}' in 'Where is the hot spots and cold spots of robberies in Shanghai in January 2009'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where is the hot spots and cold spots of robberies in Shanghai in January 2009'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where is the hot spots and cold spots of robberies in Shanghai in January 2009'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'no2 concentration', 'measureLevel': 'rat_'}' in 'What is the interpolation surface of NO2 concentration in Vancouver'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'interpolation surface', 'measureLevel': 'rat_'}' in 'What is the interpolation surface of NO2 concentration in Vancouver'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the interpolation surface of NO2 concentration in Vancouver'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the interpolation surface of NO2 concentration in Vancouver'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'burglary rate', 'measureLevel': 'ira_'}' in 'Which neighborhood has the highest burglary rate in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'neighborhood'}' in 'Which neighborhood has the highest burglary rate in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which neighborhood has the highest burglary rate in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which neighborhood has the highest burglary rate in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': '', 'measureLevel': 'cou_'}' in 'What is the population density for each neighborhood with 0 health care facility in Riverside-San Bernardino'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'neighborhood'}' in 'What is the population density for each neighborhood with 0 health care facility in Riverside-San Bernardino'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population density for each neighborhood with 0 health care facility in Riverside-San Bernardino'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population density for each neighborhood with 0 health care facility in Riverside-San Bernardino'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'land use', 'measureLevel': 'nom_'}' in 'Which land use is on top of the sandy soil in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which land use is on top of the sandy soil in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which land use is on top of the sandy soil in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'directional trends', 'measureLevel': 'loc_'}' in 'What are the directional trends of animal grazing in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the directional trends of animal grazing in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the directional trends of animal grazing in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'access score', 'measureLevel': 'rat_'}' in 'What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'accessibility index', 'measureLevel': 'rat_'}' in 'What is the accessibility index from the centers of 2 by 2 kilometers grid cells to the nearest public hospital in Sichuan in China'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the accessibility index from the centers of 2 by 2 kilometers grid cells to the nearest public hospital in Sichuan in China'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the accessibility index from the centers of 2 by 2 kilometers grid cells to the nearest public hospital in Sichuan in China'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'driving time', 'measureLevel': 'rat_'}' in 'What areas are within 10 minutes of the driving time from private hospitals in Sichuan in China'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '6', 'keyword': 'areas'}' in 'What areas are within 10 minutes of the driving time from private hospitals in Sichuan in China'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are within 10 minutes of the driving time from private hospitals in Sichuan in China'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are within 10 minutes of the driving time from private hospitals in Sichuan in China'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'potential geographic access', 'measureLevel': 'rat_'}' in 'What is the kernel density of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'kernel density', 'measureLevel': 'rat_'}' in 'What is the kernel density of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the kernel density of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the kernel density of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'total number', 'measureLevel': 'cou_'}' in 'What is the percentage of vacant houses to the total number of houses in Tarrant County, Texas'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '3', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of vacant houses to the total number of houses in Tarrant County, Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of vacant houses to the total number of houses in Tarrant County, Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of vacant houses to the total number of houses in Tarrant County, Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'access score', 'measureLevel': 'rat_'}' in 'What is the access score to nurse practitioner services for each Census Consolidated Subdivision in Alberta in Canada'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the access score to nurse practitioner services for each Census Consolidated Subdivision in Alberta in Canada'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the access score to nurse practitioner services for each Census Consolidated Subdivision in Alberta in Canada'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '5', 'keyword': 'age', 'measureLevel': 'int_'}' in 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '6', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '7', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '8', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'potential accessibility', 'measureLevel': 'rat_'}' in 'What is the potential accessibility by national network for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the potential accessibility by national network for each 2 by 2 kilometers grid cell in Finland'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the potential accessibility by national network for each 2 by 2 kilometers grid cell in Finland'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have natural resources in the UK'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have natural resources in the UK'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have natural resources in the UK'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and within 0.5 kilometers from the main roads in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '9', 'keyword': 'houses'}' in 'Which houses are for sale and within 0.5 kilometers from the main roads in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and within 0.5 kilometers from the main roads in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and within 0.5 kilometers from the main roads in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'age', 'measureLevel': 'int_'}' in 'What is the proportion of people older than 65 for each PC4 area in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '4', 'keyword': 'proportion of people', 'measureLevel': 'ira_'}' in 'What is the proportion of people older than 65 for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the proportion of people older than 65 for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the proportion of people older than 65 for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to parks for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to parks for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to parks for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'central feature', 'measureLevel': 'loc_'}' in 'What is the central feature of fire stations in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the central feature of fire stations in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the central feature of fire stations in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '0', 'keyword': 'severity', 'measureLevel': 'ord_'}' in 'What is the mean center of crimes weighted by the severity in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of crimes weighted by the severity in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of crimes weighted by the severity in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of crimes weighted by the severity in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'store'}' in 'Which store has the highest monthly sales in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which store has the highest monthly sales in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which store has the highest monthly sales in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'road'}' in 'Which road has the highest traffic count in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which road has the highest traffic count in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which road has the highest traffic count in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What is the mean center of accidents weighted by priority for each alarm territory in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of accidents weighted by priority for each alarm territory in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of accidents weighted by priority for each alarm territory in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of accidents weighted by priority for each alarm territory in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '3', 'keyword': '', 'measureLevel': 'rat_'}' in 'Which fire station is closest to each fire call in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'fire station'}' in 'Which fire station is closest to each fire call in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which fire station is closest to each fire call in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which fire station is closest to each fire call in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'standard distance circles', 'measureLevel': 'loc_'}' in 'What are the standard distance circles of fire calls answered by fire stations in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '4', 'keyword': 'fire calls'}' in 'What are the standard distance circles of fire calls answered by fire stations in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the standard distance circles of fire calls answered by fire stations in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the standard distance circles of fire calls answered by fire stations in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What are the standard distance circles of fire calls weighted by priority for each fire station in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'standard distance circles', 'measureLevel': 'loc_'}' in 'What are the standard distance circles of fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the standard distance circles of fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the standard distance circles of fire calls weighted by priority for each fire station in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What is the directional trend of fire calls weighted by priority for each fire station in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'directional trend', 'measureLevel': 'loc_'}' in 'What is the directional trend of fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the directional trend of fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the directional trend of fire calls weighted by priority for each fire station in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of Hispanics for each census block in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of Hispanics for each census block in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of Hispanics for each census block in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '3', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of bald eagle to the total bird population for each park in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of bald eagle to the total bird population for each park in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of bald eagle to the total bird population for each park in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'neighbor distance', 'measureLevel': 'rat_'}' in 'What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '2', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'degree of clustering', 'measureLevel': 'rat_'}' in 'What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority rankings', 'measureLevel': 'ord_'}' in 'What is the degree of clustering of fire alarms weighted by priority rankings for each 60 meters distance band in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'degree of clustering', 'measureLevel': 'rat_'}' in 'What is the degree of clustering of fire alarms weighted by priority rankings for each 60 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of clustering of fire alarms weighted by priority rankings for each 60 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of clustering of fire alarms weighted by priority rankings for each 60 meters distance band in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where are the hurricanes in Oleander in 1977'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the hurricanes in Oleander in 1977'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the hurricanes in Oleander in 1977'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'degree of clustering', 'measureLevel': 'rat_'}' in 'What is the degree of clustering of fire alarms density for each 300 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of clustering of fire alarms density for each 300 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of clustering of fire alarms density for each 300 meters distance band in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'Where are the clusters of fire alarms with similar priority for each 300 meters distance band in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of fire alarms with similar priority for each 300 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of fire alarms with similar priority for each 300 meters distance band in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of fire alarms with similar priority for each 300 meters distance band in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'houses'}' in 'Which houses are within 3 minutes driving time from the nearest fire station in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are within 3 minutes driving time from the nearest fire station in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are within 3 minutes driving time from the nearest fire station in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'driving time', 'measureLevel': 'rat_'}' in 'What areas are within 20 minutes of driving time from flower stores in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '5', 'keyword': 'areas'}' in 'What areas are within 20 minutes of driving time from flower stores in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are within 20 minutes of driving time from flower stores in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are within 20 minutes of driving time from flower stores in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'warehouse'}' in 'Which warehouse is closest to each household in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which warehouse is closest to each household in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which warehouse is closest to each household in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where are the tornado touchdowns in Oleander in April 2011'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the tornado touchdowns in Oleander in April 2011'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the tornado touchdowns in Oleander in April 2011'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '2', 'keyword': 'tornado path'}' in 'What is the tornado path in Oleander in April 2011'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the tornado path in Oleander in April 2011'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the tornado path in Oleander in April 2011'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '1', 'keyword': 'trajectory'}' in 'What are the trajectory of a hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the trajectory of a hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the trajectory of a hurricane in Oleander in 1977'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '2', 'keyword': 'hurricane trajectory'}' in 'What is a hurricane trajectory in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is a hurricane trajectory in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is a hurricane trajectory in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'intensity', 'measureLevel': 'rat_'}' in 'What is the intensity of a hurricane in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the intensity of a hurricane in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the intensity of a hurricane in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of crimes in Amsterdam in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of crimes in Amsterdam in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of crimes in Amsterdam in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '4', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average network distance from households to hospitals for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average network distance from households to hospitals for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average network distance from households to hospitals for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'construction year', 'measureLevel': 'int_'}' in 'What is the average construction year of buildings for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average construction year of buildings for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average construction year of buildings for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to hospitals for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to hospitals for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to hospitals for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of elderly people for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of elderly people for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of elderly people for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where was the most intense hurricane in Oleander in 1977'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '3', 'keyword': 'intensity', 'measureLevel': 'rat_'}' in 'Where was the most intense hurricane in Oleander in 1977'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '4', 'keyword': 'hurricane'}' in 'Where was the most intense hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where was the most intense hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where was the most intense hurricane in Oleander in 1977'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'euclidean distance', 'measureLevel': 'rat_'}' in 'What is the Euclidean distance to green areas in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the Euclidean distance to green areas in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the Euclidean distance to green areas in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '2', 'keyword': 'euclidean distance', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to green areas for each PC4 area in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to green areas for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to green areas for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to green areas for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to residential care complexes for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to residential care complexes for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to residential care complexes for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'safety index', 'measureLevel': 'rat_'}' in 'What is the Safety Index for each district in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'safety index', 'measureLevel': 'rat_'}' in 'What is the Safety Index for each district in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the Safety Index for each district in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the Safety Index for each district in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average point density of sport facilities for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average point density of sport facilities for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average point density of sport facilities for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to subway stations for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to subway stations for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to subway stations for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to tram stations for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to tram stations for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to tram stations for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where was the fastest hurricane in Oleander in 1977'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '3', 'keyword': 'speed', 'measureLevel': 'rat_'}' in 'Where was the fastest hurricane in Oleander in 1977'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '4', 'keyword': 'hurricane'}' in 'Where was the fastest hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where was the fastest hurricane in Oleander in 1977'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where was the fastest hurricane in Oleander in 1977'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'urban heat island effect', 'measureLevel': 'rat_'}' in 'What is the average urban heat island effect for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average urban heat island effect for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average urban heat island effect for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '3', 'keyword': 'woz waarde', 'measureLevel': 'era_'}' in 'What is the WOZ-waarde for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the WOZ-waarde for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the WOZ-waarde for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '6', 'keyword': 'age', 'measureLevel': 'int_'}' in 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '7', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '8', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '9', 'keyword': 'total population', 'measureLevel': 'cou_'}' in 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of population older than 16 and younger than 24 to the total population for each neighborhood in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '3', 'keyword': '', 'measureLevel': 'rat_'}' in 'Which fire station is closest to the fire calls in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'fire station'}' in 'Which fire station is closest to the fire calls in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which fire station is closest to the fire calls in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which fire station is closest to the fire calls in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of buildings affected by a hurricane in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'buildings'}' in 'What is the number of buildings affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of buildings affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of buildings affected by a hurricane in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '3', 'keyword': 'number of people', 'measureLevel': 'cou_'}' in 'What is the number of people affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of people affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of people affected by a hurricane in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many buildings are affected by a hurricane in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'buildings'}' in 'How many buildings are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many buildings are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many buildings are affected by a hurricane in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of luxury hotels in Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of luxury hotels in Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of luxury hotels in Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of arson cases in Fort Worth in February 2004'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of arson cases in Fort Worth in February 2004'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of arson cases in Fort Worth in February 2004'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of election votes for each precinct in Dallas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of election votes for each precinct in Dallas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of election votes for each precinct in Dallas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of dwelling units in the flood zones in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'dwelling units'}' in 'What is the number of dwelling units in the flood zones in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of dwelling units in the flood zones in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of dwelling units in the flood zones in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of high school students for each senior high school district in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of high school students for each senior high school district in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of high school students for each senior high school district in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '3', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of buildings within 3 minutes of driving time from fire stations in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of buildings within 3 minutes of driving time from fire stations in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of buildings within 3 minutes of driving time from fire stations in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'land use areas', 'measureLevel': 'nom_'}' in 'Which land use areas are intersected with sandy soil in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which land use areas are intersected with sandy soil in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which land use areas are intersected with sandy soil in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'buildings'}' in 'Which buildings are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which buildings are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which buildings are affected by a hurricane in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'degree of dispersion', 'measureLevel': 'rat_'}' in 'What is the degree of dispersion for fire calls for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of dispersion for fire calls for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of dispersion for fire calls for each fire station in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '1', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'degree of dispersion', 'measureLevel': 'rat_'}' in 'What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '3', 'keyword': 'percentage', 'measureLevel': 'ira_'}' in 'What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '4', 'keyword': 'total', 'measureLevel': 'cou_'}' in 'What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '4', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the population for each city in Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population for each city in Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population for each city in Aichi prefecture in Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'genpro', 'id': '2', 'keyword': 'density', 'measureLevel': 'ira_'}' in 'What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '6', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'hot spots and cold spots', 'measureLevel': 'loc_'}' in 'Where are the hot spots and cold spots of thefts in Shanghai in December 2009'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the hot spots and cold spots of thefts in Shanghai in December 2009'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the hot spots and cold spots of thefts in Shanghai in December 2009'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of injured pedestrians for each census tract in Georgia from 2001 to 2010'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of injured pedestrians for each census tract in Georgia from 2001 to 2010'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of injured pedestrians for each census tract in Georgia from 2001 to 2010'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Indian immigrants in Auckland from 1991 to 2006'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Indian immigrants in Auckland from 1991 to 2006'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Indian immigrants in Auckland from 1991 to 2006'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Korean immigrants in Auckland from 1991 to 2007'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Korean immigrants in Auckland from 1991 to 2007'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Korean immigrants in Auckland from 1991 to 2007'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many people are affected by a hurricane in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'people'}' in 'How many people are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many people are affected by a hurricane in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many people are affected by a hurricane in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Filipino immigrants in Auckland from 1991 to 2008'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Filipino immigrants in Auckland from 1991 to 2008'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Filipino immigrants in Auckland from 1991 to 2008'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Japanese immigrants in Auckland from 1991 to 2009'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Japanese immigrants in Auckland from 1991 to 2009'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Japanese immigrants in Auckland from 1991 to 2009'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'clusters', 'measureLevel': 'loc_'}' in 'Where are the clusters of Cambodian immigrants in Auckland from 1991 to 2010'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the clusters of Cambodian immigrants in Auckland from 1991 to 2010'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the clusters of Cambodian immigrants in Auckland from 1991 to 2010'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'Where are the number of inhabitants for each village in Banten province in Indonesia'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the number of inhabitants for each village in Banten province in Indonesia'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the number of inhabitants for each village in Banten province in Indonesia'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have parks in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have parks in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have parks in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'distfield', 'id': '1', 'keyword': ''}' in 'What areas are outside 155 meters from nature reserve districts in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are outside 155 meters from nature reserve districts in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are outside 155 meters from nature reserve districts in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'distfield', 'id': '1', 'keyword': ''}' in 'What areas are outside 155 meters from endangered species areas in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are outside 155 meters from endangered species areas in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are outside 155 meters from endangered species areas in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'distfield', 'id': '1', 'keyword': ''}' in 'What areas are outside 155 meters from developed areas in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are outside 155 meters from developed areas in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are outside 155 meters from developed areas in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have wetlands in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have wetlands in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have wetlands in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'distfield', 'id': '1', 'keyword': ''}' in 'What areas are outside 60 meters from water body in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are outside 60 meters from water body in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are outside 60 meters from water body in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have hurricane areas in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have hurricane areas in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have hurricane areas in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have floodplain in Houston'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have floodplain in Houston'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have floodplain in Houston'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'driving time', 'measureLevel': 'rat_'}' in 'Which hospitals are within 15 minutes of driving time of an accident in New York'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which hospitals are within 15 minutes of driving time of an accident in New York'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which hospitals are within 15 minutes of driving time of an accident in New York'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'average', 'measureLevel': 'rat_'}' in 'What is the average Euclidean distance to supermarkets for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average Euclidean distance to supermarkets for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average Euclidean distance to supermarkets for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and within 1 kilometer from the nearest school in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'houses'}' in 'Which houses are for sale and within 1 kilometer from the nearest school in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'houses'}' in 'Which houses are for sale and within 1 kilometer from the nearest school in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and within 1 kilometer from the nearest school in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and within 1 kilometer from the nearest school in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What areas have slope larger than 10 percent in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What areas have slope larger than 10 percent in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '4', 'keyword': 'areas'}' in 'What areas have slope larger than 10 percent in Spain'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas have slope larger than 10 percent in Spain'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas have slope larger than 10 percent in Spain'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'noise level', 'measureLevel': 'ord_'}' in 'What is the average noise level for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average noise level for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average noise level for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'temperature', 'measureLevel': 'int_'}' in 'What is the average temperature for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average temperature for each PC4 area in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average temperature for each PC4 area in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'area', 'measureLevel': 'era_'}' in 'What is the total area of agriculture in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '2', 'keyword': 'total', 'measureLevel': 'era_'}' in 'What is the total area of agriculture in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the total area of agriculture in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the total area of agriculture in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'elevation', 'measureLevel': 'rat_'}' in 'What areas have elevation higher than 30 meters in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'elevation', 'measureLevel': 'rat_'}' in 'What areas have elevation higher than 30 meters in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '4', 'keyword': 'areas'}' in 'What areas have elevation higher than 30 meters in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas have elevation higher than 30 meters in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas have elevation higher than 30 meters in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'altitude', 'measureLevel': 'rat_'}' in 'What areas have altitude higher than 700 meters and lower than 2000 meters in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'altitude', 'measureLevel': 'rat_'}' in 'What areas have altitude higher than 700 meters and lower than 2000 meters in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '4', 'keyword': 'areas'}' in 'What areas have altitude higher than 700 meters and lower than 2000 meters in Spain'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas have altitude higher than 700 meters and lower than 2000 meters in Spain'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas have altitude higher than 700 meters and lower than 2000 meters in Spain'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'temperature', 'measureLevel': 'int_'}' in 'What areas have temperature higher than 0 degrees in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'temperature', 'measureLevel': 'int_'}' in 'What areas have temperature higher than 0 degrees in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '4', 'keyword': 'areas'}' in 'What areas have temperature higher than 0 degrees in Spain'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas have temperature higher than 0 degrees in Spain'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas have temperature higher than 0 degrees in Spain'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'precipitation', 'measureLevel': 'rat_'}' in 'What areas have precipitation lower than 40 millimeters in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'precipitation', 'measureLevel': 'rat_'}' in 'What areas have precipitation lower than 40 millimeters in Spain'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '4', 'keyword': 'areas'}' in 'What areas have precipitation lower than 40 millimeters in Spain'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas have precipitation lower than 40 millimeters in Spain'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas have precipitation lower than 40 millimeters in Spain'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'park'}' in 'Which park is biggest in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which park is biggest in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which park is biggest in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': '', 'measureLevel': 'cou_'}' in 'Which freeways have 4 lanes in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'freeways'}' in 'Which freeways have 4 lanes in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which freeways have 4 lanes in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which freeways have 4 lanes in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and within 1 kilometer from the nearest supermarket in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'houses'}' in 'Which houses are for sale and within 1 kilometer from the nearest supermarket in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'houses'}' in 'Which houses are for sale and within 1 kilometer from the nearest supermarket in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and within 1 kilometer from the nearest supermarket in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and within 1 kilometer from the nearest supermarket in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'Which city has the highest crime rate in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'city'}' in 'Which city has the highest crime rate in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which city has the highest crime rate in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which city has the highest crime rate in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'city'}' in 'Which city has the highest population density in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which city has the highest population density in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which city has the highest population density in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas do not have groundwater in the UK'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas do not have groundwater in the UK'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas do not have groundwater in the UK'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '3', 'keyword': '', 'measureLevel': 'rat_'}' in 'Which emergency vehicle is closest to the accident in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'emergency vehicle'}' in 'Which emergency vehicle is closest to the accident in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which emergency vehicle is closest to the accident in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which emergency vehicle is closest to the accident in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'forestry areas', 'measureLevel': 'nom_'}' in 'Which forestry areas have Norwegian Spruce trees in Europe'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which forestry areas have Norwegian Spruce trees in Europe'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which forestry areas have Norwegian Spruce trees in Europe'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'cluster', 'measureLevel': 'loc_'}' in 'Where is the cluster of student residence in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where is the cluster of student residence in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where is the cluster of student residence in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and in urban areas in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'houses'}' in 'Which houses are for sale and in urban areas in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'houses'}' in 'Which houses are for sale and in urban areas in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and in urban areas in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and in urban areas in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '6', 'keyword': 'flat areas', 'measureLevel': 'nom_'}' in 'Where are the flat areas within 500 meters of a major highway in the United Kingdom'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the flat areas within 500 meters of a major highway in the United Kingdom'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the flat areas within 500 meters of a major highway in the United Kingdom'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'traffic flow', 'measureLevel': 'rat_'}' in 'What is the traffic flow of A28 motorway in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the traffic flow of A28 motorway in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the traffic flow of A28 motorway in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '2', 'keyword': 'land use', 'measureLevel': 'nom_'}' in 'What is the land use in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the land use in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the land use in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many luxury hotels are in Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many luxury hotels are in Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many luxury hotels are in Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconobjconpro', 'id': '0', 'keyword': 'crime rate', 'measureLevel': 'ira_'}' in 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '2', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'neighborhoods'}' in 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'houses'}' in 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'houses'}' in 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and in neighborhoods with crime rate lower than 50 per 1000 people in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': '', 'measureLevel': 'cou_'}' in 'Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'luxury hotels'}' in 'Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the luxury hotels with more than 20 bedrooms in Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'land use', 'measureLevel': 'nom_'}' in 'Which land use has meteorological stations in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which land use has meteorological stations in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which land use has meteorological stations in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'roads'}' in 'Which roads are intersected with forest areas in the UK'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which roads are intersected with forest areas in the UK'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which roads are intersected with forest areas in the UK'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '2', 'keyword': 'land use', 'measureLevel': 'nom_'}' in 'What is the land use in the Happy Valley resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the land use in the Happy Valley resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the land use in the Happy Valley resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'predicted probability surface', 'measureLevel': 'rat_'}' in 'What is the predicted probability surface for snowfall in Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the predicted probability surface for snowfall in Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the predicted probability surface for snowfall in Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'center'}' in 'What is the shortest route from the center of the resort to the ski pistes in Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the shortest route from the center of the resort to the ski pistes in Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the shortest route from the center of the resort to the ski pistes in Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'for sale', 'measureLevel': 'bool_'}' in 'Which houses are for sale and within 1 kilometer from the parks in Utrecht'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '9', 'keyword': 'houses'}' in 'Which houses are for sale and within 1 kilometer from the parks in Utrecht'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which houses are for sale and within 1 kilometer from the parks in Utrecht'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which houses are for sale and within 1 kilometer from the parks in Utrecht'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'From where are the wind farms visible in Amsterdam'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'visibility surface', 'measureLevel': 'nom_'}' in 'From where are the wind farms visible in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'From where are the wind farms visible in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'From where are the wind farms visible in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'ski pistes'}' in 'Which ski pistes are in the avalanche danger zones in Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which ski pistes are in the avalanche danger zones in Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which ski pistes are in the avalanche danger zones in Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '2', 'keyword': ''}' in 'Where are the accidents within ski pistes in the Happy Valley'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '4', 'keyword': 'accidents'}' in 'Where are the accidents within ski pistes in the Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the accidents within ski pistes in the Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the accidents within ski pistes in the Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'visitor facilities'}' in 'Which visitor facilities are in the Happy Valley'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which visitor facilities are in the Happy Valley'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which visitor facilities are in the Happy Valley'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '3', 'keyword': 'areas'}' in 'What areas are affected by a tsunami in Indonesia in 2004'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are affected by a tsunami in Indonesia in 2004'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are affected by a tsunami in Indonesia in 2004'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'political leaning', 'measureLevel': 'nom_'}' in 'What are the political leaning for each county in the United States'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'political leaning', 'measureLevel': 'nom_'}' in 'What are the political leaning for each county in the United States'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the political leaning for each county in the United States'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the political leaning for each county in the United States'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the number of crime cases for each police district in Texas in 2018'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the number of crime cases for each police district in Texas in 2018'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the number of crime cases for each police district in Texas in 2018'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'Where is the mean center of households in Amsterdam Oost district'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where is the mean center of households in Amsterdam Oost district'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where is the mean center of households in Amsterdam Oost district'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'central feature', 'measureLevel': 'loc_'}' in 'What is the central feature of bank branches in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the central feature of bank branches in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the central feature of bank branches in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of library patrons for each district in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of library patrons for each district in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of library patrons for each district in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eventquality', 'id': '0', 'keyword': 'priority', 'measureLevel': 'ord_'}' in 'What is the mean center of fire calls weighted by the priority in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '2', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of fire calls weighted by the priority in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of fire calls weighted by the priority in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of fire calls weighted by the priority in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the mean center of customers weighted by the number of transactions in Oleander city'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'mean center', 'measureLevel': 'loc_'}' in 'What is the mean center of customers weighted by the number of transactions in Oleander city'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the mean center of customers weighted by the number of transactions in Oleander city'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the mean center of customers weighted by the number of transactions in Oleander city'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'number', 'measureLevel': 'cou_'}' in 'What is the central feature of bank branches weighted by the number of employees in Oleander city'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '3', 'keyword': 'central feature', 'measureLevel': 'loc_'}' in 'What is the central feature of bank branches weighted by the number of employees in Oleander city'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the central feature of bank branches weighted by the number of employees in Oleander city'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the central feature of bank branches weighted by the number of employees in Oleander city'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'event', 'id': '4', 'keyword': 'fire calls'}' in 'Which police stations have the fire calls that are outside each alarm territory in Fort Worth'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'police stations'}' in 'Which police stations have the fire calls that are outside each alarm territory in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which police stations have the fire calls that are outside each alarm territory in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which police stations have the fire calls that are outside each alarm territory in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'standard distance circles', 'measureLevel': 'loc_'}' in 'What are the standard distance circles of West Nile Virus in Fort Worth'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the standard distance circles of West Nile Virus in Fort Worth'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the standard distance circles of West Nile Virus in Fort Worth'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'directional trend', 'measureLevel': 'loc_'}' in 'What is the directional trend of crimes in Amsterdam in 2019'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the directional trend of crimes in Amsterdam in 2019'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the directional trend of crimes in Amsterdam in 2019'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'cafes'}' in 'Which cafes are in forested areas in the Happy Valley ski resort'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which cafes are in forested areas in the Happy Valley ski resort'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which cafes are in forested areas in the Happy Valley ski resort'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '1', 'keyword': 'directional trend', 'measureLevel': 'loc_'}' in 'What is the directional trend of animal migration in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the directional trend of animal migration in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the directional trend of animal migration in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '2', 'keyword': 'total', 'measureLevel': 'era_'}' in 'What is the total linear mileage of the asphalt streets in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the total linear mileage of the asphalt streets in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the total linear mileage of the asphalt streets in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '1', 'keyword': 'how many', 'measureLevel': 'cou_'}' in 'How many arson cases in Fort Worth in February 2004'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'How many arson cases in Fort Worth in February 2004'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'How many arson cases in Fort Worth in February 2004'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where are the auto accidents in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where are the auto accidents in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where are the auto accidents in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'age', 'measureLevel': 'int_'}' in 'What is the median age for each census tract in Tarrant County in Texas'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '2', 'keyword': 'median', 'measureLevel': 'int_'}' in 'What is the median age for each census tract in Tarrant County in Texas'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the median age for each census tract in Tarrant County in Texas'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the median age for each census tract in Tarrant County in Texas'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '1', 'keyword': 'construction year', 'measureLevel': 'int_'}' in 'What is the construction year for each house in Oleander'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objectquality', 'id': '3', 'keyword': 'construction year', 'measureLevel': 'int_'}' in 'What is the construction year for each house in Oleander'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the construction year for each house in Oleander'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the construction year for each house in Oleander'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '2', 'keyword': 'areas'}' in 'What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'covamount', 'id': '5', 'keyword': '', 'measureLevel': 'era_'}' in 'What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'distfield', 'id': '1', 'keyword': ''}' in 'What areas are within 150 miles of urban areas in Ogallala Aquifer in the United States'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are within 150 miles of urban areas in Ogallala Aquifer in the United States'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are within 150 miles of urban areas in Ogallala Aquifer in the United States'. Not all types are annotated.
+
+INFO:: TQConverter.generateRuleTemplates:: Generated 100 new templates/rules. Total of 100 templates/rules in the list.
+
+###################################################################################
+###### ANNOTATING retri_parser_results_0620.json
+
+INFO:: TQConverter.generateRuleTemplates:: Generated 0 new templates/rules. Total of 100 templates/rules in the list.
+
+###################################################################################
+###### ANNOTATING Leticia_parser_results_0620.json
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'metropolitan municipalities'}' in 'What are the metropolitan municipalities in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the metropolitan municipalities in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the metropolitan municipalities in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '4', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the population for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population for each rural district in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'networkquality', 'id': '1', 'keyword': 'driving time', 'measureLevel': 'rat_'}' in 'Which hospital is within 2 minutes of driving time to the nearest incident in San Francisco, USA'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'hospital'}' in 'Which hospital is within 2 minutes of driving time to the nearest incident in San Francisco, USA'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which hospital is within 2 minutes of driving time to the nearest incident in San Francisco, USA'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which hospital is within 2 minutes of driving time to the nearest incident in San Francisco, USA'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'location', 'id': '1', 'keyword': ''}' in 'Where is the incident in San Francisco, USA'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Where is the incident in San Francisco, USA'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Where is the incident in San Francisco, USA'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'network', 'id': '3', 'keyword': 'road network'}' in 'What is the road network in San Francisco, USA'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the road network in San Francisco, USA'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the road network in San Francisco, USA'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconobjconpro', 'id': '0', 'keyword': 'malaria incidence rate', 'measureLevel': 'ira_'}' in 'Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'administrative regions'}' in 'Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconamount', 'id': '1', 'keyword': 'malaria incidence counts', 'measureLevel': 'cou_'}' in 'What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'eveconamount', 'id': '4', 'keyword': 'malaria incidence counts', 'measureLevel': 'cou_'}' in 'What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '3', 'keyword': 'population estimate', 'measureLevel': 'cou_'}' in 'What is the population estimate in the Democratic Republic of the Congo in 2016'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population estimate in the Democratic Republic of the Congo in 2016'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population estimate in the Democratic Republic of the Congo in 2016'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'administrative regions'}' in 'What are the administrative regions in the Democratic Republic of the Congo'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the administrative regions in the Democratic Republic of the Congo'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the administrative regions in the Democratic Republic of the Congo'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'administrative regions'}' in 'What are the administrative regions in the world'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the administrative regions in the world'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the administrative regions in the world'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'neighborhoods'}' in 'Which neighborhoods are within 100 meters from a school and with housing price lower than 200000 dollars in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which neighborhoods are within 100 meters from a school and with housing price lower than 200000 dollars in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which neighborhoods are within 100 meters from a school and with housing price lower than 200000 dollars in Utrecht, the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '4', 'keyword': 'housing price', 'measureLevel': 'era_'}' in 'What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '5', 'keyword': 'average', 'measureLevel': 'era_'}' in 'What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'neighborhoods'}' in 'What are the neighborhoods in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the neighborhoods in Utrecht, the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the neighborhoods in Utrecht, the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'neighborhoods'}' in 'What are the neighborhoods in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the neighborhoods in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the neighborhoods in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '8', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'provinces'}' in 'What is the area size of population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'population centers'}' in 'What is the area size of population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the area size of population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the area size of population centers within the provinces intersected with the A2 highway in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '4', 'keyword': 'provinces'}' in 'What are the population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '5', 'keyword': 'population centers'}' in 'What are the population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the population centers within the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the population centers within the provinces intersected with the A2 highway in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'population centers'}' in 'What are the population centers in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the population centers in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the population centers in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'provinces'}' in 'What are the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the provinces intersected with the A2 highway in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the provinces intersected with the A2 highway in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '2', 'keyword': 'provinces'}' in 'What are the provinces in the Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the provinces in the Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the provinces in the Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'annual amount', 'measureLevel': 'rat_'}' in 'What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'total', 'measureLevel': 'rat_'}' in 'What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '9', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the proportion of population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '10', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the proportion of population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the proportion of population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the proportion of population within 2 kilometers of the all-season roads for each rural district in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '2', 'keyword': 'annual amount', 'measureLevel': 'rat_'}' in 'What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'aggre', 'id': '3', 'keyword': 'total', 'measureLevel': 'rat_'}' in 'What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the total annual amount of solar radiation in MWh/m2 for each building's usable area in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'buildings'}' in 'Which buildings have an area of roof larger than 30 square meters in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'Which buildings have an area of roof larger than 30 square meters in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'Which buildings have an area of roof larger than 30 square meters in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '3', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '8', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '9', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '11', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '12', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '14', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '15', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '16', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the rooftop cells with slope lower than 10 degrees, with solar radiation higher than 8000 kilowatt hours, with aspect higher than 22.5 degrees and with aspect lower than 337.5 degrees in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '7', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '8', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the rooftop cells with slope lower than 45 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '7', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '8', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the rooftop cells with slope lower than 10 degrees and with solar radiation higher than 8000 kilowatt hours in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '5', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'rooftop cells'}' in 'What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the rooftop cells with slope lower than 45 degrees in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '0', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the slope in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '4', 'keyword': 'slope', 'measureLevel': 'rat_'}' in 'What are the slope in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the slope in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the slope in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '5', 'keyword': 'solar radiation in kwh m2', 'measureLevel': 'era_'}' in 'What is the solar radiation in KWh/m2 for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the solar radiation in KWh/m2 for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the solar radiation in KWh/m2 for each rooftop cell in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '1', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What is the aspect for each rooftop cell in Glover Park, Washington, D.C.'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'field', 'id': '5', 'keyword': 'aspect', 'measureLevel': 'int_'}' in 'What is the aspect for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the aspect for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the aspect for each rooftop cell in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '7', 'keyword': 'rural district'}' in 'What is the area of rural district within 2 kilometers of the all-season roads in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the area of rural district within 2 kilometers of the all-season roads in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the area of rural district within 2 kilometers of the all-season roads in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'region', 'id': '6', 'keyword': 'areas'}' in 'What areas are within 2 kilometers of the all-season roads for each rural district in Amsterdam'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What areas are within 2 kilometers of the all-season roads for each rural district in Amsterdam'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What areas are within 2 kilometers of the all-season roads for each rural district in Amsterdam'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '4', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the population for each district in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population for each district in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population for each district in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '3', 'keyword': 'rural municipalities'}' in 'What are the rural municipalities in Shikoku, Japan'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What are the rural municipalities in Shikoku, Japan'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What are the rural municipalities in Shikoku, Japan'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'object', 'id': '6', 'keyword': 'provinces'}' in 'What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '7', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands'.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '8', 'keyword': 'population', 'measureLevel': 'cou_'}' in 'What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the density of population within provinces intersected with the A2 highway for each population center in Netherlands'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'conamount', 'id': '5', 'keyword': 'solar radiation in wh m2', 'measureLevel': 'era_'}' in 'What is the solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the solar radiation in Wh/m2 for each rooftop cell in Glover Park, Washington, D.C.'. Not all types are annotated.
+
+WARNING:: TQConverter.typesToCCT:: No matching rule to annotate '{'type': 'objconamount', 'id': '2', 'keyword': 'population estimate', 'measureLevel': 'cou_'}' in 'What is the population estimate in the world in 2016'.
+
+ERROR:: TQConverter.typesToCCT:: 'Not all types were annotated with algebra expression for 'What is the population estimate in the world in 2016'.
+
+ERROR:: TQConverter.cctToExpandedQuery:: Cannot generate query for 'What is the population estimate in the world in 2016'. Not all types are annotated.
+
+INFO:: TQConverter.generateRuleTemplates:: Generated 11 new templates/rules. Total of 111 templates/rules in the list.
+
+Process finished with exit code 0

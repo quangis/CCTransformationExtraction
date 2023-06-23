@@ -1,0 +1,1735 @@
+[
+    {
+        "question": "Which neighborhoods are within 100 meters from a school in Utrecht",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "100 meters"
+        ],
+        "placename": [
+            "Utrecht"
+        ],
+        "replaceQ": "Which neighborhoods are topoRel0 quantity0 from school extent",
+        "object": [
+            "neighborhoods",
+            "school"
+        ],
+        "ner_Question": "which object0 are toporel0 quantity0 from object1 extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) are (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) from (coreC object 1)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "school",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "5",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "6",
+                    "keyword": "",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "7",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "3"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "5"
+                    ],
+                    "after": [
+                        "6"
+                    ]
+                },
+                {
+                    "before": [
+                        "6"
+                    ],
+                    "after": [
+                        "7"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "7",
+                "cct": "R(Obj,_)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "6",
+                        "cct": "R(Obj*Obj,Ratio)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "5",
+                                "cct": "R(Obj*Obj,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                },
+                                {
+                                    "after": {
+                                        "id": "3",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "Which neighborhoods have an average WOZ value less than 200 in Utrecht",
+        "aggregate": [
+            "average"
+        ],
+        "comparison": [
+            "less than"
+        ],
+        "quantity": [
+            "200 "
+        ],
+        "placename": [
+            "Utrecht"
+        ],
+        "replaceQ": "Which neighborhoods have aggregate0 WOZ value comparison0 quantity0extent",
+        "object": [
+            "neighborhoods"
+        ],
+        "conamount": [
+            "woz value"
+        ],
+        "ner_Question": "which object0 have aggregate0 conamount0 era_ comparison0 quantity0extent",
+        "parseTreeStr": "(start which (measure (coreC object 0)) have (condition (aggre aggregate 0) (coreC conamount 0 era_) (compareR comparison 0) (quantityV quantity 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "conamount",
+                    "id": "0",
+                    "keyword": "woz value",
+                    "measureLevel": "era_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "1",
+                    "keyword": "average",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Utrecht",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "neighborhoods",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "2"
+                    ],
+                    "after": [
+                        "1"
+                    ],
+                    "key": "2"
+                },
+                {
+                    "before": [
+                        "2",
+                        "1"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "4",
+                "cct": "R(Obj,_)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Obj,Reg*Ratio)",
+                        "key": "2"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(_,Ratio)"
+                            }
+                        },
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the number of people within 1000 meters of the A2 highway in the Netherlands",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "1000 meters"
+        ],
+        "placename": [
+            "Netherlands"
+        ],
+        "replaceQ": "What is number of people topoRel0 quantity0 of A2 highway extent",
+        "conamount": [
+            "number of people"
+        ],
+        "object": [
+            "a2 highway"
+        ],
+        "ner_Question": "what is conamount0 cou_ toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC conamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "a2 highway",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "3",
+                    "keyword": "number of people",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Netherlands",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "5",
+                    "keyword": "number of people",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "1"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "5",
+                "cct": "R(Reg,Count)",
+                "key": "1"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Count)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Loc,Bool)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the proportion of rural population within 2 kilometers of all-season roads in Shikoku, Japan",
+        "topoRel": [
+            "within"
+        ],
+        "quantity": [
+            "2 kilometers"
+        ],
+        "placename": [
+            "Shikoku",
+            "Japan"
+        ],
+        "replaceQ": "What is proportion of rural population topoRel0 quantity0 of all season roads extent",
+        "objconamount": [
+            "rural population"
+        ],
+        "genpro": [
+            "proportion"
+        ],
+        "object": [
+            "all season roads"
+        ],
+        "ner_Question": "what is genpro0 ira_ of objconamount0 cou_ toporel0 quantity0 of object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC objconamount 0 cou_)) (condition (boolField (topoR toporel 0) (distField (quantityV quantity 0) of (coreC object 0)))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "all season roads",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "distfield",
+                    "id": "1",
+                    "keyword": "",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "boolfield",
+                    "id": "2",
+                    "keyword": "",
+                    "cct": "R(Loc,Bool)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "3",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(_,Count)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "4",
+                    "keyword": "proportion",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Shikoku",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "6",
+                    "keyword": "Japan",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objconamount",
+                    "id": "7",
+                    "keyword": "rural population",
+                    "measureLevel": "cou_",
+                    "cct": "R(Reg,Count)"
+                }
+            ],
+            "extent": [
+                "5",
+                "6"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "3",
+                        "2"
+                    ],
+                    "after": [
+                        "7"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "before": [
+                        "7",
+                        "3"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "5"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "4",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "5"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "7",
+                        "cct": "R(Reg,Count)",
+                        "key": "1"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "3",
+                                "cct": "R(_,Count)"
+                            }
+                        },
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Loc,Bool)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "1",
+                                        "cct": "R(Loc,Ratio)"
+                                    },
+                                    "before": [
+                                        {
+                                            "after": {
+                                                "id": "0",
+                                                "cct": "R(Obj,_)"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Count)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the crime density along the shortest path from my home to my workplace in Amsterdam",
+        "placename": [
+            "Amsterdam"
+        ],
+        "replaceQ": "What is crime density along shortest path from home to workplace extent",
+        "network": [
+            "shortest path"
+        ],
+        "genpro": [
+            "crime density"
+        ],
+        "object": [
+            "workplace",
+            "home"
+        ],
+        "ner_Question": "what is genpro0 ira_ along network0 from object1 to object0 extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_)) (condition along (networkC network 0) from (origin (objectC object 1)) to (destination (objectC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "home",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "workplace",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "network",
+                    "id": "2",
+                    "keyword": "shortest path",
+                    "cct": "R(Obj*Obj,Reg)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "3",
+                    "keyword": "crime density",
+                    "measureLevel": "ira_",
+                    "cct": "R(_,Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "shortest path",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "6",
+                    "keyword": "crime density",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "5",
+                        "3"
+                    ],
+                    "after": [
+                        "6"
+                    ],
+                    "key": "5"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "6",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "5"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "5",
+                        "cct": "R(Obj,_)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Obj*Obj,Reg)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "1",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                },
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(_,Ratio)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What are the supermarkets, sport facilities and offices in Amsterdam",
+        "placename": [
+            "Amsterdam"
+        ],
+        "replaceQ": "What are supermarkets , sport facilities and offices extent",
+        "object": [
+            "sport facilities",
+            "supermarkets",
+            "offices"
+        ],
+        "ner_Question": "what are object1 , object0 and object2 extent",
+        "parseTreeStr": "(start what are (measure (mergeO (coreC object 1) (coreC object 0) and (coreC object 2))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "offices",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "sport facilities",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "supermarkets",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "merge layer",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Obj,_)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the shortest path through my workplace, a gym and a supermarket from my home in Amsterdam",
+        "placename": [
+            "Amsterdam"
+        ],
+        "replaceQ": "What is shortest path through workplace , gym and supermarket from home extent",
+        "network": [
+            "shortest path"
+        ],
+        "object": [
+            "supermarket",
+            "workplace",
+            "home",
+            "gym"
+        ],
+        "ner_Question": "what is network0 through object1 , object3 and object0 from object2 extent",
+        "parseTreeStr": "(start what is (measure (networkC network 0) through (destination (objectC object 1) (objectC object 3) and (objectC object 0)) from (origin (objectC object 2))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "home",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "supermarket",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "2",
+                    "keyword": "gym",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "workplace",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "network",
+                    "id": "4",
+                    "keyword": "shortest path",
+                    "cct": "R(Obj*Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "2",
+                        "3",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "4",
+                "cct": "R(Obj*Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the average network distance from households to the nearest supermarket in centrum district in Amsterdam",
+        "aggregate": [
+            "average"
+        ],
+        "extrema": [
+            "nearest"
+        ],
+        "placename": [
+            "centrum district",
+            "Amsterdam"
+        ],
+        "replaceQ": "What is aggregate0 network distance from households to extrema0 supermarket extent",
+        "networkquality": [
+            "network distance"
+        ],
+        "object": [
+            "supermarket",
+            "households"
+        ],
+        "ner_Question": "what is aggregate0 networkquality0 rat_ from object1 to extrema0 object0 extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (networkQ networkquality 0 rat_) from (origin (objectC object 1)) to (destination (extremaR extrema 0) (objectC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "supermarket",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "households",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "2",
+                    "keyword": "network distance",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "3",
+                    "keyword": "average",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "centrum district",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "5",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objectquality",
+                    "id": "6",
+                    "keyword": "network distance",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "4",
+                "5"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "6"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "before": [
+                        "6"
+                    ],
+                    "after": [
+                        "3"
+                    ],
+                    "key": "4"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "4"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "6",
+                        "cct": "R(Obj,Reg*Ratio)",
+                        "key": "1"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Obj*Obj,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                },
+                                {
+                                    "after": {
+                                        "id": "1",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the proportion of residential area for each neighborhood in Amsterdam",
+        "sup_object": [
+            "neighborhood"
+        ],
+        "replaceQ": "What is proportion of residential area support extent",
+        "placename": [
+            "Amsterdam"
+        ],
+        "field": [
+            "residential area"
+        ],
+        "genpro": [
+            "proportion"
+        ],
+        "ner_Question": "what is genpro0 ira_ of field0 nom_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC field 0 nom_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhood",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "residential area",
+                    "measureLevel": "nom_",
+                    "cct": "R(Loc,Nom)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "2",
+                    "keyword": "proportion",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "4",
+                    "keyword": "",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "5",
+                    "keyword": "",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "0"
+                },
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "4",
+                        "5"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "0"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "4",
+                        "cct": "R(Obj,Reg*Ratio)",
+                        "key": "0"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Loc,Nom)"
+                            }
+                        },
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "5",
+                        "cct": "R(Obj,Reg*Ratio)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the density of street intersections for each neighborhood in Amsterdam",
+        "sup_object": [
+            "neighborhood"
+        ],
+        "replaceQ": "What is density of street intersections support extent",
+        "placename": [
+            "Amsterdam"
+        ],
+        "object": [
+            "street intersections"
+        ],
+        "genpro": [
+            "density"
+        ],
+        "ner_Question": "what is genpro0 ira_ of object0 support extent",
+        "parseTreeStr": "(start what is (measure (coreC genpro 0 ira_) of (coreC object 0)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhood",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "street intersections",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "genpro",
+                    "id": "2",
+                    "keyword": "density",
+                    "measureLevel": "ira_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "amount",
+                    "id": "4",
+                    "keyword": "",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "covamount",
+                    "id": "5",
+                    "keyword": "",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "4"
+                    ],
+                    "key": "0"
+                },
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "5"
+                    ]
+                },
+                {
+                    "before": [
+                        "4",
+                        "5"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "0"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "4",
+                        "cct": "R(Obj,Reg*Ratio)",
+                        "key": "0"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "1",
+                                "cct": "R(Obj,_)"
+                            }
+                        },
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "5",
+                        "cct": "R(Obj,Reg*Ratio)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the diversity of land use for each neighborhood in Amsterdam",
+        "sup_object": [
+            "neighborhood"
+        ],
+        "replaceQ": "What is diversity of land use support extent",
+        "placename": [
+            "Amsterdam"
+        ],
+        "conamount": [
+            "diversity"
+        ],
+        "field": [
+            "land use"
+        ],
+        "ner_Question": "what is conamount0 era_ of field0 nom_ support extent",
+        "parseTreeStr": "(start what is (measure (coreC conamount 0 era_) of (coreC field 0 nom_)) (support support) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "neighborhood",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "land use",
+                    "measureLevel": "nom_",
+                    "cct": "R(Loc,Nom)"
+                },
+                {
+                    "type": "conamount",
+                    "id": "2",
+                    "keyword": "diversity",
+                    "measureLevel": "era_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "1",
+                        "0"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "0"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "0"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Loc,Nom)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the shortest travel route from the AEB incineration plant through every waste disposal place along waterways in Amsterdam",
+        "placename": [
+            "Amsterdam"
+        ],
+        "replaceQ": "What is shortest travel route from AEB incineration plant through every waste disposal place along waterways extent",
+        "object": [
+            "aeb incineration plant",
+            "waste disposal place"
+        ],
+        "network": [
+            "shortest travel route",
+            "waterways"
+        ],
+        "ner_Question": "what is network0 from object0 through every object1 along network1 extent",
+        "parseTreeStr": "(start what is (measure (networkC network 0) from (origin (objectC object 0)) through (destination every (objectC object 1)) along (networkC network 1)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "waste disposal place",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "aeb incineration plant",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "network",
+                    "id": "2",
+                    "keyword": "waterways",
+                    "cct": "R(Obj*Obj,Reg)"
+                },
+                {
+                    "type": "network",
+                    "id": "3",
+                    "keyword": "shortest travel route",
+                    "cct": "R(Obj*Obj,Reg)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Amsterdam",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "1",
+                        "2"
+                    ],
+                    "after": [
+                        "3"
+                    ]
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Obj*Obj,Reg)"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "0",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Obj,_)"
+                    }
+                },
+                {
+                    "after": {
+                        "id": "2",
+                        "cct": "R(Obj*Obj,Reg)"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the total walking time from each household to the nearest waste disposal place in the Amsterdam city center",
+        "aggregate": [
+            "total"
+        ],
+        "extrema": [
+            "nearest"
+        ],
+        "placename": [
+            "Amsterdam city center"
+        ],
+        "replaceQ": "What is aggregate0 walking time from each household to extrema0 waste disposal place extent",
+        "object": [
+            "waste disposal place",
+            "household"
+        ],
+        "networkquality": [
+            "walking time"
+        ],
+        "ner_Question": "what is aggregate0 networkquality0 rat_ from each object1 to extrema0 object0 extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (networkQ networkquality 0 rat_) from each (origin (objectC object 1)) to (destination (extremaR extrema 0) (objectC object 0))) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "waste disposal place",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "object",
+                    "id": "1",
+                    "keyword": "household",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "networkquality",
+                    "id": "2",
+                    "keyword": "walking time",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj*Obj,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "3",
+                    "keyword": "total",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "4",
+                    "keyword": "Amsterdam city center",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "objectquality",
+                    "id": "5",
+                    "keyword": "walking time",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                }
+            ],
+            "extent": [
+                "4"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0",
+                        "1"
+                    ],
+                    "after": [
+                        "2"
+                    ]
+                },
+                {
+                    "before": [
+                        "2"
+                    ],
+                    "after": [
+                        "5"
+                    ],
+                    "key": "1"
+                },
+                {
+                    "before": [
+                        "5"
+                    ],
+                    "after": [
+                        "3"
+                    ],
+                    "key": "4"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "3",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "4"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "5",
+                        "cct": "R(Obj,Reg*Ratio)",
+                        "key": "1"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "2",
+                                "cct": "R(Obj*Obj,Ratio)"
+                            },
+                            "before": [
+                                {
+                                    "after": {
+                                        "id": "0",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                },
+                                {
+                                    "after": {
+                                        "id": "1",
+                                        "cct": "R(Obj,_)"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "question": "What is the total kernel density of waste disposal places in the Amsterdam city center",
+        "aggregate": [
+            "total"
+        ],
+        "placename": [
+            "Amsterdam city center"
+        ],
+        "replaceQ": "What is aggregate0 kernel density of waste disposal places extent",
+        "object": [
+            "waste disposal places"
+        ],
+        "field": [
+            "kernel density"
+        ],
+        "ner_Question": "what is aggregate0 field0 rat_ of object0 extent",
+        "parseTreeStr": "(start what is (measure (aggre aggregate 0) (coreC field 0 rat_) of (coreC object 0)) (extent extent))",
+        "cctrans": {
+            "types": [
+                {
+                    "type": "object",
+                    "id": "0",
+                    "keyword": "waste disposal places",
+                    "cct": "R(Obj,_)"
+                },
+                {
+                    "type": "field",
+                    "id": "1",
+                    "keyword": "kernel density",
+                    "measureLevel": "rat_",
+                    "cct": "R(Loc,Ratio)"
+                },
+                {
+                    "type": "aggre",
+                    "id": "2",
+                    "keyword": "total",
+                    "measureLevel": "rat_",
+                    "cct": "R(Obj,Reg*Ratio)"
+                },
+                {
+                    "type": "object",
+                    "id": "3",
+                    "keyword": "Amsterdam city center",
+                    "cct": "R(Obj,_)"
+                }
+            ],
+            "extent": [
+                "3"
+            ],
+            "transformations": [
+                {
+                    "before": [
+                        "0"
+                    ],
+                    "after": [
+                        "1"
+                    ]
+                },
+                {
+                    "before": [
+                        "1",
+                        "3"
+                    ],
+                    "after": [
+                        "2"
+                    ],
+                    "key": "3"
+                }
+            ]
+        },
+        "valid": "T",
+        "queryEx": {
+            "after": {
+                "id": "2",
+                "cct": "R(Obj,Reg*Ratio)",
+                "key": "3"
+            },
+            "before": [
+                {
+                    "after": {
+                        "id": "1",
+                        "cct": "R(Loc,Ratio)"
+                    },
+                    "before": [
+                        {
+                            "after": {
+                                "id": "0",
+                                "cct": "R(Obj,_)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "after": {
+                        "id": "3",
+                        "cct": "R(Obj,_)"
+                    }
+                }
+            ]
+        }
+    }
+]
