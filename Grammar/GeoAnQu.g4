@@ -21,7 +21,7 @@ condition: boolField | (topoR coreC ('from' coreC)? subcon?) |
            ('that'? extremaR 'each'? aggre? coreC? ('of' coreC 'to' aggre? coreC)? subcon?) |
            (booleanR coreC subcon?) | visible | (coreC subcon?) | ('with'? compareR? conAmount) ;
 boolField: (topoR|compareR) (distField|serviceObj) ;
-distField: quantityV ('distfield' DIGIT ML)? ('from'|'of'|'to') extremaR? (coreC|(networkC (('from'|'for'|'of') origin)? ('to' destination)?)) ;
+distField: quantityV ('distfield' DIGIT)? ('from'|'of'|'to') extremaR? (coreC|(networkC (('from'|'for'|'of') origin)? ('to' destination)?)) ;
 serviceObj: (time|quantityV)+ 'of'? networkQ (('from'|'for'|'of') origin)? ('to' destination)? ;
 origin: DIGIT? (extremaR|'each')? objectC? 'of'? (objectC|eventC|grid)+ ;
 destination: DIGIT? (extremaR|'each'|'every')? ((objectC|eventC) 'and'? 'every'?)+;
