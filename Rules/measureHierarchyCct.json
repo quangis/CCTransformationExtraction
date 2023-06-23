@@ -1,0 +1,51 @@
+{
+    "terms": [
+        {
+            "concept": "Nom",
+            "cct": ""
+        },
+        {
+            "concept": "Ord",
+            "cct": ""
+        },
+        {
+            "concept": "Bool",
+            "cct": ""
+        },
+        {
+            "concept": "Itv",
+            "cct": ""
+        },
+        {
+            "concept": "Ratio",
+            "cct": ""
+        },
+        {
+            "concept": "Count",
+            "cct": ""
+        }
+    ],
+    
+    "hierachy": [
+        {
+            "super": "Nom",
+            "sub": "Ord"
+        },
+        {
+            "super": "Nom",
+            "sub": "Bool"
+        },
+        {
+            "super": "Ord",
+            "sub": "Itv"
+        },
+        {
+            "super": "Itv",
+            "sub": "Ratio"
+        },
+        {
+            "super": "Ratio",
+            "sub": "Count"
+        }
+    ]
+}

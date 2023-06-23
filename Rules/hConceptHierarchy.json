@@ -169,11 +169,11 @@
             "sub": "covamount"
         },
         {
-            "super": "proportion",
+            "super": "genpro",
             "sub": "objconobjconpro"
         },
         {
-            "super": "proportion",
+            "super": "genpro",
             "sub": "eveconobjconpro"
         },
         {

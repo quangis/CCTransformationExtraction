@@ -30,33 +30,12 @@
         },
         {
             "concept": "cou_",
-            "cct": "Ratio"
+            "cct": "Count"
         },
         
         {
             "concept": "loc_",
             "cct": "Nom"
-        },
-        
-        {
-            "concept": "Nom",
-            "cct": "Nom"
-        },
-        {
-            "concept": "Ord",
-            "cct": "Ord"
-        },
-        {
-            "concept": "Bool",
-            "cct": "Bool"
-        },
-        {
-            "concept": "Itv",
-            "cct": "Itv"
-        },
-        {
-            "concept": "Ratio",
-            "cct": "Ratio"
         }
     ],
     
@@ -93,23 +72,6 @@
         {
             "super": "nom_",
             "sub": "loc_"
-        },
-        
-        {
-            "super": "Nom",
-            "sub": "Ord"
-        },
-        {
-            "super": "Nom",
-            "sub": "Bool"
-        },
-        {
-            "super": "Ord",
-            "sub": "Itv"
-        },
-        {
-            "super": "Itv",
-            "sub": "Ratio"
         }
     ]
 }
