@@ -1,6 +1,8 @@
 ## [SC][TODO] ignore loc while deriving new rules based on measures
 ## [SC][TODO] expand rules based on shared parent concept
 
+import sys
+sys.path.append('..')
 import json
 from QuestionParser import *
 
@@ -83,7 +85,6 @@ def testRuleGeneration():
     # [SC] save template rules into a file
     with open(f"output/templateRules.json", "w") as outputFile:
         json.dump(templateRules, outputFile, indent=4)
-
 #testRuleGeneration()
 
 
