@@ -1,0 +1,1379 @@
+[
+    {
+        "id": "Filled-Template-1",
+        "description": "Which houses are for sale in Utrecht",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "bool_"
+        },
+        "rhs": "R(Obj,Reg*Bool)"
+    },
+    {
+        "id": "Filled-Template-2",
+        "description": "Which houses are for sale in Utrecht",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-3",
+        "description": "Which houses have construction year before 1990 and after 2000 in Utrecht",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "int_"
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "Filled-Template-4",
+        "description": "What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "aggre",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-5",
+        "description": "What is the percentage of the Hispanic population to the total population for each census block in Tarrant County in Texas",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-6",
+        "description": "Which park has the highest proportion of bald eagles to the total bird population in Texas",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "aggre",
+                "amount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-7",
+        "description": "Which park has the highest proportion of bald eagles to the total bird population in Texas",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "genpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-8",
+        "description": "What is the number of tractors for each road in Texas",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-9",
+        "description": "What is the percentage of owner-occupied houses to the total number of houses for each census tract in Tarrant County, Texas",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "amount",
+                "conamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-10",
+        "description": "What is the crime rate for each police district in Texas in 2019",
+        "lhs": {
+            "type": "eveconobjconpro",
+            "measureLevel": "ira_"
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-11",
+        "description": "What is the crime rate for each police district in Texas in 2019",
+        "lhs": {
+            "type": "eveconobjconpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "eveconobjconpro"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-12",
+        "description": "What are the vote totals of an election for each precinct in Dallas",
+        "lhs": {
+            "type": "eveconamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-13",
+        "description": "What is the density of robberies for each police beat in Dallas",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-14",
+        "description": "What is the density of rental units in Oleander",
+        "lhs": {
+            "type": "amount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-15",
+        "description": "Where is the most popular ski piste in Happy Valley ski resort",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "objconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-16",
+        "description": "What is the point density of trees in parks in Oleander",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-17",
+        "description": "What is the point density of fire calls in Oleander",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "Filled-Template-18",
+        "description": "What is the point density of rainfall measurements in the Netherlands",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "Filled-Template-19",
+        "description": "What is the point density of rainfall measurements in the Netherlands",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "Filled-Template-20",
+        "description": "What are the directional trends of tornadoes in the Tarrant county from 2010 to 2019",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-21",
+        "description": "What is the mean direction of freeways in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-22",
+        "description": "What is the degree of clustering for fire calls in Fort Worth in 2015",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-23",
+        "description": "Which ski piste is longest in the Happy Valley",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "covamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-24",
+        "description": "Where are the clusters of fire alarms with similar priority in Fort Worth",
+        "lhs": {
+            "type": "eventquality",
+            "measureLevel": "ord_"
+        },
+        "rhs": "R(Obj,Reg*Ord)"
+    },
+    {
+        "id": "Filled-Template-25",
+        "description": "Where are the clusters of fire alarms with similar priority in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "event",
+                "eventquality"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-26",
+        "description": "Where are the clusters of census blocks with similar median household income in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "aggre",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-27",
+        "description": "Where are the clusters of neighborhoods with similar crime rate in Amsterdam",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-28",
+        "description": "What is the percentage of residential areas within 1 kilometer of the central station in Oleander",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_",
+            "inputType": [
+                "boolfield",
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "Filled-Template-29",
+        "description": "What is the percentage of residential areas within 1 kilometer of the central station in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-30",
+        "description": "What is the percentage of residential areas within 1 kilometer of the central station in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "boolfield"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-31",
+        "description": "Which properties are within 0.5 kilometers of the Independence Day parade route in Washington D.C.",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "Filled-Template-32",
+        "description": "How many dwelling units are in the flood zones in Oleander",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-33",
+        "description": "How many dwelling units are in the flood zones in Oleander",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-34",
+        "description": "What are the land use in the flood zones in Oleander",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_",
+            "inputType": [
+                "field",
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "Filled-Template-35",
+        "description": "Which hotels are within 0.3 kilometers of the longest ski piste in Happy Valley ski resort",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "boolfield",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-36",
+        "description": "How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-37",
+        "description": "How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-38",
+        "description": "How many fire calls were answered by a fire station that was not closest to the fire accidents in Oleander",
+        "lhs": {
+            "type": "event",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-39",
+        "description": "Which neighborhood has the highest crime rate in Amsterdam",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "eveconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-40",
+        "description": "What areas are within 3 minutes of driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "object",
+                "region"
+            ]
+        },
+        "rhs": "R(Reg*Obj,Ratio)"
+    },
+    {
+        "id": "Filled-Template-41",
+        "description": "What areas are within 3 minutes of driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-42",
+        "description": "What areas are within 3 minutes of driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "networkquality",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-43",
+        "description": "Which buildings were affected by tornadoes in Oleander",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-44",
+        "description": "What is the walkability for each neighborhood in Ghent",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-45",
+        "description": "What is the walkability for each neighborhood in Ghent",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-46",
+        "description": "Where are the individual crimes in Amsterdam",
+        "lhs": {
+            "type": "location",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Obj,Reg)"
+    },
+    {
+        "id": "Filled-Template-47",
+        "description": "What is the network distance from hexagonal grids with a diameter of 2000 meters to the nearest public primary school in the Multifunctional Urban Area of Barcelona",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "grid",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-48",
+        "description": "What is the average network distance for people to public primary schools for each census area in Rotterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "networkquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-49",
+        "description": "What is average network distance for people to the nearest primary schools for each census area in Rotterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-50",
+        "description": "What is the number of people within 1000 meters network distance from hexagonal grids with a diameter of 2000 meters to primary schools in Barcelona",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "grid"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-51",
+        "description": "What is the travel time from the centroids of municipalities to outpatient services in Tuscany in Italy",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-52",
+        "description": "What is the number of inhabitants for each 100 by 100 meters grid cell in Banten province in Indonesia",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-53",
+        "description": "What is the potential geographic access from communities to the sexual and productive health services in rural areas in Chibuto, Chokwe, Guija and Mandlakaze in Mozambique in 2019",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-54",
+        "description": "What areas do not have green belt areas in Houston",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "field",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-55",
+        "description": "What is the potential accessibility by local road for each 2 by 2 kilometers grid cell in Finland",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "grid",
+            "inputType": [
+                "grid",
+                "network"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-56",
+        "description": "What is the population density for each neighborhood with 0 health care facility in Riverside-San Bernardino",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-57",
+        "description": "What is the access score to family physicians services for each Census Consolidated Subdivision in Saskatchewan in Canada",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-58",
+        "description": "What is the kernel density of potential geographic access of communities to clinics in Chibuto in Mozambique in 2019",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_",
+            "inputType": [
+                "objectquality"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "Filled-Template-59",
+        "description": "What is the percentage of population older than 65 for each Census Consolidated Subdivision in Alberta in Canada",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_",
+            "inputType": [
+                "objconamount",
+                "objectquality"
+            ]
+        },
+        "rhs": "R(_,Count)"
+    },
+    {
+        "id": "Filled-Template-60",
+        "description": "What is the proportion of people older than 65 for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "inputType": [
+                "genpro",
+                "objectquality"
+            ]
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "Filled-Template-61",
+        "description": "What is the average Euclidean distance to parks for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-62",
+        "description": "What is the mean center of accidents weighted by priority for each alarm territory in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "event",
+                "eventquality",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-63",
+        "description": "What is the average neighbor distance to the 7 nearest neighbors for fire alarms in Fort Worth",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-64",
+        "description": "What is the degree of clustering of fire alarms weighted by priority for each 60 meters distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "distanceBand",
+                "event",
+                "eventquality"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-65",
+        "description": "What is the number of fire calls for each 150 by 150 meters grid cell in Fort Worth",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "grid",
+            "inputType": [
+                "event",
+                "grid"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-66",
+        "description": "What is the degree of clustering of fire alarms density for each 300 meters distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "distanceBand",
+                "genpro"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-67",
+        "description": "Where are the clusters of fire alarms with similar priority for each 300 meters distance band in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "distanceBand",
+                "event",
+                "eventquality"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-68",
+        "description": "Which houses are within 3 minutes driving time from the nearest fire station in Oleander",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "networkquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-69",
+        "description": "What is the tornado path in Oleander in April 2011",
+        "lhs": {
+            "type": "event",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-70",
+        "description": "What is the intensity of a hurricane in Texas",
+        "lhs": {
+            "type": "eventquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-71",
+        "description": "What is the average construction year of buildings for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "int_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "Filled-Template-72",
+        "description": "Where was the most intense hurricane in Oleander in 1977",
+        "lhs": {
+            "type": "eventquality",
+            "measureLevel": "rat_"
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-73",
+        "description": "Where was the most intense hurricane in Oleander in 1977",
+        "lhs": {
+            "type": "event",
+            "inputType": [
+                "event",
+                "eventquality"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-74",
+        "description": "What is the WOZ-waarde for each neighborhood in Amsterdam",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-75",
+        "description": "What is the number of people affected by a hurricane in Oleander",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "event"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-76",
+        "description": "What is the number of election votes for each precinct in Dallas",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-77",
+        "description": "What is the degree of dispersion for fire calls for each fire station in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event",
+                "object"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-78",
+        "description": "What is the degree of dispersion for fire calls weighted by priority for each fire station in Fort Worth",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "event",
+                "eventquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-79",
+        "description": "What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "grid",
+            "inputType": [
+                "aggre",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-80",
+        "description": "What is the percentage of elderly population to the total population for each 1 by 1 kilometer grid cell in the Aichi prefecture in Japan",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "cou_",
+            "key": "grid",
+            "inputType": [
+                "objconamount",
+                "grid"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-81",
+        "description": "What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan",
+        "lhs": {
+            "type": "genpro",
+            "measureLevel": "ira_",
+            "key": "grid",
+            "inputType": [
+                "covamount",
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-82",
+        "description": "What is the density of elderly population for each 500 by 500 meters grid cell in Aichi prefecture in Japan",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "grid"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-83",
+        "description": "What areas do not have parks in Houston",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "object",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-84",
+        "description": "What areas are outside 155 meters from nature reserve districts in Houston",
+        "lhs": {
+            "type": "distfield",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+    {
+        "id": "Filled-Template-85",
+        "description": "What is the average noise level for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "ord_"
+        },
+        "rhs": "R(Loc,Ord)"
+    },
+    {
+        "id": "Filled-Template-86",
+        "description": "What is the average temperature for each PC4 area in Amsterdam",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "int_"
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": "Filled-Template-87",
+        "description": "What is the total area of agriculture in Netherlands",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "covamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-88",
+        "description": "What areas have temperature higher than 0 degrees in Spain",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "int_",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Itv)"
+    },
+    {
+        "id": "Filled-Template-89",
+        "description": "Which forestry areas have Norwegian Spruce trees in Europe",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "Filled-Template-90",
+        "description": "What is the traffic flow of A28 motorway in Utrecht",
+        "lhs": {
+            "type": "networkquality",
+            "measureLevel": "rat_",
+            "inputType": [
+                "network"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Ratio)"
+    },
+    {
+        "id": "Filled-Template-91",
+        "description": "What is the land use in Netherlands",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "nom_",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Nom)"
+    },
+    {
+        "id": "Filled-Template-92",
+        "description": "What areas are affected by a tsunami in Indonesia in 2004",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "event",
+                "region"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-93",
+        "description": "What are the political leaning for each county in the United States",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "nom_"
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "Filled-Template-94",
+        "description": "What are the political leaning for each county in the United States",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "nom_",
+            "key": "object",
+            "inputType": [
+                "objectquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Nom)"
+    },
+    {
+        "id": "Filled-Template-95",
+        "description": "What is the mean center of library patrons for each district in Oleander",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "object",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-96",
+        "description": "What is the mean center of customers weighted by the number of transactions in Oleander city",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "loc_",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(_,Reg)"
+    },
+    {
+        "id": "Filled-Template-97",
+        "description": "What is the median age for each census tract in Tarrant County in Texas",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objectquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "Filled-Template-98",
+        "description": "What is the construction year for each house in Oleander",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "objectquality",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    },
+    {
+        "id": "Filled-Template-99",
+        "description": "What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center",
+        "lhs": {
+            "type": "region",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Loc)"
+    },
+    {
+        "id": "Filled-Template-100",
+        "description": "What is the proportion of areas covered by odour concentration from waste disposal places in the Amsterdam city center",
+        "lhs": {
+            "type": "covamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "region"
+            ]
+        },
+        "rhs": "R(Reg,Ratio)"
+    },
+    {
+        "id": "Filled-Template-101",
+        "description": "What is the road network in San Francisco, USA",
+        "lhs": {
+            "type": "network",
+            "inputType": [
+                "network"
+            ]
+        },
+        "rhs": "R(Obj*Obj,Reg)"
+    },
+    {
+        "id": "Filled-Template-102",
+        "description": "Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015",
+        "lhs": {
+            "type": "objconobjconpro",
+            "measureLevel": "ira_"
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "Filled-Template-103",
+        "description": "Which administrative regions have the highest malaria incidence rate in the Democratic Republic of the Congo from 2000 to 2015",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "objconobjconpro",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,_)"
+    },
+    {
+        "id": "Filled-Template-104",
+        "description": "What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015",
+        "lhs": {
+            "type": "eveconamount",
+            "measureLevel": "cou_"
+        },
+        "rhs": "R(_,Count)"
+    },
+    {
+        "id": "Filled-Template-105",
+        "description": "What are the malaria incidence counts for each administrative regions in the Democratic Republic of the Congo from 2000 to 2015",
+        "lhs": {
+            "type": "eveconamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "eveconamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-106",
+        "description": "What is the population estimate in the Democratic Republic of the Congo in 2016",
+        "lhs": {
+            "type": "objconamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "objconamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+    {
+        "id": "Filled-Template-107",
+        "description": "What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "era_",
+            "inputType": [
+                "object"
+            ]
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "Filled-Template-108",
+        "description": "What is the average housing price of neighborhoods within 100 meters from a school in Utrecht, the Netherlands",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "era_",
+            "key": "object",
+            "inputType": [
+                "conamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-109",
+        "description": "What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "inputType": [
+                "conamount"
+            ]
+        },
+        "rhs": "R(_,Ratio)"
+    },
+    {
+        "id": "Filled-Template-110",
+        "description": "What is the total annual amount of electric power production in MWh for each building's usable area in Glover Park, Washington, D.C.",
+        "lhs": {
+            "type": "aggre",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "conamount"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+    {
+        "id": "Filled-Template-111",
+        "description": "What is the aspect for each rooftop cell in Glover Park, Washington, D.C.",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "int_",
+            "key": "object",
+            "inputType": [
+                "field",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Itv)"
+    }
+]
