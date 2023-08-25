@@ -52,6 +52,7 @@ altitude	field	rat_
 elevation	field	rat_
 temperature in Celsius	field	int_
 precipitation	field	rat_
+irrigation	field	rat_
 rivers	object
 river	object
 predicted distribution probability	field	rat_
@@ -227,6 +228,8 @@ clusters	covAmount	loc_
 cluster	covAmount	loc_
 residential area	field	nom_
 residential areas	field	nom_
+excluded area	field	nom_
+excluded areas	field	nom_
 central station	object
 Independence Day parade route	event
 properties	object
@@ -285,6 +288,7 @@ intersection	object
 cycling destinations	object
 cycling destination	object
 network distance	networkQuality	rat_
+distance	networkQuality	rat_
 public primary schools	object
 public primary school	object
 census areas	object
@@ -368,6 +372,7 @@ WOZ waarde	conAmount	era_
 wall plants	object
 wall plant	object
 water areas	field	nom_
+water	conAmount	era_
 elderly population	objConAmount	cou_
 municipality areas	object
 municipality area	object
@@ -524,6 +529,8 @@ liquor stores	object
 liquor store	object
 college districts	object
 college district	object
+community college districts	object
+community college district	object
 wind farm proposals	object
 wild lands	object
 restaurant	object
@@ -681,6 +688,8 @@ waste disposal places	object
 waste disposal place	object
 containers	object
 container	object
+waste containers	object
+waste container	object
 rowboat containers	object
 rowboat container	object
 all season roads	object
