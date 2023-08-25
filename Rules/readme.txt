@@ -1,3 +1,0 @@
-conversionRules.json - rules manually created from the questions used in the prototype + rules derived (using input type and measurement hierarchies) from the manually created rules
-GeoAnQu_parser_results_1024_cct.json - geoAnQu questions that are partially annotated with the rules from "conversionRules.json"
-missingRules.json - templates for missing rules necessary to fully annotate the "GeoAnQu_parser_results_1024_cct.json"

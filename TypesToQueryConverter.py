@@ -705,8 +705,8 @@ class TQConverter:
     # @param:  boolean      validate    It True the question annotation is checked for a valid structure.
     # @param:  boolean      annotate    If True the types are annotated with 'cct' expressions.
     # @return: void                     adds 'query' object to qJson
-    def algebraToQuery(self, qJson, validate, annotate):
-        methodName = "TQConverter.algebraToQuery"
+    def cctToQuery(self, qJson, validate, annotate):
+        methodName = "TQConverter.cctToQuery"
 
         if validate:
             self.isValidQJson(qJson)
