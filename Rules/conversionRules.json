@@ -9125,5 +9125,84 @@
             ]
         },
         "rhs": "R(Obj,Reg*Ord)"
+    },
+	{
+        "id": "Manual-24082023-1",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "objectquality",
+            "measureLevel": "rat_",
+            "key": "event",
+            "inputType": [
+                "networkquality"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+	{
+        "id": "Manual-24082023-2",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "cou_",
+            "key": "object",
+            "inputType": [
+                "conamount",
+                "object"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Count)"
+    },
+	{
+        "id": "Manual-25082023-3",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "field",
+            "measureLevel": "rat_",
+            "inputType": [
+                "field",
+                "field"
+            ]
+        },
+        "rhs": "R(Loc,Ratio)"
+    },
+	{
+        "id": "Manual-25082023-4",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "conamount",
+            "measureLevel": "rat_",
+            "key": "object",
+            "inputType": [
+                "field"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+	{
+        "id": "Manual-25082023-5",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "objconobjconpro",
+            "measureLevel": "ira_",
+            "key": "object",
+            "inputType": [
+                "object",
+                "objconobjconpro"
+            ]
+        },
+        "rhs": "R(Obj,Reg*Ratio)"
+    },
+	{
+        "id": "Manual-25082023-6",
+        "description": "Manually added rule",
+        "lhs": {
+            "type": "object",
+            "inputType": [
+                "object",
+                "region"
+            ]
+        },
+        "rhs": "R(Obj,_)"
     }
 ]

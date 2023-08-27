@@ -713,3 +713,6 @@ provinces	object
 province	object
 population centers	object
 population center	object
+waterway    object
+waterways   object
+A2 highway  object
